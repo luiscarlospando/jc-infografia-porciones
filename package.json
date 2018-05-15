@@ -1,0 +1,32 @@
+{
+  "name": "jc-infografia-porciones",
+  "version": "1.0.0",
+  "description": "Infografía interactiva Porciones de Juntos Contamos",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js' --directory --port 7777",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pack": "webpack ./assets/js/scripts.js ./dist/bundle.js"
+  },
+  "keywords": [
+    "porciones",
+    "juntos",
+    "contamos",
+    "discovery",
+    "en",
+    "la",
+    "escuela"
+  ],
+  "author": "Luis Carlos Pando (@mijo)",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.13"
+  },
+  "dependencies": {
+    "animate.css": "^3.6.1",
+    "bootstrap": "^4.0.0",
+    "fullpage.js": "^2.9.6",
+    "jquery": "^1.9.1",
+    "popper.js": "^1.12.9"
+  }
+}
