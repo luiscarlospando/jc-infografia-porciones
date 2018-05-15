@@ -1,0 +1,50 @@
+html {
+  height: 100%; }
+
+body {
+  background: linear-gradient(to bottom, #bff2ff 0%, #fdffff 100%); }
+
+.navbar {
+  background-color: transparent;
+  text-transform: uppercase; }
+
+.elemento-portada {
+  position: absolute;
+  opacity: 0;
+  z-index: 1; }
+
+#porciones {
+  position: relative;
+  z-index: 2;
+  opacity: 0; }
+
+#mano {
+  opacity: 0;
+  z-index: 0; }
+
+#queso {
+  top: -12%;
+  right: 22%; }
+
+#miel {
+  top: 3%;
+  left: 4%; }
+
+#banana {
+  top: 12%;
+  right: 18%; }
+
+#pan {
+  top: 23%;
+  left: 14%; }
+
+#brocoli {
+  left: 30%;
+  top: 50%; }
+
+#pescado {
+  top: 58%;
+  right: 21%;
+  width: 32%; }
+
+/*# sourceMappingURL=styles.css.map */
