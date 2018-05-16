@@ -8,43 +8,46 @@ body {
   background-color: transparent;
   text-transform: uppercase; }
 
-.elemento-portada {
-  position: absolute;
-  opacity: 0;
-  z-index: 1; }
-
-#porciones {
-  position: relative;
-  z-index: 2;
+#portada .container-fluid {
+  height: 100%; }
+#portada .circulo,
+#portada .mano {
+  width: 100%;
+  float: left; }
+#portada .contenedor-circulo {
+  margin-bottom: 50px; }
+  #portada .contenedor-circulo .elemento {
+    position: absolute;
+    opacity: 0;
+    z-index: 1; }
+  #portada .contenedor-circulo #porciones {
+    position: relative;
+    z-index: 2;
+    opacity: 0; }
+  #portada .contenedor-circulo #queso {
+    top: -12%;
+    right: 22%; }
+  #portada .contenedor-circulo #miel {
+    top: 3%;
+    left: 4%; }
+  #portada .contenedor-circulo #banana {
+    top: 12%;
+    right: 18%; }
+  #portada .contenedor-circulo #pan {
+    top: 23%;
+    left: 14%; }
+  #portada .contenedor-circulo #brocoli {
+    left: 30%;
+    top: 50%; }
+  #portada .contenedor-circulo #pescado {
+    top: 58%;
+    right: 21%;
+    width: 32%; }
+#portada .mano #mano {
   opacity: 0; }
 
-#mano {
-  opacity: 0;
-  z-index: 0; }
-
-#queso {
-  top: -12%;
-  right: 22%; }
-
-#miel {
-  top: 3%;
-  left: 4%; }
-
-#banana {
-  top: 12%;
-  right: 18%; }
-
-#pan {
-  top: 23%;
-  left: 14%; }
-
-#brocoli {
-  left: 30%;
-  top: 50%; }
-
-#pescado {
-  top: 58%;
-  right: 21%;
-  width: 32%; }
+#section-1 #dropdownMenuButton,
+#section-1 .dropdown-menu {
+  width: 100%; }
 
 /*# sourceMappingURL=styles.css.map */
