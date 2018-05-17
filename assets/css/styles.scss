@@ -76,9 +76,44 @@ body {
     }
 }
 
-#section-1 {
-    #dropdownMenuButton,
+#pagina-1,
+#pagina-2,
+#pagina-3,
+#pagina-4,
+#pagina-5,
+#pagina-6,
+#pagina-7,
+#pagina-8 {
+    #dropdown1,
+    #dropdown2,
+    #dropdown3,
+    #dropdown4,
+    #dropdown5,
+    #dropdown6,
+    #dropdown7,
+    #dropdown8,
     .dropdown-menu {
         width: 100%;
+        position: relative;
+    }
+    
+    #dropdown1::after,
+    #dropdown2:after,
+    #dropdown3:after,
+    #dropdown4:after,
+    #dropdown5:after,
+    #dropdown6:after,
+    #dropdown7:after,
+    #dropdown8:after {
+        position: absolute;
+        right: 16px;
+        top: 16px;
+    }
+
+    .info {
+        background-color: #fff;
+        width: 100%;
+        float: left;
+        margin: 15px 0;
     }
 }

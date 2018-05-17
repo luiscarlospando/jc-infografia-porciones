@@ -3,14 +3,35 @@ $(document).ready(function() {
 	$('#fullpage').fullpage({
 		navigation: true,
 		showActiveTooltip: true,
+		slidesNavigation: false,
 		recordHistory: false,
-		anchors: ['pagina-1', 'pagina-2', 'pagina-3','pagina-4', 'pagina-5'],
+		anchors: ['inicio', 'seccion-1', 'seccion-2','seccion-3', 'seccion-4'],
 		menu: '.main-nav ul',
 		fixedElements: '.header, .footer',
 		paddingTop: '30px',
 		// paddingBottom: '55px',
 		scrollOverflow: true,
-		controlArrows: false
+		controlArrows: false,
+		keyboardScrolling: true,
+		loopHorizontal: false,
+		// onLeave: function(index, nextIndex, direction){
+		// 	var leavingSection = $(this);
+
+		// 	// after leaving inicio (index 1)
+		// 	if(index == 1 && direction =='down'){
+		// 		console.log("Going to seccion-1");
+		// 		$.fn.fullpage.silentMoveTo('seccion-1', 1);
+		// 	}
+	
+		// 	// after leaving seccion-1 (index 2)
+		// 	if(index == 2 && direction =='up'){
+		// 		console.log("Going to inicio");
+		// 	}
+	
+		// 	else if(index == 2 && direction == 'down'){
+		// 		console.log("Going to seccion-2");
+		// 	}
+		// }
 	});
 
 	// animate.css
@@ -53,4 +74,13 @@ $(document).ready(function() {
 	setTimeout(function () {
 		$('#porciones').show().addClass('animated fadeIn');
 	}, 6000);
+});
+
+// slides
+$(document).on('click', '.btn-izq', function(){
+	$.fn.fullpage.moveSlideLeft();
+});
+
+$(document).on('click', '.btn-der', function(){
+	$.fn.fullpage.moveSlideRight();
 });
