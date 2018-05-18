@@ -1,9 +1,17 @@
+@import "fonts";
+
 html {
     height: 100%;
 }
 
 body {
     background: linear-gradient(to bottom, #bff2ff 0%, #fdffff 100%);
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Amatic-Bold", sans-serif;
 }
 
 .navbar {
