@@ -208,6 +208,28 @@ h3 {
   background-color: #fff;
   width: 100%;
   float: left;
-  margin: 15px 0; }
+  margin: 15px 0;
+  padding: 30px; }
+  #pagina-1 .info svg,
+  #pagina-2 .info svg,
+  #pagina-3 .info svg,
+  #pagina-4 .info svg,
+  #pagina-5 .info svg,
+  #pagina-6 .info svg,
+  #pagina-7 .info svg,
+  #pagina-8 .info svg {
+    width: 200px;
+    margin: 0 auto;
+    fill-opacity: 0;
+    transition: fill-opacity 1s; }
+  #pagina-1 .info svg.finished *,
+  #pagina-2 .info svg.finished *,
+  #pagina-3 .info svg.finished *,
+  #pagina-4 .info svg.finished *,
+  #pagina-5 .info svg.finished *,
+  #pagina-6 .info svg.finished *,
+  #pagina-7 .info svg.finished *,
+  #pagina-8 .info svg.finished * {
+    fill-opacity: 1; }
 
 /*# sourceMappingURL=styles.css.map */

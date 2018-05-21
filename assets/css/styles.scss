@@ -123,5 +123,17 @@ h3 {
         width: 100%;
         float: left;
         margin: 15px 0;
+        padding: 30px;
+
+       svg {
+            width: 200px;
+            margin: 0 auto;
+            fill-opacity: 0;
+            transition: fill-opacity 1s;
+        }
+  
+        svg.finished * {
+            fill-opacity: 1;
+        }
     }
 }

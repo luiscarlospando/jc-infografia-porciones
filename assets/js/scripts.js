@@ -4,6 +4,7 @@ $(document).ready(function() {
 		navigation: true,
 		showActiveTooltip: true,
 		slidesNavigation: false,
+		autoScrolling: false, // scrolleo de un sólo toque desactivado
 		recordHistory: false,
 		anchors: ['inicio', 'seccion-1', 'seccion-2','seccion-3', 'seccion-4'],
 		menu: '.main-nav ul',
@@ -13,25 +14,7 @@ $(document).ready(function() {
 		scrollOverflow: true,
 		controlArrows: false,
 		keyboardScrolling: true,
-		loopHorizontal: false,
-		// onLeave: function(index, nextIndex, direction){
-		// 	var leavingSection = $(this);
-
-		// 	// after leaving inicio (index 1)
-		// 	if(index == 1 && direction =='down'){
-		// 		console.log("Going to seccion-1");
-		// 		$.fn.fullpage.silentMoveTo('seccion-1', 1);
-		// 	}
-	
-		// 	// after leaving seccion-1 (index 2)
-		// 	if(index == 2 && direction =='up'){
-		// 		console.log("Going to inicio");
-		// 	}
-	
-		// 	else if(index == 2 && direction == 'down'){
-		// 		console.log("Going to seccion-2");
-		// 	}
-		// }
+		loopHorizontal: false
 	});
 
 	// animate.css
@@ -84,3 +67,24 @@ $(document).on('click', '.btn-izq', function(){
 $(document).on('click', '.btn-der', function(){
 	$.fn.fullpage.moveSlideRight();
 });
+
+// svgs
+var svg1 = new Vivus('svg-1', {
+		type: 'oneByOne',
+		duration: 150,
+		start: 'inViewport'
+	},
+	function (obj) {
+		obj.el.classList.add('finished');
+	}
+);
+
+var svg2 = new Vivus('svg-2', {
+	type: 'oneByOne',
+	duration: 150,
+	start: 'inViewport'
+},
+function (obj) {
+	obj.el.classList.add('finished');
+}
+);  
