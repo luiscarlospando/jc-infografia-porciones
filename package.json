@@ -26,6 +26,8 @@
     "animate.css": "^3.6.1",
     "bootstrap": "^4.0.0",
     "fullpage.js": "^2.9.6",
-    "jquery": "^1.9.1"
+    "jquery": "^1.9.1",
+    "popper.js": "^1.14.3",
+    "vivus": "^0.4.3"
   }
 }
