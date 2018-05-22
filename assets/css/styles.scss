@@ -84,14 +84,26 @@ h3 {
     }
 }
 
-#pagina-1,
-#pagina-2,
-#pagina-3,
-#pagina-4,
-#pagina-5,
-#pagina-6,
-#pagina-7,
-#pagina-8 {
+.section {
+    position: relative;
+
+    .dropdown {
+        position: absolute;
+        z-index: 4;
+        opacity: 1;
+        -webkit-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        left: 0 !important;
+        margin: 0 auto !important; 
+        width: 100%;
+        padding: 0 15px 0;
+    }
+
+    .dropdown.top {
+        top: 45px;
+    }
+
     #dropdown1,
     #dropdown2,
     #dropdown3,
@@ -135,5 +147,32 @@ h3 {
         svg.finished * {
             fill-opacity: 1;
         }
+    }
+
+    .fp-slidesNav-custom {
+        position: absolute;
+        z-index: 4;
+        opacity: 1;
+        -webkit-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        left: 15px !important;
+        right: 0;
+        margin: 0 auto !important;
+    
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+    }
+    
+    .fp-slidesNav-custom.bottom {
+        bottom: 17px;
+    }
+}
+
+@media all and (orientation:landscape) {
+    body {
+        display: none;
     }
 }

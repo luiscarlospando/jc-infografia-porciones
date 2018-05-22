@@ -4,7 +4,7 @@ $(document).ready(function() {
 		navigation: true,
 		showActiveTooltip: true,
 		slidesNavigation: false,
-		autoScrolling: false, // scrolleo de un sólo toque desactivado
+		autoScrolling: true, // scrolleo de un sólo toque desactivado
 		recordHistory: false,
 		anchors: ['inicio', 'seccion-1', 'seccion-2','seccion-3', 'seccion-4'],
 		menu: '.main-nav ul',
@@ -66,6 +66,14 @@ $(document).on('click', '.btn-izq', function(){
 
 $(document).on('click', '.btn-der', function(){
 	$.fn.fullpage.moveSlideRight();
+});
+
+$(document).on('click', '.btn-mano-1', function(){
+	$.fn.fullpage.moveTo('seccion-1', 1);
+});
+
+$(document).on('click', '.btn-mano-2', function(){
+	$.fn.fullpage.moveTo('seccion-2', 1);
 });
 
 // svgs

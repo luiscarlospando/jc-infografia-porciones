@@ -56,180 +56,74 @@ h3 {
 #portada .mano #mano {
   opacity: 0; }
 
-#pagina-1 #dropdown1,
-#pagina-1 #dropdown2,
-#pagina-1 #dropdown3,
-#pagina-1 #dropdown4,
-#pagina-1 #dropdown5,
-#pagina-1 #dropdown6,
-#pagina-1 #dropdown7,
-#pagina-1 #dropdown8,
-#pagina-1 .dropdown-menu,
-#pagina-2 #dropdown1,
-#pagina-2 #dropdown2,
-#pagina-2 #dropdown3,
-#pagina-2 #dropdown4,
-#pagina-2 #dropdown5,
-#pagina-2 #dropdown6,
-#pagina-2 #dropdown7,
-#pagina-2 #dropdown8,
-#pagina-2 .dropdown-menu,
-#pagina-3 #dropdown1,
-#pagina-3 #dropdown2,
-#pagina-3 #dropdown3,
-#pagina-3 #dropdown4,
-#pagina-3 #dropdown5,
-#pagina-3 #dropdown6,
-#pagina-3 #dropdown7,
-#pagina-3 #dropdown8,
-#pagina-3 .dropdown-menu,
-#pagina-4 #dropdown1,
-#pagina-4 #dropdown2,
-#pagina-4 #dropdown3,
-#pagina-4 #dropdown4,
-#pagina-4 #dropdown5,
-#pagina-4 #dropdown6,
-#pagina-4 #dropdown7,
-#pagina-4 #dropdown8,
-#pagina-4 .dropdown-menu,
-#pagina-5 #dropdown1,
-#pagina-5 #dropdown2,
-#pagina-5 #dropdown3,
-#pagina-5 #dropdown4,
-#pagina-5 #dropdown5,
-#pagina-5 #dropdown6,
-#pagina-5 #dropdown7,
-#pagina-5 #dropdown8,
-#pagina-5 .dropdown-menu,
-#pagina-6 #dropdown1,
-#pagina-6 #dropdown2,
-#pagina-6 #dropdown3,
-#pagina-6 #dropdown4,
-#pagina-6 #dropdown5,
-#pagina-6 #dropdown6,
-#pagina-6 #dropdown7,
-#pagina-6 #dropdown8,
-#pagina-6 .dropdown-menu,
-#pagina-7 #dropdown1,
-#pagina-7 #dropdown2,
-#pagina-7 #dropdown3,
-#pagina-7 #dropdown4,
-#pagina-7 #dropdown5,
-#pagina-7 #dropdown6,
-#pagina-7 #dropdown7,
-#pagina-7 #dropdown8,
-#pagina-7 .dropdown-menu,
-#pagina-8 #dropdown1,
-#pagina-8 #dropdown2,
-#pagina-8 #dropdown3,
-#pagina-8 #dropdown4,
-#pagina-8 #dropdown5,
-#pagina-8 #dropdown6,
-#pagina-8 #dropdown7,
-#pagina-8 #dropdown8,
-#pagina-8 .dropdown-menu {
-  width: 100%;
+.section {
   position: relative; }
-#pagina-1 #dropdown1::after,
-#pagina-1 #dropdown2:after,
-#pagina-1 #dropdown3:after,
-#pagina-1 #dropdown4:after,
-#pagina-1 #dropdown5:after,
-#pagina-1 #dropdown6:after,
-#pagina-1 #dropdown7:after,
-#pagina-1 #dropdown8:after,
-#pagina-2 #dropdown1::after,
-#pagina-2 #dropdown2:after,
-#pagina-2 #dropdown3:after,
-#pagina-2 #dropdown4:after,
-#pagina-2 #dropdown5:after,
-#pagina-2 #dropdown6:after,
-#pagina-2 #dropdown7:after,
-#pagina-2 #dropdown8:after,
-#pagina-3 #dropdown1::after,
-#pagina-3 #dropdown2:after,
-#pagina-3 #dropdown3:after,
-#pagina-3 #dropdown4:after,
-#pagina-3 #dropdown5:after,
-#pagina-3 #dropdown6:after,
-#pagina-3 #dropdown7:after,
-#pagina-3 #dropdown8:after,
-#pagina-4 #dropdown1::after,
-#pagina-4 #dropdown2:after,
-#pagina-4 #dropdown3:after,
-#pagina-4 #dropdown4:after,
-#pagina-4 #dropdown5:after,
-#pagina-4 #dropdown6:after,
-#pagina-4 #dropdown7:after,
-#pagina-4 #dropdown8:after,
-#pagina-5 #dropdown1::after,
-#pagina-5 #dropdown2:after,
-#pagina-5 #dropdown3:after,
-#pagina-5 #dropdown4:after,
-#pagina-5 #dropdown5:after,
-#pagina-5 #dropdown6:after,
-#pagina-5 #dropdown7:after,
-#pagina-5 #dropdown8:after,
-#pagina-6 #dropdown1::after,
-#pagina-6 #dropdown2:after,
-#pagina-6 #dropdown3:after,
-#pagina-6 #dropdown4:after,
-#pagina-6 #dropdown5:after,
-#pagina-6 #dropdown6:after,
-#pagina-6 #dropdown7:after,
-#pagina-6 #dropdown8:after,
-#pagina-7 #dropdown1::after,
-#pagina-7 #dropdown2:after,
-#pagina-7 #dropdown3:after,
-#pagina-7 #dropdown4:after,
-#pagina-7 #dropdown5:after,
-#pagina-7 #dropdown6:after,
-#pagina-7 #dropdown7:after,
-#pagina-7 #dropdown8:after,
-#pagina-8 #dropdown1::after,
-#pagina-8 #dropdown2:after,
-#pagina-8 #dropdown3:after,
-#pagina-8 #dropdown4:after,
-#pagina-8 #dropdown5:after,
-#pagina-8 #dropdown6:after,
-#pagina-8 #dropdown7:after,
-#pagina-8 #dropdown8:after {
-  position: absolute;
-  right: 16px;
-  top: 16px; }
-#pagina-1 .info,
-#pagina-2 .info,
-#pagina-3 .info,
-#pagina-4 .info,
-#pagina-5 .info,
-#pagina-6 .info,
-#pagina-7 .info,
-#pagina-8 .info {
-  background-color: #fff;
-  width: 100%;
-  float: left;
-  margin: 15px 0;
-  padding: 30px; }
-  #pagina-1 .info svg,
-  #pagina-2 .info svg,
-  #pagina-3 .info svg,
-  #pagina-4 .info svg,
-  #pagina-5 .info svg,
-  #pagina-6 .info svg,
-  #pagina-7 .info svg,
-  #pagina-8 .info svg {
-    width: 200px;
-    margin: 0 auto;
-    fill-opacity: 0;
-    transition: fill-opacity 1s; }
-  #pagina-1 .info svg.finished *,
-  #pagina-2 .info svg.finished *,
-  #pagina-3 .info svg.finished *,
-  #pagina-4 .info svg.finished *,
-  #pagina-5 .info svg.finished *,
-  #pagina-6 .info svg.finished *,
-  #pagina-7 .info svg.finished *,
-  #pagina-8 .info svg.finished * {
-    fill-opacity: 1; }
+  .section .dropdown {
+    position: absolute;
+    z-index: 4;
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    left: 0 !important;
+    margin: 0 auto !important;
+    width: 100%;
+    padding: 0 15px 0; }
+  .section .dropdown.top {
+    top: 45px; }
+  .section #dropdown1,
+  .section #dropdown2,
+  .section #dropdown3,
+  .section #dropdown4,
+  .section #dropdown5,
+  .section #dropdown6,
+  .section #dropdown7,
+  .section #dropdown8,
+  .section .dropdown-menu {
+    width: 100%;
+    position: relative; }
+  .section #dropdown1::after,
+  .section #dropdown2:after,
+  .section #dropdown3:after,
+  .section #dropdown4:after,
+  .section #dropdown5:after,
+  .section #dropdown6:after,
+  .section #dropdown7:after,
+  .section #dropdown8:after {
+    position: absolute;
+    right: 16px;
+    top: 16px; }
+  .section .info {
+    background-color: #fff;
+    width: 100%;
+    float: left;
+    margin: 15px 0;
+    padding: 30px; }
+    .section .info svg {
+      width: 200px;
+      margin: 0 auto;
+      fill-opacity: 0;
+      transition: fill-opacity 1s; }
+    .section .info svg.finished * {
+      fill-opacity: 1; }
+  .section .fp-slidesNav-custom {
+    position: absolute;
+    z-index: 4;
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    left: 15px !important;
+    right: 0;
+    margin: 0 auto !important; }
+    .section .fp-slidesNav-custom ul {
+      margin: 0;
+      padding: 0; }
+  .section .fp-slidesNav-custom.bottom {
+    bottom: 17px; }
+
+@media all and (orientation: landscape) {
+  body {
+    display: none; } }
 
 /*# sourceMappingURL=styles.css.map */
