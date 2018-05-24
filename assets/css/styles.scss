@@ -6,6 +6,10 @@ html {
 
 body {
     background: linear-gradient(to bottom, #bff2ff 0%, #fdffff 100%);
+    
+    .msge {
+        display: none;
+    }
 }
 
 h1,
@@ -111,8 +115,7 @@ h3 {
     #dropdown5,
     #dropdown6,
     #dropdown7,
-    #dropdown8,
-    .dropdown-menu {
+    #dropdown8 {
         width: 100%;
         position: relative;
     }
@@ -128,6 +131,10 @@ h3 {
         position: absolute;
         right: 16px;
         top: 16px;
+    }
+
+    .dropdown-menu {
+
     }
 
     .info {
@@ -173,6 +180,21 @@ h3 {
 
 @media all and (orientation:landscape) {
     body {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .msge {
+            display: block;
+            color: #000;
+            position: relative;
+            z-index: 9999;
+        }
+    }
+
+    body > *,
+    .navbar {
         display: none;
     }
 }

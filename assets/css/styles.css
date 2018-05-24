@@ -8,6 +8,8 @@ html {
 
 body {
   background: linear-gradient(to bottom, #bff2ff 0%, #fdffff 100%); }
+  body .msge {
+    display: none; }
 
 h1,
 h2,
@@ -78,8 +80,7 @@ h3 {
   .section #dropdown5,
   .section #dropdown6,
   .section #dropdown7,
-  .section #dropdown8,
-  .section .dropdown-menu {
+  .section #dropdown8 {
     width: 100%;
     position: relative; }
   .section #dropdown1::after,
@@ -124,6 +125,18 @@ h3 {
 
 @media all and (orientation: landscape) {
   body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    body .msge {
+      display: block;
+      color: #000;
+      position: relative;
+      z-index: 9999; }
+
+  body > *,
+  .navbar {
     display: none; } }
 
 /*# sourceMappingURL=styles.css.map */
