@@ -59,21 +59,31 @@ $(document).ready(function() {
 	}, 6000);
 });
 
-// slides
-$(document).on('click', '.btn-izq', function(){
-	$.fn.fullpage.moveSlideLeft();
-});
-
-$(document).on('click', '.btn-der', function(){
-	$.fn.fullpage.moveSlideRight();
+// botones slides
+// sección 1
+$(document).on('click', '.btn-izq-1', function(){
+	$.fn.fullpage.moveTo('seccion-1', 0);
 });
 
 $(document).on('click', '.btn-mano-1', function(){
 	$.fn.fullpage.moveTo('seccion-1', 1);
 });
 
+$(document).on('click', '.btn-der-1', function(){
+	$.fn.fullpage.moveTo('seccion-1', 2);
+});
+
+// sección 2
+$(document).on('click', '.btn-izq-2', function(){
+	$.fn.fullpage.moveTo('seccion-2', 0);
+});
+
 $(document).on('click', '.btn-mano-2', function(){
 	$.fn.fullpage.moveTo('seccion-2', 1);
+});
+
+$(document).on('click', '.btn-der-2', function(){
+	$.fn.fullpage.moveTo('seccion-2', 2);
 });
 
 // svgs

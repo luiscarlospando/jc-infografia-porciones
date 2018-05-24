@@ -178,7 +178,7 @@ h3 {
     }
 }
 
-@media all and (orientation:landscape) {
+@media all and (orientation:landscape) and (max-width: 991.98px) {
     body {
         position: relative;
         display: flex;
