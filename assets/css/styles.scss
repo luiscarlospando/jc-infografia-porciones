@@ -19,9 +19,27 @@ h3 {
 }
 
 .navbar {
-    background-color: transparent;
+    background-color: #4d4d4d;
+    color: #fff;
+    padding: .1rem 1rem;
     text-transform: uppercase;
+
+    a {
+        color: #fff !important;
+    }
+
+    .navbar-toggler {
+        padding: .25rem 0rem;
+    }
 }
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='4' stroke-linecap='square' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+  
+.custom-toggler.navbar-toggler {
+    border-color: #4d4d4d;
+  } 
 
 #portada {
     .container-fluid {
@@ -91,6 +109,10 @@ h3 {
 .section {
     position: relative;
 
+    .btn-primary {
+        border-radius: 1.25rem;
+    }
+
     .dropdown {
         position: absolute;
         z-index: 4;
@@ -105,7 +127,7 @@ h3 {
     }
 
     .dropdown.top {
-        top: 45px;
+        top: 56px;
     }
 
     #dropdown1,
@@ -133,12 +155,8 @@ h3 {
         top: 16px;
     }
 
-    .dropdown-menu {
-
-    }
-
     .info {
-        background-color: #fff;
+        background-color: transparent;
         width: 100%;
         float: left;
         margin: 15px 0;
@@ -175,6 +193,25 @@ h3 {
     
     .fp-slidesNav-custom.bottom {
         bottom: 17px;
+    }
+}
+
+#pagina-1,
+#pagina-2,
+#pagina-3,
+#pagina-4,
+#pagina-5,
+#pagina-6,
+#pagina-7,
+#pagina-8 {
+    color: #fff;
+}
+
+#pagina-1 {
+    background-color: #b95ea4;
+
+    .dropdown-toggle {
+        background-color: #761f65;
     }
 }
 
