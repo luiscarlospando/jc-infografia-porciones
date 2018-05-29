@@ -4,7 +4,7 @@ $(document).ready(function() {
 		navigation: true,
 		showActiveTooltip: true,
 		slidesNavigation: false,
-		autoScrolling: true, // scrolleo de un sólo toque desactivado
+		autoScrolling: true, // scrolleo de un toque desactivado
 		recordHistory: false,
 		anchors: ['inicio', 'seccion-1', 'seccion-2','seccion-3', 'seccion-4', 'seccion-5', 'seccion-6', 'seccion-7', 'seccion-8'],
 		menu: '.main-nav ul',
