@@ -14,7 +14,15 @@ $(document).ready(function() {
 		scrollOverflow: true,
 		controlArrows: false,
 		keyboardScrolling: true,
-		loopHorizontal: false
+		loopHorizontal: false,
+		afterLoad: function(anchorLink, index){
+			var loadedSection = $(this);
+	
+			//using index
+			if(index == 3){
+				alert("Section 3 ended loading");
+			}
+		}
 	});
 
 	// animate.css
