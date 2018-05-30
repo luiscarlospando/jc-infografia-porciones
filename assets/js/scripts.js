@@ -14,15 +14,7 @@ $(document).ready(function() {
 		scrollOverflow: true,
 		controlArrows: false,
 		keyboardScrolling: true,
-		loopHorizontal: false,
-		afterLoad: function(anchorLink, index){
-			var loadedSection = $(this);
-	
-			//using index
-			if(index == 3){
-				alert("Section 3 ended loading");
-			}
-		}
+		loopHorizontal: false
 	});
 
 	// animate.css
@@ -184,6 +176,11 @@ $('.fp-slidesNav-custom > ul > li > button').each(function() {
 	} else if ( $(this).hasClass('btn-calcio') ) {
 		$(this).click(function () {
 			$('.btn-calcio').removeClass('active');
+			$(this).toggleClass('active');
+		});
+	} else if ( $(this).hasClass('btn-dulce') ) {
+		$(this).click(function () {
+			$('.btn-dulce').removeClass('active');
 			$(this).toggleClass('active');
 		});
 	} else if ( $(this).hasClass('btn-hidratacion') ) {

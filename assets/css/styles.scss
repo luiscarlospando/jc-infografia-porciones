@@ -6,6 +6,7 @@ html {
 }
 
 body {
+    font-family: 'FuturaPT-Light', sans-serif;
     background: linear-gradient(to bottom, #bff2ff 0%, #fdffff 100%);
     
     .msge {
@@ -13,10 +14,14 @@ body {
     }
 }
 
+button:focus {
+    outline: none;
+}
+
 h1,
 h2,
 h3 {
-    font-family: "Amatic-Bold", sans-serif;
+
 }
 
 .navbar {
@@ -30,7 +35,9 @@ h3 {
     }
 
     .navbar-brand {
-        font-family: "Amatic-Bold", sans-serif;
+        strong {
+            font-family: 'FuturaPT-Medium', sans-serif;
+        }
     }
 
     .navbar-toggler {
@@ -46,7 +53,14 @@ h3 {
 .btn-primary:not(:disabled):not(.disabled).active,
 .btn-primary:not(:disabled):not(.disabled):active,
 .show>.btn-primary.dropdown-toggle {
-    color: #3f3d3f;
+    color: #fff;
+    border: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0;
 }
 
 .custom-toggler .navbar-toggler-icon {
@@ -127,6 +141,12 @@ h3 {
 
     .btn-primary {
         border-radius: 1.25rem;
+        border: none;
+    }
+
+    .btn-primary.focus,
+    .btn-primary:focus {
+        box-shadow: 0 0 0 0;
     }
 
     .buttons-container {

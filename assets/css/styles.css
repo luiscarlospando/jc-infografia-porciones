@@ -1,16 +1,25 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates|Playfair+Display:700");
+@font-face {
+  font-family: 'FuturaPT-Light';
+  src: url("../fonts/FuturaPT-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaPT-Light.otf") format("opentype"), url("../fonts/FuturaPT-Light.woff") format("woff"), url("../fonts/FuturaPT-Light.ttf") format("truetype"), url("../fonts/FuturaPT-Light.svg#FuturaPT-Light") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'FuturaPT-Medium';
+  src: url("../fonts/FuturaPT-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaPT-Medium.otf") format("opentype"), url("../fonts/FuturaPT-Medium.woff") format("woff"), url("../fonts/FuturaPT-Medium.ttf") format("truetype"), url("../fonts/FuturaPT-Medium.svg#FuturaPT-Medium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 html {
   height: 100%; }
 
 body {
+  font-family: 'FuturaPT-Light', sans-serif;
   background: linear-gradient(to bottom, #bff2ff 0%, #fdffff 100%); }
   body .msge {
     display: none; }
 
-h1,
-h2,
-h3 {
-  font-family: "Amatic-Bold", sans-serif; }
+button:focus {
+  outline: none; }
 
 .navbar {
   background-color: #4d4d4d;
@@ -19,8 +28,8 @@ h3 {
   text-transform: uppercase; }
   .navbar a {
     color: #fff !important; }
-  .navbar .navbar-brand {
-    font-family: "Amatic-Bold", sans-serif; }
+  .navbar .navbar-brand strong {
+    font-family: 'FuturaPT-Medium', sans-serif; }
   .navbar .navbar-toggler {
     padding: .25rem 0rem; }
 
@@ -31,7 +40,13 @@ h3 {
 .btn-primary:not(:disabled):not(.disabled).active,
 .btn-primary:not(:disabled):not(.disabled):active,
 .show > .btn-primary.dropdown-toggle {
-  color: #3f3d3f; }
+  color: #fff;
+  border: none; }
+
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0; }
 
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='4' stroke-linecap='square' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
@@ -80,7 +95,11 @@ h3 {
 .section {
   position: relative; }
   .section .btn-primary {
-    border-radius: 1.25rem; }
+    border-radius: 1.25rem;
+    border: none; }
+  .section .btn-primary.focus,
+  .section .btn-primary:focus {
+    box-shadow: 0 0 0 0; }
   .section .buttons-container {
     position: absolute;
     width: 100%;
