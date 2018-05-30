@@ -226,7 +226,37 @@ button:focus {
   #pagina-7 .dropdown-toggle {
     background-color: #ad3c1e; }
 
-@media all and (orientation: landscape) and (max-width: 991.98px) {
+@media all and (max-width: 991.98px) and (orientation: landscape) {
+  body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    body .msge {
+      display: block;
+      color: #000;
+      position: relative;
+      z-index: 9999; }
+
+  body > *,
+  .navbar {
+    display: none; } }
+@media only screen and (device-width: 1024px) and (orientation: landscape) {
+  body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    body .msge {
+      display: block;
+      color: #000;
+      position: relative;
+      z-index: 9999; }
+
+  body > *,
+  .navbar {
+    display: none; } }
+@media only screen and (device-width: 1366px) and (orientation: landscape) {
   body {
     position: relative;
     display: flex;
