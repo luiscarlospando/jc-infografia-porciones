@@ -153,10 +153,37 @@ $(document).on('click', '.btn-der-7', function(){
 
 // agregamos/quitamos clase active cuando se presiona botón
 $('.fp-slidesNav-custom > ul > li > button').each(function() { 
-	$(this).click(function () {
-		$('.btn').removeClass('active');
-		$(this).toggleClass('active');
-	});
+	if ( $(this).hasClass('btn-proteinas') ) {
+		$(this).click(function () {
+			$('.btn-proteinas').removeClass('active');
+			$(this).toggleClass('active');
+		});
+	} else if ( $(this).hasClass('btn-frutas') ) {
+		$(this).click(function () {
+			$('.btn-frutas').removeClass('active');
+			$(this).toggleClass('active');
+		});
+	} else if ( $(this).hasClass('btn-grasas') ) {
+		$(this).click(function () {
+			$('.btn-grasas').removeClass('active');
+			$(this).toggleClass('active');
+		});
+	} else if ( $(this).hasClass('btn-carbohidratos') ) {
+		$(this).click(function () {
+			$('.btn-carbohidratos').removeClass('active');
+			$(this).toggleClass('active');
+		});
+	} else if ( $(this).hasClass('btn-calcio') ) {
+		$(this).click(function () {
+			$('.btn-calcio').removeClass('active');
+			$(this).toggleClass('active');
+		});
+	} else if ( $(this).hasClass('btn-hidratacion') ) {
+		$(this).click(function () {
+			$('.btn-hidratacion').removeClass('active');
+			$(this).toggleClass('active');
+		});
+	}
 });
 
 // svgs
