@@ -1,4 +1,5 @@
 @import "fonts";
+@import "colors";
 
 html {
     height: 100%;
@@ -31,6 +32,17 @@ h3 {
     .navbar-toggler {
         padding: .25rem 0rem;
     }
+}
+
+.btn:not(:disabled):not(.disabled).active,
+.btn:not(:disabled):not(.disabled):active {
+    background-color: #fee829;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+    color: #3f3d3f;
 }
 
 .custom-toggler .navbar-toggler-icon {
@@ -113,8 +125,15 @@ h3 {
         border-radius: 1.25rem;
     }
 
-    .dropdown {
+    .buttons-container {
         position: absolute;
+        width: 100%;
+        left: 0 !important;
+        z-index: 4;
+    }
+
+    .dropdown {
+        position: relative;
         z-index: 4;
         opacity: 1;
         -webkit-transform: translate3d(0,0,0);
@@ -126,9 +145,9 @@ h3 {
         padding: 0 15px 0;
     }
 
-    .dropdown.top {
-        top: 56px;
-    }
+    // .dropdown.top {
+    //     top: 56px;
+    // }
 
     #dropdown1,
     #dropdown2,
@@ -189,11 +208,17 @@ h3 {
             margin: 0;
             padding: 0;
         }
+
+        .btn {
+            background-color: $slidesBtn;
+            border: none;
+            color: $slidesBtnColor;
+        }
     }
     
-    .fp-slidesNav-custom.bottom {
-        bottom: 17px;
-    }
+    // .fp-slidesNav-custom.bottom {
+    //     bottom: 17px;
+    // }
 }
 
 #pagina-1,
@@ -208,10 +233,58 @@ h3 {
 }
 
 #pagina-1 {
-    background-color: #b95ea4;
+    background-color: $proteinasPrimario;
 
     .dropdown-toggle {
-        background-color: #761f65;
+        background-color: $proteinasSecundario;
+    }
+}
+
+#pagina-2 {
+    background-color: $frutasPrimario;
+
+    .dropdown-toggle {
+        background-color: $frutasSecundario;
+    }
+}
+
+#pagina-3 {
+    background-color: $grasasPrimario;
+
+    .dropdown-toggle {
+        background-color: $grasasSecundario;
+    }
+}
+
+#pagina-4 {
+    background-color: $carbohidratosPrimario;
+
+    .dropdown-toggle {
+        background-color: $carbohidratosSecundario;
+    }
+}
+
+#pagina-5 {
+    background-color: $calcioPrimario;
+
+    .dropdown-toggle {
+        background-color: $calcioSecundario;
+    }
+}
+
+#pagina-6 {
+    background-color: $dulcePrimario;
+
+    .dropdown-toggle {
+        background-color: $dulceSecundario;
+    }
+}
+
+#pagina-7 {
+    background-color: $hidratacionPrimario;
+
+    .dropdown-toggle {
+        background-color: $hidratacionSecundario;
     }
 }
 

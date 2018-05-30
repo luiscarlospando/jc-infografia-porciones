@@ -26,6 +26,15 @@ h3 {
   .navbar .navbar-toggler {
     padding: .25rem 0rem; }
 
+.btn:not(:disabled):not(.disabled).active,
+.btn:not(:disabled):not(.disabled):active {
+  background-color: #fee829; }
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+  color: #3f3d3f; }
+
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='4' stroke-linecap='square' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
 
@@ -74,8 +83,13 @@ h3 {
   position: relative; }
   .section .btn-primary {
     border-radius: 1.25rem; }
-  .section .dropdown {
+  .section .buttons-container {
     position: absolute;
+    width: 100%;
+    left: 0 !important;
+    z-index: 4; }
+  .section .dropdown {
+    position: relative;
     z-index: 4;
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
@@ -85,8 +99,6 @@ h3 {
     margin: 0 auto !important;
     width: 100%;
     padding: 0 15px 0; }
-  .section .dropdown.top {
-    top: 56px; }
   .section #dropdown1,
   .section #dropdown2,
   .section #dropdown3,
@@ -134,8 +146,10 @@ h3 {
     .section .fp-slidesNav-custom ul {
       margin: 0;
       padding: 0; }
-  .section .fp-slidesNav-custom.bottom {
-    bottom: 17px; }
+    .section .fp-slidesNav-custom .btn {
+      background-color: #3f3d3f;
+      border: none;
+      color: #666; }
 
 #pagina-1,
 #pagina-2,
@@ -150,7 +164,37 @@ h3 {
 #pagina-1 {
   background-color: #b95ea4; }
   #pagina-1 .dropdown-toggle {
-    background-color: #761f65; }
+    background-color: #6e2b5f; }
+
+#pagina-2 {
+  background-color: #99ad43; }
+  #pagina-2 .dropdown-toggle {
+    background-color: #55632a; }
+
+#pagina-3 {
+  background-color: #e5cb33; }
+  #pagina-3 .dropdown-toggle {
+    background-color: #94842a; }
+
+#pagina-4 {
+  background-color: #eba037; }
+  #pagina-4 .dropdown-toggle {
+    background-color: #956523; }
+
+#pagina-5 {
+  background-color: #2e88c8; }
+  #pagina-5 .dropdown-toggle {
+    background-color: #0b5680; }
+
+#pagina-6 {
+  background-color: #36ad72; }
+  #pagina-6 .dropdown-toggle {
+    background-color: #086137; }
+
+#pagina-7 {
+  background-color: #d35b32; }
+  #pagina-7 .dropdown-toggle {
+    background-color: #ad3c1e; }
 
 @media all and (orientation: landscape) and (max-width: 991.98px) {
   body {
