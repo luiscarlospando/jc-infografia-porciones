@@ -154,7 +154,7 @@ $(document).on('click', '.btn-der-7', function(){
 // agregamos/quitamos clase active cuando se presiona botón
 $('.fp-slidesNav-custom > ul > li > button').each(function() { 
 	$(this).click(function () {
-		$('.btn-primary').removeClass('active');
+		$('.btn').removeClass('active');
 		$(this).toggleClass('active');
 	});
 });
