@@ -16,26 +16,56 @@
 </head>
 <body>
     <p class="msge">Favor de girar tu dispositivo.</p>
-    <nav class="navbar fixed-top custom-toggler navbar-expand-lg">
-        <a class="navbar-brand" href="#">Infografía <strong>Porciones</strong></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-          
-        <div class="collapse navbar-collapse" id="navbar">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+
+    <!-- Menú de navegación (Desktop) -->
+    <div class="d-none d-sm-none d-md-none d-lg-block d-xd-block">
+        <nav class="navbar fixed-top custom-toggler navbar-expand-lg">
+            <a class="navbar-brand" href="#inicio">Infografía <strong>Porciones</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar-mobile" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home Desktop <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- /Menú de navegación (Desktop) -->
+    
+    <!-- Menú de navegación (Mobile) -->
+    <div class="d-block d-sm-block d-md-block d-lg-none d-xd-none">
+        <nav class="navbar fixed-top custom-toggler navbar-expand-lg">
+            <a class="navbar-brand" href="#inicio">Infografía <strong>Porciones</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile" aria-controls="navbar-mobile" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbar-mobile">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#inicio">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hidratación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Conoce más</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- /Menú de navegación (Mobile) -->
 
     <div id="fullpage">
         <div class="section active" id="portada">
