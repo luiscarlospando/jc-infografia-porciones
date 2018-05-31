@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates|Playfair+Display:700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,600|Playfair+Display:700");
 @font-face {
   font-family: 'FuturaPT-Light';
   src: url("../fonts/FuturaPT-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaPT-Light.otf") format("opentype"), url("../fonts/FuturaPT-Light.woff") format("woff"), url("../fonts/FuturaPT-Light.ttf") format("truetype"), url("../fonts/FuturaPT-Light.svg#FuturaPT-Light") format("svg");
@@ -13,7 +13,7 @@ html {
   height: 100%; }
 
 body {
-  font-family: 'FuturaPT-Light', sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
   background: linear-gradient(to bottom, #bff2ff 0%, #fdffff 100%); }
   body .msge {
     display: none; }
@@ -29,7 +29,8 @@ button:focus {
   .navbar a {
     color: #fff !important; }
   .navbar .navbar-brand strong {
-    font-family: 'FuturaPT-Medium', sans-serif; }
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600; }
   .navbar .navbar-toggler {
     padding: .25rem 0rem; }
 
