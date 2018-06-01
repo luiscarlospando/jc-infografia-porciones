@@ -141,7 +141,7 @@ button:focus {
     right: 16px;
     top: 16px; }
   .section .info {
-    background-color: transparent;
+    background-color: #faf090;
     width: 100%;
     float: left;
     margin: 15px 0;

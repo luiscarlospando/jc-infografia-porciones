@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	// fullPage.js
 	$('#fullpage').fullpage({
-		fadingEffect: true,
+		fadingEffect: 'slides',
 		navigation: true,
 		showActiveTooltip: true,
 		slidesNavigation: false,
