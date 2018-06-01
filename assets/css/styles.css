@@ -146,7 +146,11 @@ button:focus {
     width: 100%;
     float: left;
     margin: 15px 0;
-    padding: 30px; }
+    padding: 18px;
+    border-radius: 0px 8px 8px 0px;
+    position: relative; }
+    .section .info p {
+      margin-bottom: 0rem; }
     .section .info svg {
       width: 200px;
       margin: 0 auto;
@@ -154,6 +158,20 @@ button:focus {
       transition: fill-opacity 1s; }
     .section .info svg.finished * {
       fill-opacity: 1; }
+  .section .info::before {
+    bottom: 100%;
+    left: 0;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(250, 240, 144, 0);
+    border-bottom-color: #faf090;
+    border-width: 26px;
+    border-left: 0;
+    border-right-width: 14px; }
   .section .fp-slidesNav-custom {
     position: relative;
     opacity: 1;
