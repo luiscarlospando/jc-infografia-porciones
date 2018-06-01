@@ -7,7 +7,7 @@ $(document).ready(function() {
 		slidesNavigation: false,
 		autoScrolling: true, // scrolleo de un toque desactivado
 		recordHistory: false,
-		anchors: ['inicio', 'tutorial', 'menu', 'proteinas', 'frutas', 'grasas', 'carbohidratos', 'calcio', 'dulce', 'hidratacion'],
+		anchors: ['inicio', 'tutorial', 'menu', 'proteinas', 'frutas', 'grasas', 'carbohidratos', 'calcio', 'dulce', 'hidratacion', 'vegetales', 'conoce-mas'],
 		menu: '.main-nav ul',
 		fixedElements: '.header, .footer',
 		paddingTop: '54px',
