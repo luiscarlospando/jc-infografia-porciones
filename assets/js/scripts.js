@@ -6,7 +6,7 @@ $(document).ready(function() {
 		slidesNavigation: false,
 		autoScrolling: true, // scrolleo de un toque desactivado
 		recordHistory: false,
-		anchors: ['inicio', 'proteinas', 'frutas', 'grasas', 'carbohidratos', 'calcio', 'dulce', 'hidratacion'],
+		anchors: ['inicio', 'tutorial', 'menu', 'proteinas', 'frutas', 'grasas', 'carbohidratos', 'calcio', 'dulce', 'hidratacion'],
 		menu: '.main-nav ul',
 		fixedElements: '.header, .footer',
 		paddingTop: '54px',
@@ -19,176 +19,185 @@ $(document).ready(function() {
 			var leavingSlide = $(this);
 	
 			// agregamos/quitamos clase active cuando se dezliza slide (touch)
+			var proteinasIndex = 4;
+			var frutasIndex = 5;
+			var grasasIndex = 6;
+			var carbohidratosIndex = 7;
+			var calcioIndex = 8;
+			var dulceIndex = 9;
+			var hidratacionIndex = 10;
+			var vegetalesIndex = 11;
+			
 			// proteínas
-			if(index == 2 && slideIndex == 0 && direction == 'right'){
+			if(index == proteinasIndex && slideIndex == 0 && direction == 'right'){
 				$('.btn-izq-1').removeClass('active');
 				$('.btn-mano-1').addClass('active');
 				$('.btn-der-1').removeClass('active');
 			}
 
-			if(index == 2 && slideIndex == 1 && direction == 'left'){
+			if(index == proteinasIndex && slideIndex == 1 && direction == 'left'){
 				$('.btn-izq-1').addClass('active');
 				$('.btn-mano-1').removeClass('active');
 				$('.btn-der-1').removeClass('active');
 			}
 
-			if(index == 2 && slideIndex == 1 && direction == 'right'){
+			if(index == proteinasIndex && slideIndex == 1 && direction == 'right'){
 				$('.btn-izq-1').removeClass('active');
 				$('.btn-mano-1').removeClass('active');
 				$('.btn-der-1').addClass('active');
 			}
 
-			if(index == 2 && slideIndex == 2 && direction == 'left'){
+			if(index == proteinasIndex && slideIndex == 2 && direction == 'left'){
 				$('.btn-izq-1').removeClass('active');
 				$('.btn-mano-1').addClass('active');
 				$('.btn-der-1').removeClass('active');
 			}
 
 			// frutas
-			if(index == 3 && slideIndex == 0 && direction == 'right'){
+			if(index == frutasIndex && slideIndex == 0 && direction == 'right'){
 				$('.btn-izq-2').removeClass('active');
 				$('.btn-mano-2').addClass('active');
 				$('.btn-der-2').removeClass('active');
 			}
 
-			if(index == 3 && slideIndex == 1 && direction == 'left'){
+			if(index == frutasIndex && slideIndex == 1 && direction == 'left'){
 				$('.btn-izq-2').addClass('active');
 				$('.btn-mano-2').removeClass('active');
 				$('.btn-der-2').removeClass('active');
 			}
 
-			if(index == 3 && slideIndex == 1 && direction == 'right'){
+			if(index == frutasIndex && slideIndex == 1 && direction == 'right'){
 				$('.btn-izq-2').removeClass('active');
 				$('.btn-mano-2').removeClass('active');
 				$('.btn-der-2').addClass('active');
 			}
 
-			if(index == 3 && slideIndex == 2 && direction == 'left'){
+			if(index == frutasIndex && slideIndex == 2 && direction == 'left'){
 				$('.btn-izq-2').removeClass('active');
 				$('.btn-mano-2').addClass('active');
 				$('.btn-der-2').removeClass('active');
 			}
 
 			// grasas
-			if(index == 4 && slideIndex == 0 && direction == 'right'){
+			if(index == grasasIndex && slideIndex == 0 && direction == 'right'){
 				$('.btn-izq-3').removeClass('active');
 				$('.btn-mano-3').addClass('active');
 				$('.btn-der-3').removeClass('active');
 			}
 
-			if(index == 4 && slideIndex == 1 && direction == 'left'){
+			if(index == grasasIndex && slideIndex == 1 && direction == 'left'){
 				$('.btn-izq-3').addClass('active');
 				$('.btn-mano-3').removeClass('active');
 				$('.btn-der-3').removeClass('active');
 			}
 
-			if(index == 4 && slideIndex == 1 && direction == 'right'){
+			if(index == grasasIndex && slideIndex == 1 && direction == 'right'){
 				$('.btn-izq-3').removeClass('active');
 				$('.btn-mano-3').removeClass('active');
 				$('.btn-der-3').addClass('active');
 			}
 
-			if(index == 4 && slideIndex == 2 && direction == 'left'){
+			if(index == grasasIndex && slideIndex == 2 && direction == 'left'){
 				$('.btn-izq-3').removeClass('active');
 				$('.btn-mano-3').addClass('active');
 				$('.btn-der-3').removeClass('active');
 			}
 
 			// carbohidratos
-			if(index == 5 && slideIndex == 0 && direction == 'right'){
+			if(index == carbohidratosIndex && slideIndex == 0 && direction == 'right'){
 				$('.btn-izq-4').removeClass('active');
 				$('.btn-mano-4').addClass('active');
 				$('.btn-der-4').removeClass('active');
 			}
 
-			if(index == 5 && slideIndex == 1 && direction == 'left'){
+			if(index == carbohidratosIndex && slideIndex == 1 && direction == 'left'){
 				$('.btn-izq-4').addClass('active');
 				$('.btn-mano-4').removeClass('active');
 				$('.btn-der-4').removeClass('active');
 			}
 
-			if(index == 5 && slideIndex == 1 && direction == 'right'){
+			if(index == carbohidratosIndex && slideIndex == 1 && direction == 'right'){
 				$('.btn-izq-4').removeClass('active');
 				$('.btn-mano-4').removeClass('active');
 				$('.btn-der-4').addClass('active');
 			}
 
-			if(index == 5 && slideIndex == 2 && direction == 'left'){
+			if(index == carbohidratosIndex && slideIndex == 2 && direction == 'left'){
 				$('.btn-izq-4').removeClass('active');
 				$('.btn-mano-4').addClass('active');
 				$('.btn-der-4').removeClass('active');
 			}
 
 			// calcio
-			if(index == 6 && slideIndex == 0 && direction == 'right'){
+			if(index == calcioIndex && slideIndex == 0 && direction == 'right'){
 				$('.btn-izq-5').removeClass('active');
 				$('.btn-mano-5').addClass('active');
 				$('.btn-der-5').removeClass('active');
 			}
 
-			if(index == 6 && slideIndex == 1 && direction == 'left'){
+			if(index == calcioIndex && slideIndex == 1 && direction == 'left'){
 				$('.btn-izq-5').addClass('active');
 				$('.btn-mano-5').removeClass('active');
 				$('.btn-der-5').removeClass('active');
 			}
 
-			if(index == 6 && slideIndex == 1 && direction == 'right'){
+			if(index == calcioIndex && slideIndex == 1 && direction == 'right'){
 				$('.btn-izq-5').removeClass('active');
 				$('.btn-mano-5').removeClass('active');
 				$('.btn-der-5').addClass('active');
 			}
 
-			if(index == 6 && slideIndex == 2 && direction == 'left'){
+			if(index == calcioIndex && slideIndex == 2 && direction == 'left'){
 				$('.btn-izq-5').removeClass('active');
 				$('.btn-mano-5').addClass('active');
 				$('.btn-der-5').removeClass('active');
 			}
 
 			// dulce
-			if(index == 7 && slideIndex == 0 && direction == 'right'){
+			if(index == dulceIndex && slideIndex == 0 && direction == 'right'){
 				$('.btn-izq-6').removeClass('active');
 				$('.btn-mano-6').addClass('active');
 				$('.btn-der-6').removeClass('active');
 			}
 
-			if(index == 7 && slideIndex == 1 && direction == 'left'){
+			if(index == dulceIndex && slideIndex == 1 && direction == 'left'){
 				$('.btn-izq-6').addClass('active');
 				$('.btn-mano-6').removeClass('active');
 				$('.btn-der-6').removeClass('active');
 			}
 
-			if(index == 7 && slideIndex == 1 && direction == 'right'){
+			if(index == dulceIndex && slideIndex == 1 && direction == 'right'){
 				$('.btn-izq-6').removeClass('active');
 				$('.btn-mano-6').removeClass('active');
 				$('.btn-der-6').addClass('active');
 			}
 
-			if(index == 7 && slideIndex == 2 && direction == 'left'){
+			if(index == dulceIndex && slideIndex == 2 && direction == 'left'){
 				$('.btn-izq-6').removeClass('active');
 				$('.btn-mano-6').addClass('active');
 				$('.btn-der-6').removeClass('active');
 			}
 
 			// hidratación
-			if(index == 8 && slideIndex == 0 && direction == 'right'){
+			if(index == hidratacionIndex && slideIndex == 0 && direction == 'right'){
 				$('.btn-izq-7').removeClass('active');
 				$('.btn-mano-7').addClass('active');
 				$('.btn-der-7').removeClass('active');
 			}
 
-			if(index == 8 && slideIndex == 1 && direction == 'left'){
+			if(index == hidratacionIndex && slideIndex == 1 && direction == 'left'){
 				$('.btn-izq-7').addClass('active');
 				$('.btn-mano-7').removeClass('active');
 				$('.btn-der-7').removeClass('active');
 			}
 
-			if(index == 8 && slideIndex == 1 && direction == 'right'){
+			if(index == hidratacionIndex && slideIndex == 1 && direction == 'right'){
 				$('.btn-izq-7').removeClass('active');
 				$('.btn-mano-7').removeClass('active');
 				$('.btn-der-7').addClass('active');
 			}
 
-			if(index == 8 && slideIndex == 2 && direction == 'left'){
+			if(index == hidratacionIndex && slideIndex == 2 && direction == 'left'){
 				$('.btn-izq-7').removeClass('active');
 				$('.btn-mano-7').addClass('active');
 				$('.btn-der-7').removeClass('active');
