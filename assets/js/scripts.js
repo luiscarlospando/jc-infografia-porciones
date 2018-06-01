@@ -2,6 +2,7 @@ $(document).ready(function() {
 	// fullPage.js
 	$('#fullpage').fullpage({
 		fadingEffect: 'slides',
+		fadingEffectKey: 'aW50ZXJhY3RpdmVzb2x1dGlvbnMuaW5mb190NmhabUZrYVc1blJXWm1aV04wN3BH',
 		navigation: true,
 		showActiveTooltip: true,
 		slidesNavigation: false,
