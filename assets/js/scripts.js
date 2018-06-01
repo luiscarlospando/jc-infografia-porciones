@@ -423,6 +423,11 @@ $('.fp-slidesNav-custom > ul > li > button').each(function() {
 	}
 });
 
+// navbar cerrado al hacer click
+$('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});
+
 // svgs
 var svg1 = new Vivus('svg-1', {
 		type: 'oneByOne',
