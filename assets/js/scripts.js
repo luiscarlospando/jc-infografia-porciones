@@ -206,27 +206,27 @@ $(document).ready(function() {
 
 			// vegetales
 			if(index == vegetalesIndex && slideIndex == 0 && direction == 'right'){
-				$('.btn-izq-7').removeClass('active');
-				$('.btn-mano-7').addClass('active');
-				$('.btn-der-7').removeClass('active');
+				$('.btn-izq-8').removeClass('active');
+				$('.btn-mano-8').addClass('active');
+				$('.btn-der-8').removeClass('active');
 			}
 
 			if(index == vegetalesIndex && slideIndex == 1 && direction == 'left'){
-				$('.btn-izq-7').addClass('active');
-				$('.btn-mano-7').removeClass('active');
-				$('.btn-der-7').removeClass('active');
+				$('.btn-izq-8').addClass('active');
+				$('.btn-mano-8').removeClass('active');
+				$('.btn-der-8').removeClass('active');
 			}
 
 			if(index == vegetalesIndex && slideIndex == 1 && direction == 'right'){
-				$('.btn-izq-7').removeClass('active');
-				$('.btn-mano-7').removeClass('active');
-				$('.btn-der-7').addClass('active');
+				$('.btn-izq-8').removeClass('active');
+				$('.btn-mano-8').removeClass('active');
+				$('.btn-der-8').addClass('active');
 			}
 
 			if(index == vegetalesIndex && slideIndex == 2 && direction == 'left'){
-				$('.btn-izq-7').removeClass('active');
-				$('.btn-mano-7').addClass('active');
-				$('.btn-der-7').removeClass('active');
+				$('.btn-izq-8').removeClass('active');
+				$('.btn-mano-8').addClass('active');
+				$('.btn-der-8').removeClass('active');
 			}
 		}
 	});
@@ -413,6 +413,11 @@ $('.fp-slidesNav-custom > ul > li > button').each(function() {
 	} else if ( $(this).hasClass('btn-hidratacion') ) {
 		$(this).click(function () {
 			$('.btn-hidratacion').removeClass('active');
+			$(this).toggleClass('active');
+		});
+	} else if ( $(this).hasClass('btn-vegetales') ) {
+		$(this).click(function () {
+			$('.btn-vegetales').removeClass('active');
 			$(this).toggleClass('active');
 		});
 	}
