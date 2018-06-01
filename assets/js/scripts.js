@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	// fullPage.js
 	$('#fullpage').fullpage({
+		fadingEffect: true,
 		navigation: true,
 		showActiveTooltip: true,
 		slidesNavigation: false,
