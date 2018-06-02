@@ -279,6 +279,55 @@ $(document).ready(function() {
 	}, 6000);
 });
 
+// Reseteamos estado de los botones de navegación entre slides al usar menú de navegación principal
+$('.prot').on('click', function() {
+	$('.btn-izq-1').addClass('active');
+	$('.btn-mano-1').removeClass('active');
+	$('.btn-der-1').removeClass('active');
+});
+
+$('.frut').on('click', function() {
+	$('.btn-izq-2').addClass('active');
+	$('.btn-mano-2').removeClass('active');
+	$('.btn-der-2').removeClass('active');
+});
+
+$('.gras').on('click', function() {
+	$('.btn-izq-3').addClass('active');
+	$('.btn-mano-3').removeClass('active');
+	$('.btn-der-3').removeClass('active');
+});
+
+$('.carb').on('click', function() {
+	$('.btn-izq-4').addClass('active');
+	$('.btn-mano-4').removeClass('active');
+	$('.btn-der-4').removeClass('active');
+});
+
+$('.cal').on('click', function() {
+	$('.btn-izq-5').addClass('active');
+	$('.btn-mano-5').removeClass('active');
+	$('.btn-der-5').removeClass('active');
+});
+
+$('.dul').on('click', function() {
+	$('.btn-izq-6').addClass('active');
+	$('.btn-mano-6').removeClass('active');
+	$('.btn-der-6').removeClass('active');
+});
+
+$('.hid').on('click', function() {
+	$('.btn-izq-7').addClass('active');
+	$('.btn-mano-7').removeClass('active');
+	$('.btn-der-7').removeClass('active');
+});
+
+$('.veg').on('click', function() {
+	$('.btn-izq-8').addClass('active');
+	$('.btn-mano-8').removeClass('active');
+	$('.btn-der-8').removeClass('active');
+});
+
 // botones de navegación entre slides
 // proteínas
 $(document).on('click', '.btn-izq-1', function(){
