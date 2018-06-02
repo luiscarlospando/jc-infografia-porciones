@@ -21,6 +21,11 @@ body {
 button:focus {
   outline: none; }
 
+.montserrat-strong {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase; }
+
 .navbar {
   background-color: #4d4d4d;
   color: #fff;
@@ -202,6 +207,8 @@ button:focus {
     transform: translate(-50%, -50%);
     border-radius: 1.25rem;
     z-index: 1; }
+  .section .slide .media .media-body h5 {
+    font-weight: 600; }
 
 #pagina-1,
 #pagina-2,
@@ -220,7 +227,8 @@ button:focus {
   #pagina-6 .dropdown-toggle,
   #pagina-7 .dropdown-toggle,
   #pagina-8 .dropdown-toggle {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-weight: 600; }
 
 #pagina-1 {
   background-color: #b95ea4; }
