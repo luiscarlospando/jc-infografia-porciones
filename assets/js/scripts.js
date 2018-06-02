@@ -1,12 +1,12 @@
 $(document).ready(function() {
 	// fullPage.js
 	$('#fullpage').fullpage({
-		fadingEffect: 'slides',
+		fadingEffect: true,
 		fadingEffectKey: 'aW50ZXJhY3RpdmVzb2x1dGlvbnMuaW5mb190NmhabUZrYVc1blJXWm1aV04wN3BH',
 		navigation: true,
 		showActiveTooltip: true,
 		slidesNavigation: false,
-		autoScrolling: true, // scrolleo de un toque desactivado
+		autoScrolling: true, // scrolleo de un toque activado
 		recordHistory: false,
 		anchors: ['inicio', 'tutorial', 'menu', 'proteinas', 'frutas', 'grasas', 'carbohidratos', 'calcio', 'dulce', 'hidratacion', 'vegetales', 'conoce-mas'],
 		menu: '.main-nav ul',
@@ -231,6 +231,10 @@ $(document).ready(function() {
 			}
 		}
 	});
+
+	// Deshabilitado de scroll con touch events y con mousewheel
+	$.fn.fullpage.setMouseWheelScrolling(false);
+    $.fn.fullpage.setAllowScrolling(false);
 
 	// animate.css
 	// var index = 0;
