@@ -233,7 +233,7 @@ $(document).ready(function() {
 		}
 	});
 
-	// Deshabilitado de scroll con mousewheel
+	// deshabilitado de scroll con mousewheel
 	$.fn.fullpage.setMouseWheelScrolling(false);
     // $.fn.fullpage.setAllowScrolling(false);
 
@@ -279,7 +279,8 @@ $(document).ready(function() {
 	}, 6000);
 });
 
-// Reseteamos estado de los botones de navegación entre slides al usar menú de navegación principal
+// reseteamos estado de los botones de navegación entre slides al usar menú de navegación principal
+// desktop
 $('.prot').on('click', function() {
 	$('.btn-izq-1').addClass('active');
 	$('.btn-mano-1').removeClass('active');
@@ -323,6 +324,55 @@ $('.hid').on('click', function() {
 });
 
 $('.veg').on('click', function() {
+	$('.btn-izq-8').addClass('active');
+	$('.btn-mano-8').removeClass('active');
+	$('.btn-der-8').removeClass('active');
+});
+
+// mobile
+$('.prot-dd').on('click', function() {
+	$('.btn-izq-1').addClass('active');
+	$('.btn-mano-1').removeClass('active');
+	$('.btn-der-1').removeClass('active');
+});
+
+$('.frut-dd').on('click', function() {
+	$('.btn-izq-2').addClass('active');
+	$('.btn-mano-2').removeClass('active');
+	$('.btn-der-2').removeClass('active');
+});
+
+$('.gras-dd').on('click', function() {
+	$('.btn-izq-3').addClass('active');
+	$('.btn-mano-3').removeClass('active');
+	$('.btn-der-3').removeClass('active');
+});
+
+$('.carb-dd').on('click', function() {
+	$('.btn-izq-4').addClass('active');
+	$('.btn-mano-4').removeClass('active');
+	$('.btn-der-4').removeClass('active');
+});
+
+$('.cal-dd').on('click', function() {
+	$('.btn-izq-5').addClass('active');
+	$('.btn-mano-5').removeClass('active');
+	$('.btn-der-5').removeClass('active');
+});
+
+$('.dul-dd').on('click', function() {
+	$('.btn-izq-6').addClass('active');
+	$('.btn-mano-6').removeClass('active');
+	$('.btn-der-6').removeClass('active');
+});
+
+$('.hid-dd').on('click', function() {
+	$('.btn-izq-7').addClass('active');
+	$('.btn-mano-7').removeClass('active');
+	$('.btn-der-7').removeClass('active');
+});
+
+$('.veg-dd').on('click', function() {
 	$('.btn-izq-8').addClass('active');
 	$('.btn-mano-8').removeClass('active');
 	$('.btn-der-8').removeClass('active');
