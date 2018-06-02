@@ -7,6 +7,7 @@ $(document).ready(function() {
 		showActiveTooltip: true,
 		slidesNavigation: false,
 		autoScrolling: true, // scrolleo de un toque activado
+		dragAndMove: 'fingersonly', // permitimos scrolleo con dedos solamente
 		recordHistory: false,
 		anchors: ['inicio', 'tutorial', 'menu', 'proteinas', 'frutas', 'grasas', 'carbohidratos', 'calcio', 'dulce', 'hidratacion', 'vegetales', 'conoce-mas'],
 		menu: '.main-nav ul',
@@ -232,9 +233,9 @@ $(document).ready(function() {
 		}
 	});
 
-	// Deshabilitado de scroll con touch events y con mousewheel
+	// Deshabilitado de scroll con mousewheel
 	$.fn.fullpage.setMouseWheelScrolling(false);
-    $.fn.fullpage.setAllowScrolling(false);
+    // $.fn.fullpage.setAllowScrolling(false);
 
 	// animate.css
 	// var index = 0;
