@@ -117,6 +117,13 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
 
 .section {
   position: relative; }
+  .section a,
+  .section a:active,
+  .section a:hover,
+  .section a:focus,
+  .section a:visited {
+    color: #fff;
+    text-decoration: underline; }
   .section .btn-primary {
     border-radius: 1.25rem;
     border: none; }

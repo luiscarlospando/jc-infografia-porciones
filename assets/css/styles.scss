@@ -164,6 +164,15 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
 .section {
     position: relative;
 
+    a,
+    a:active,
+    a:hover,
+    a:focus,
+    a:visited {
+        color: $linkColor;
+        text-decoration: underline;
+    }
+
     .btn-primary {
         border-radius: 1.25rem;
         border: none;
