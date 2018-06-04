@@ -4,12 +4,13 @@ $(document).ready(function() {
 		fadingEffect: true,
 		fadingEffectKey: 'aW50ZXJhY3RpdmVzb2x1dGlvbnMuaW5mb190NmhabUZrYVc1blJXWm1aV04wN3BH',
 		navigation: true,
+		navigationTooltips: ['firstSlide', 'secondSlide'],
 		showActiveTooltip: true,
 		slidesNavigation: false,
 		autoScrolling: true, // scrolleo de un toque activado
-		dragAndMove: 'fingersonly', // permitimos scrolleo con dedos solamente
+		dragAndMove: false, // permitimos scrolleo con dedos solamente (desactivado)
 		recordHistory: false,
-		anchors: ['inicio', 'tutorial', 'menu', 'proteinas', 'frutas', 'grasas', 'carbohidratos', 'calcio', 'dulce', 'hidratacion', 'vegetales', 'conoce-mas'],
+		anchors: ['inicio', 'instrucciones', 'menu', 'proteinas', 'frutas', 'grasas', 'carbohidratos', 'calcio', 'dulce', 'hidratacion', 'vegetales', 'conoce-mas'],
 		menu: '.main-nav ul',
 		fixedElements: '.header, .footer',
 		paddingTop: '54px',
@@ -18,6 +19,16 @@ $(document).ready(function() {
 		controlArrows: false,
 		keyboardScrolling: true,
 		loopHorizontal: false,
+		afterLoad: function(anchorLink, index){
+			var loadedSection = $(this);
+	
+			// ocultamos navbar en secciones donde no es necesaria
+			if( (index == 1) || (index == 2) || (index == 3) ) {
+				$('.navbar').hide();
+			} else {
+				$('.navbar').show();
+			}
+		},
 		onSlideLeave: function( anchorLink, index, slideIndex, direction, nextSlideIndex){
 			var leavingSlide = $(this);
 	
@@ -233,9 +244,9 @@ $(document).ready(function() {
 		}
 	});
 
-	// deshabilitado de scroll con mousewheel
+	// deshabilitado de scroll con mousewheel y con touch gestures
 	$.fn.fullpage.setMouseWheelScrolling(false);
-    // $.fn.fullpage.setAllowScrolling(false);
+    $.fn.fullpage.setAllowScrolling(false);
 
 	// animate.css
 	// var index = 0;

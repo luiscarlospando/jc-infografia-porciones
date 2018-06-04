@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,600|Playfair+Display:700");
 @font-face {
   font-family: 'FuturaPT-Light';
@@ -61,6 +62,20 @@ button:focus {
 
 .custom-toggler.navbar-toggler {
   border-color: #4d4d4d; }
+
+/* Ocultamos navegación en pantallas donde no la necesitamos */
+body.fp-viewing-inicio #fp-nav,
+body.fp-viewing-instrucciones-0 #fp-nav,
+body.fp-viewing-menu-0 #fp-nav,
+body.fp-viewing-conoce-mas-0 #fp-nav {
+  display: none; }
+
+/* Ocultamos beans de portada, instrucciones, menú y conoce más */
+#fp-nav ul li:first-child,
+#fp-nav ul li:nth-child(2),
+#fp-nav ul li:nth-child(3),
+#fp-nav ul li:last-child {
+  display: none; }
 
 #portada .container-fluid {
   height: 100%; }
