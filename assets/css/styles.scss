@@ -167,6 +167,7 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
 
     #mano {
         opacity: 0;
+        width: 100%;
     }
 }
 
@@ -188,6 +189,10 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
     a:visited {
         color: $linkColor;
         text-decoration: underline;
+    }
+
+    h2 {
+        font-family: 'Playfair Display', serif;
     }
 
     .btn-primary {
@@ -225,10 +230,6 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
             text-decoration: none;
         }
     }
-
-    // .dropdown.top {
-    //     top: 56px;
-    // }
 
     #dropdown1,
     #dropdown2,

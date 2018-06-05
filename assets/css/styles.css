@@ -120,7 +120,8 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
     right: 21%;
     width: 32%; }
   #portada #mano {
-    opacity: 0; }
+    opacity: 0;
+    width: 100%; }
 
 #intro-id,
 #menu-id {
@@ -138,6 +139,8 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
   .section a:visited {
     color: #fff;
     text-decoration: underline; }
+  .section h2 {
+    font-family: 'Playfair Display', serif; }
   .section .btn-primary {
     border-radius: 1.25rem;
     border: none; }
@@ -368,6 +371,16 @@ footer {
   .navbar {
     display: none; } }
 @media (min-width: 768px) {
+  #pagina-1,
+  #pagina-2,
+  #pagina-3,
+  #pagina-4,
+  #pagina-5,
+  #pagina-6,
+  #pagina-7,
+  #pagina-8 {
+    padding-top: 80px !important; }
+
   footer .list-inline .list-inline-item img {
     width: 56px; } }
 @media (min-width: 992px) {
