@@ -12,7 +12,7 @@ $(document).ready(function() {
 		recordHistory: false,
 		anchors: ['inicio', 'instrucciones', 'menu', 'proteinas', 'frutas', 'grasas', 'carbohidratos', 'calcio', 'dulce', 'hidratacion', 'vegetales', 'conoce-mas'],
 		paddingTop: '130px',
-		// paddingBottom: '55px',
+		paddingBottom: '8px',
 		scrollOverflow: true,
 		controlArrows: false,
 		keyboardScrolling: true,

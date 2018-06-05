@@ -97,7 +97,7 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
 }
 
 #portada {
-    padding-top: 0 !important;
+    padding-top: 15px !important;
 
     .container-fluid {
         height: 100%;
@@ -400,6 +400,38 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
 
     .dropdown-toggle {
         background-color: $hidratacionSecundario;
+    }
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: $footerBgColor;
+    color: $footerColor;
+    width: 100%;
+    padding: 8px 0;
+
+    .media {
+        img {
+            max-width: 30px;
+        }
+
+        .media-body {
+            h5 {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .list-inline {
+        margin-bottom: 0;
+        
+        .list-inline-item {
+            img {
+                width: 39px;
+            }
+        }
     }
 }
 

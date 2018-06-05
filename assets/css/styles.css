@@ -78,7 +78,7 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
   display: none; }
 
 #portada {
-  padding-top: 0 !important; }
+  padding-top: 15px !important; }
   #portada .container-fluid {
     height: 100%; }
   #portada .contenedor-circulo .elemento {
@@ -291,6 +291,23 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
   #pagina-7 .dropdown-toggle {
     background-color: #ad3c1e; }
 
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #08adc1;
+  color: #fff;
+  width: 100%;
+  padding: 8px 0; }
+  footer .media img {
+    max-width: 30px; }
+  footer .media .media-body h5 {
+    margin-bottom: 0; }
+  footer .list-inline {
+    margin-bottom: 0; }
+    footer .list-inline .list-inline-item img {
+      width: 39px; }
+
 @media all and (max-width: 991.98px) and (orientation: landscape) {
   body {
     position: relative;
@@ -336,11 +353,17 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
   body > *,
   .navbar {
     display: none; } }
+@media (min-width: 768px) {
+  footer .list-inline .list-inline-item img {
+    width: 56px; } }
 @media (min-width: 992px) {
   #portada {
     padding-top: 0 !important; }
 
   .section .fp-slidesNav-custom:after {
-    width: 16%; } }
+    width: 16%; }
+
+  footer .list-inline .list-inline-item img {
+    width: 56px; } }
 
 /*# sourceMappingURL=styles.css.map */
