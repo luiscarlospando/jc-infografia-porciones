@@ -255,37 +255,46 @@ $(document).ready(function() {
 	// 	index = (index + 1) % total;
 	// });
 
-	setTimeout(function () {
-		$('#queso').show().addClass('animated fadeInDown');
-	}, 1500);
+	// animación de alimentos del intro
+	// setTimeout(function () {
+	// 	$('#queso').show().addClass('animated fadeInDown');
+	// }, 1500);
 
-	setTimeout(function () {
-		$('#miel').show().addClass('animated fadeInDown');
-	}, 2000);
+	// setTimeout(function () {
+	// 	$('#miel').show().addClass('animated fadeInDown');
+	// }, 2000);
 
-	setTimeout(function () {
-		$('#banana').show().addClass('animated fadeInDown');
-	}, 2500);
+	// setTimeout(function () {
+	// 	$('#banana').show().addClass('animated fadeInDown');
+	// }, 2500);
 
-	setTimeout(function () {
-		$('#pan').show().addClass('animated fadeInDown');
-	}, 3000);
+	// setTimeout(function () {
+	// 	$('#pan').show().addClass('animated fadeInDown');
+	// }, 3000);
 
-	setTimeout(function () {
-		$('#brocoli').show().addClass('animated fadeInDown');
-	}, 3500);
+	// setTimeout(function () {
+	// 	$('#brocoli').show().addClass('animated fadeInDown');
+	// }, 3500);
 
-	setTimeout(function () {
-		$('#pescado').show().addClass('animated fadeInDown');
-	}, 4000);
+	// setTimeout(function () {
+	// 	$('#pescado').show().addClass('animated fadeInDown');
+	// }, 4000);
 
 	setTimeout(function () {
 		$('#mano').show().addClass('animated fadeIn');
-	}, 5000);
+	}, 800);
 
 	setTimeout(function () {
-		$('#porciones').show().addClass('animated fadeIn');
-	}, 6000);
+		$('#circulo').show().addClass('animated fadeIn');
+	}, 2000);
+
+	setTimeout(function () {
+		$('#btn-comenzar').show().addClass('animated fadeIn');
+	}, 2800);
+
+	setTimeout(function () {
+		$('#btn-saltar').show().addClass('animated fadeIn');
+	}, 3300);
 });
 
 // reseteamos estado de los botones de navegación entre slides al usar menú de navegación principal
@@ -543,22 +552,22 @@ $('.navbar-nav>li>a').on('click', function(){
 });
 
 // svgs
-var svg1 = new Vivus('svg-1', {
-		type: 'oneByOne',
-		duration: 150,
-		start: 'inViewport'
-	},
-	function (obj) {
-		obj.el.classList.add('finished');
-	}
-);
+// var svg1 = new Vivus('svg-1', {
+// 		type: 'oneByOne',
+// 		duration: 150,
+// 		start: 'inViewport'
+// 	},
+// 	function (obj) {
+// 		obj.el.classList.add('finished');
+// 	}
+// );
 
-var svg2 = new Vivus('svg-2', {
-	type: 'oneByOne',
-	duration: 150,
-	start: 'inViewport'
-	},
-	function (obj) {
-		obj.el.classList.add('finished');
-	}
-);  
+// var svg2 = new Vivus('svg-2', {
+// 	type: 'oneByOne',
+// 	duration: 150,
+// 	start: 'inViewport'
+// 	},
+// 	function (obj) {
+// 		obj.el.classList.add('finished');
+// 	}
+// );  

@@ -97,14 +97,10 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
 }
 
 #portada {
+    padding-top: 0 !important;
+
     .container-fluid {
         height: 100%;
-    }
-
-    .circulo,
-    .mano {
-        width: 100%;
-        float: left;
     }
 
     .contenedor-circulo {
@@ -116,7 +112,9 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
             z-index: 1;
         }
 
-        #porciones {
+        #circulo,
+        #btn-comenzar,
+        #btn-saltar  {
             position: relative;
             z-index: 2;
             opacity: 0;
@@ -154,10 +152,8 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
         }
     }
 
-    .mano {
-        #mano {
-            opacity: 0;
-        }
+    #mano {
+        opacity: 0;
     }
 }
 
