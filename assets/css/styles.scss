@@ -104,8 +104,6 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
     }
 
     .contenedor-circulo {
-        margin-bottom: 50px;
-
         .elemento {
             position: absolute;
             opacity: 0;
@@ -118,6 +116,10 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
             position: relative;
             z-index: 2;
             opacity: 0;
+        }
+
+        .list-unstyled {
+            margin-bottom: 0;
         }
         
         #queso {

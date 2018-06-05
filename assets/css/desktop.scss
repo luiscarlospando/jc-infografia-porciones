@@ -1,4 +1,8 @@
 @media (min-width: 992px) {
+    #portada {
+        padding-top: 0 !important;
+    }
+
     .section {
         .fp-slidesNav-custom:after {
             width: 16%;

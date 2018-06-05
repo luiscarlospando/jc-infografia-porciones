@@ -81,37 +81,37 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
   padding-top: 0 !important; }
   #portada .container-fluid {
     height: 100%; }
-  #portada .contenedor-circulo {
-    margin-bottom: 50px; }
-    #portada .contenedor-circulo .elemento {
-      position: absolute;
-      opacity: 0;
-      z-index: 1; }
-    #portada .contenedor-circulo #circulo,
-    #portada .contenedor-circulo #btn-comenzar,
-    #portada .contenedor-circulo #btn-saltar {
-      position: relative;
-      z-index: 2;
-      opacity: 0; }
-    #portada .contenedor-circulo #queso {
-      top: -12%;
-      right: 22%; }
-    #portada .contenedor-circulo #miel {
-      top: 3%;
-      left: 4%; }
-    #portada .contenedor-circulo #banana {
-      top: 12%;
-      right: 18%; }
-    #portada .contenedor-circulo #pan {
-      top: 23%;
-      left: 14%; }
-    #portada .contenedor-circulo #brocoli {
-      left: 30%;
-      top: 50%; }
-    #portada .contenedor-circulo #pescado {
-      top: 58%;
-      right: 21%;
-      width: 32%; }
+  #portada .contenedor-circulo .elemento {
+    position: absolute;
+    opacity: 0;
+    z-index: 1; }
+  #portada .contenedor-circulo #circulo,
+  #portada .contenedor-circulo #btn-comenzar,
+  #portada .contenedor-circulo #btn-saltar {
+    position: relative;
+    z-index: 2;
+    opacity: 0; }
+  #portada .contenedor-circulo .list-unstyled {
+    margin-bottom: 0; }
+  #portada .contenedor-circulo #queso {
+    top: -12%;
+    right: 22%; }
+  #portada .contenedor-circulo #miel {
+    top: 3%;
+    left: 4%; }
+  #portada .contenedor-circulo #banana {
+    top: 12%;
+    right: 18%; }
+  #portada .contenedor-circulo #pan {
+    top: 23%;
+    left: 14%; }
+  #portada .contenedor-circulo #brocoli {
+    left: 30%;
+    top: 50%; }
+  #portada .contenedor-circulo #pescado {
+    top: 58%;
+    right: 21%;
+    width: 32%; }
   #portada #mano {
     opacity: 0; }
 
@@ -337,6 +337,9 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
   .navbar {
     display: none; } }
 @media (min-width: 992px) {
+  #portada {
+    padding-top: 0 !important; }
+
   .section .fp-slidesNav-custom:after {
     width: 16%; } }
 
