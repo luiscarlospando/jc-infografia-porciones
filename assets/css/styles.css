@@ -78,6 +78,8 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
   display: none; }
 
 #portada {
+  width: 100% !important;
+  float: left;
   padding-top: 15px !important; }
   #portada .container-fluid {
     height: 100%; }
@@ -89,10 +91,12 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
   #portada .contenedor-circulo #btn-comenzar,
   #portada .contenedor-circulo #btn-saltar {
     position: relative;
-    z-index: 2;
+    z-index: 10;
     opacity: 0; }
   #portada .contenedor-circulo .list-unstyled {
     margin-bottom: 0; }
+    #portada .contenedor-circulo .list-unstyled li a {
+      display: block; }
   #portada .contenedor-circulo #queso {
     top: -12%;
     right: 22%; }
@@ -116,6 +120,8 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
     opacity: 0; }
 
 .section {
+  width: 100% !important;
+  float: left;
   position: relative; }
   .section a,
   .section a:active,

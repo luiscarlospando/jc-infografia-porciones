@@ -20,11 +20,13 @@ $(document).ready(function() {
 		afterLoad: function(anchorLink, index){
 			var loadedSection = $(this);
 	
-			// ocultamos navbar en secciones donde no es necesaria
+			// ocultamos navbar y footer en secciones donde no es necesaria
 			if( (index == 1) || (index == 2) || (index == 3) ) {
 				$('.navbar').hide();
+				$('footer').hide();
 			} else {
 				$('.navbar').show();
+				$('footer').show();
 			}
 		},
 		onSlideLeave: function( anchorLink, index, slideIndex, direction, nextSlideIndex){

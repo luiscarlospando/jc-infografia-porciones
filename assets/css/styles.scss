@@ -97,6 +97,8 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
 }
 
 #portada {
+    width: 100% !important;
+    float: left;
     padding-top: 15px !important;
 
     .container-fluid {
@@ -114,12 +116,18 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
         #btn-comenzar,
         #btn-saltar  {
             position: relative;
-            z-index: 2;
+            z-index: 10;
             opacity: 0;
         }
 
         .list-unstyled {
             margin-bottom: 0;
+
+            li {
+                a {
+                    display: block;
+                }
+            }
         }
         
         #queso {
@@ -160,6 +168,8 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
 }
 
 .section {
+    width: 100% !important;
+    float: left;
     position: relative;
 
     a,
