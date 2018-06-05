@@ -128,6 +128,15 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
   width: 100%;
   float: left; }
 
+#menu-id {
+  padding-top: 0 !important; }
+  #menu-id h1,
+  #menu-id button {
+    text-transform: uppercase;
+    font-weight: 600; }
+  #menu-id .btn-primary {
+    background-color: #08adc1; }
+
 .section {
   width: 100% !important;
   float: left;
@@ -323,7 +332,7 @@ footer {
   footer .list-inline {
     margin-bottom: 0; }
     footer .list-inline .list-inline-item img {
-      width: 39px; }
+      width: 38px; }
 
 @media all and (max-width: 991.98px) and (orientation: landscape) {
   body {

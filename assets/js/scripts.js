@@ -11,7 +11,7 @@ $(document).ready(function() {
 		anchors: ['inicio', 'instrucciones', 'menu', 'proteinas', 'frutas', 'grasas', 'carbohidratos', 'calcio', 'dulce', 'hidratacion', 'vegetales', 'conoce-mas'],
 		animateAnchor: true,
 		paddingTop: '130px',
-		paddingBottom: '80px',
+		// paddingBottom: '80px',
 		scrollOverflow: true,
 		controlArrows: false,
 		keyboardScrolling: true,
