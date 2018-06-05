@@ -4,15 +4,14 @@ $(document).ready(function() {
 		fadingEffect: true,
 		fadingEffectKey: 'aW50ZXJhY3RpdmVzb2x1dGlvbnMuaW5mb190NmhabUZrYVc1blJXWm1aV04wN3BH',
 		navigation: true,
-		navigationTooltips: ['inicio', 'instrucciones', 'menu'],
-		showActiveTooltip: true,
 		slidesNavigation: false,
-		autoScrolling: true, // scrolleo de un toque activado
+		autoScrolling: false, // scrolleo de un toque activado
 		dragAndMove: false, // permitimos scrolleo con dedos solamente (desactivado)
 		recordHistory: false,
 		anchors: ['inicio', 'instrucciones', 'menu', 'proteinas', 'frutas', 'grasas', 'carbohidratos', 'calcio', 'dulce', 'hidratacion', 'vegetales', 'conoce-mas'],
+		animateAnchor: true,
 		paddingTop: '130px',
-		paddingBottom: '8px',
+		paddingBottom: '80px',
 		scrollOverflow: true,
 		controlArrows: false,
 		keyboardScrolling: true,
@@ -246,7 +245,7 @@ $(document).ready(function() {
 
 	// deshabilitado de scroll con mousewheel y con touch gestures
 	$.fn.fullpage.setMouseWheelScrolling(false);
-    $.fn.fullpage.setAllowScrolling(false);
+	$.fn.fullpage.setAllowScrolling(false);
 
 	// animate.css
 	// var index = 0;

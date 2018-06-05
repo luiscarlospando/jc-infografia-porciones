@@ -80,7 +80,10 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
 #portada {
   width: 100% !important;
   float: left;
-  padding-top: 15px !important; }
+  padding-top: 15px !important;
+  padding-bottom: 0 !important;
+  position: relative;
+  z-index: 10; }
   #portada .container-fluid {
     height: 100%; }
   #portada .contenedor-circulo .elemento {
@@ -119,6 +122,11 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
   #portada #mano {
     opacity: 0; }
 
+#intro-id,
+#menu-id {
+  width: 100%;
+  float: left; }
+
 .section {
   width: 100% !important;
   float: left;
@@ -137,7 +145,7 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
   .section .btn-primary:focus {
     box-shadow: 0 0 0 0; }
   .section .buttons-container {
-    position: absolute;
+    position: fixed;
     width: 100%;
     top: 54px;
     left: 0 !important;
