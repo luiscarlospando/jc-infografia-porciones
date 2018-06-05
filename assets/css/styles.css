@@ -133,6 +133,7 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
   .section .buttons-container {
     position: absolute;
     width: 100%;
+    top: 54px;
     left: 0 !important;
     z-index: 4;
     padding: 0 15px; }
@@ -146,6 +147,9 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
     margin: 0 auto 8px !important;
     width: 100%;
     float: left; }
+    .section .dropdown .dropdown-item {
+      color: #212529;
+      text-decoration: none; }
   .section #dropdown1,
   .section #dropdown2,
   .section #dropdown3,
@@ -332,5 +336,8 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
   body > *,
   .navbar {
     display: none; } }
+@media (min-width: 992px) {
+  .section .fp-slidesNav-custom:after {
+    width: 16%; } }
 
 /*# sourceMappingURL=styles.css.map */

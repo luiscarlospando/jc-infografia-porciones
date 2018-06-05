@@ -4,16 +4,14 @@ $(document).ready(function() {
 		fadingEffect: true,
 		fadingEffectKey: 'aW50ZXJhY3RpdmVzb2x1dGlvbnMuaW5mb190NmhabUZrYVc1blJXWm1aV04wN3BH',
 		navigation: true,
-		navigationTooltips: ['firstSlide', 'secondSlide'],
+		navigationTooltips: ['inicio', 'instrucciones', 'menu'],
 		showActiveTooltip: true,
 		slidesNavigation: false,
 		autoScrolling: true, // scrolleo de un toque activado
 		dragAndMove: false, // permitimos scrolleo con dedos solamente (desactivado)
 		recordHistory: false,
 		anchors: ['inicio', 'instrucciones', 'menu', 'proteinas', 'frutas', 'grasas', 'carbohidratos', 'calcio', 'dulce', 'hidratacion', 'vegetales', 'conoce-mas'],
-		menu: '.main-nav ul',
-		fixedElements: '.header, .footer',
-		paddingTop: '54px',
+		paddingTop: '130px',
 		// paddingBottom: '55px',
 		scrollOverflow: true,
 		controlArrows: false,
