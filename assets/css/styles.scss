@@ -109,6 +109,14 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
     }
 
     .contenedor-circulo {
+        a,
+        a:hover,
+        a:active,
+        a:visited
+        a:focus {
+            text-decoration: none;
+        }
+
         .elemento {
             position: absolute;
             opacity: 0;
@@ -121,6 +129,26 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
             position: relative;
             z-index: 10;
             opacity: 0;
+        }
+
+        #btn-comenzar,
+        #btn-saltar {
+            background-color: $menuBtn;
+            text-transform: uppercase;
+            font-weight: 600;
+            --box-shadow-color: #106a74;
+            box-shadow: 0px 10px 0px var(--box-shadow-color);
+            position: relative;
+            top: 0;
+            transition: all ease 0.3s;
+        }
+
+        #btn-comenzar:hover,
+        #btn-saltar:hover,
+        #btn-comenzar:focus,
+        #btn-saltar:focus {
+            box-shadow: 0px 5px 0px var(--box-shadow-color);
+            top: 5px;
         }
 
         .list-unstyled {
