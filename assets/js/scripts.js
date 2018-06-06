@@ -552,6 +552,10 @@ $('.navbar-nav>li>a').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });
 
+$('#fullpage').on('scroll', function () {
+	console.log('Event Fired');
+});
+
 // svgs
 // var svg1 = new Vivus('svg-1', {
 // 		type: 'oneByOne',
