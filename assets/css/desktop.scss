@@ -4,8 +4,26 @@
     }
 
     .section {
+        h1,
+        h2 {
+            display: inline-block;
+            font-size: 3.5rem;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            font-weight: 800;
+            color: $tituloDsktpColor;
+        }
+
+        .fp-slidesNav-custom {
+            .btn {
+                font-size: 1.50rem;
+            }
+        }
+
         .fp-slidesNav-custom:after {
-            width: 16%;
+            width: 19%;
         }
     }
 

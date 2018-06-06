@@ -233,6 +233,17 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
         text-decoration: underline;
     }
 
+    h1,
+    h2 {
+        display: inline-block;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        font-weight: 800;
+        color: $tituloDsktpColor;
+    }
+
     h2 {
         font-family: 'Playfair Display', serif;
     }
