@@ -8,7 +8,7 @@ $(document).ready(function() {
 		autoScrolling: false, // scrolleo de un toque activado
 		dragAndMove: false, // permitimos scrolleo con dedos solamente (desactivado)
 		recordHistory: false,
-		anchors: ['inicio', 'instrucciones', 'menu', 'proteinas', 'frutas', 'grasas', 'carbohidratos', 'calcio', 'dulce', 'hidratacion', 'vegetales', 'conoce-mas'],
+		anchors: ['inicio', 'instrucciones', 'menu', 'proteinas', 'calcio', 'frutas', 'vegetales', 'grasas', 'carbohidratos', 'dulce', 'hidratacion', 'conoce-mas'],
 		animateAnchor: true,
 		paddingTop: '130px',
 		// paddingBottom: '80px',
