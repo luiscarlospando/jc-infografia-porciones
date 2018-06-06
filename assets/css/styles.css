@@ -259,7 +259,7 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
     transform: translate(-50%, -50%);
     border-radius: 1.25rem;
     z-index: 1; }
-  .section .slide .media .media-body h5 {
+  .section .slide h5 {
     font-weight: 600; }
 
 #pagina-1,
