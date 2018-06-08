@@ -7,7 +7,7 @@
         h1,
         h2 {
             display: inline-block;
-            font-size: 3.5rem;
+            font-size: 2.3rem;
         }
 
         h1 {
@@ -17,6 +17,8 @@
         }
 
         .fp-slidesNav-custom {
+            top: 25px;
+
             .btn {
                 font-size: 1.50rem;
             }
@@ -25,6 +27,17 @@
         .fp-slidesNav-custom:after {
             width: 19%;
         }
+    }
+
+    #pagina-1,
+    #pagina-2,
+    #pagina-3,
+    #pagina-4,
+    #pagina-5,
+    #pagina-6,
+    #pagina-7,
+    #pagina-8 {
+        padding-top: 0 !important;
     }
 
     footer {

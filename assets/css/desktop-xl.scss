@@ -1,0 +1,19 @@
+@media (min-width: 1200px) {
+    .section {
+        .fp-slidesNav-custom {
+            top: 18px;
+        }
+
+        .fp-slidesNav-custom:after {
+            width: 16%;
+        }
+    }
+
+    footer::before {
+        border-radius: 60% 38%;
+        width: 100%;
+        height: 80px;
+        right: -5px;
+        top: -19px;
+    }
+}
