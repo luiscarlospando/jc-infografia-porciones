@@ -9,6 +9,7 @@ $(document).ready(function() {
 		dragAndMove: false, // permitimos scrolleo con dedos solamente (desactivado)
 		recordHistory: false,
 		anchors: ['inicio', 'instrucciones', 'menu', 'proteinas', 'calcio', 'frutas', 'vegetales', 'grasas', 'carbohidratos', 'dulce', 'hidratacion', 'conoce-mas'],
+		navigationTooltips: ['', '', '', 'Proteínas', 'Calcio', 'Frutas', 'Vegetales', 'Grasas', 'Carbohidratos', 'Dulce', 'Hidratación'],
 		animateAnchor: true,
 		paddingTop: '130px',
 		// paddingBottom: '80px',
