@@ -82,7 +82,9 @@ h3 {
 
 /* Ocultamos navegación en pantallas donde no la necesitamos */
 body.fp-viewing-inicio #fp-nav,
-body.fp-viewing-instrucciones-0 #fp-nav ,
+body.fp-viewing-instrucciones-0 #fp-nav,
+body.fp-viewing-instrucciones-1 #fp-nav,
+body.fp-viewing-instrucciones-2 #fp-nav,
 body.fp-viewing-menu-0 #fp-nav,
 body.fp-viewing-conoce-mas-0 #fp-nav {
     display: none;
@@ -356,6 +358,10 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
         border-width: 26px;
         border-left: 0;
         border-right-width: 14px;
+    }
+
+    .fp-slidesNav {
+        text-align: center;
     }
 
     .fp-slidesNav-custom {

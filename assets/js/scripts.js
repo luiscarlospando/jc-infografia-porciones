@@ -4,7 +4,7 @@ $(document).ready(function() {
 		fadingEffect: true,
 		fadingEffectKey: 'aW50ZXJhY3RpdmVzb2x1dGlvbnMuaW5mb190NmhabUZrYVc1blJXWm1aV04wN3BH',
 		navigation: true,
-		slidesNavigation: false,
+		slidesNavigation: true, // activado para sección de instrucciones
 		autoScrolling: false, // scrolleo de un toque activado
 		dragAndMove: false, // permitimos scrolleo con dedos solamente (desactivado)
 		recordHistory: false,
