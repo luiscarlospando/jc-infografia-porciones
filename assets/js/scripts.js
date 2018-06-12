@@ -17,6 +17,19 @@ $(document).ready(function() {
 		controlArrows: false,
 		keyboardScrolling: true,
 		loopHorizontal: false,
+		onLeave: function (index, nextIndex, direction) {
+			var leavingSection = $(this);
+
+			// animaciones 
+			// instrucciones
+			if (index == 1 && nextIndex == 2) {
+				$('#titulo-instrucciones-1').addClass('animated fadeInUpBig'); 
+			}
+
+			else if (index == 2 && direction == 'up') {
+				alert("Regresaste al inicio");
+			}
+		},
 		afterLoad: function(anchorLink, index){
 			var loadedSection = $(this);
 	
@@ -248,7 +261,7 @@ $(document).ready(function() {
 	$.fn.fullpage.setMouseWheelScrolling(false);
 	$.fn.fullpage.setAllowScrolling(false);
 
-	// animate.css
+	// animaciones de la portada
 	// var index = 0;
 	// var total = $(".media").length;
 
