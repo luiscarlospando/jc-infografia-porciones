@@ -9,6 +9,20 @@
         }
     }
 
+    #intro-id {
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        .slide-2 {
+            .bloque-3 {
+                img {
+                    max-width: 7%;
+                }
+            }
+        }
+    }
+
     footer::before {
         border-radius: 60% 38%;
         width: 100%;

@@ -98,6 +98,23 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
     display: none;
 }
 
+/* Estilos del los beans de los slides  */
+/* Activo */
+.fp-slidesNav ul li a.active span,
+.fp-slidesNav ul li:hover a.active span {
+    background-color: $slidesBeans;
+}
+
+/* No activo */
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    background-color: transparent;
+    border: 2px solid $slidesBeans;
+    width: 12px;
+    height: 12px;
+    margin: -6px 0 0 -6px;
+}
+
 #portada {
     width: 100% !important;
     float: left;
@@ -212,6 +229,34 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
 #intro-id {
     h1 {
         // opacity: 0;
+        font-size: 1.5rem;
+    }
+
+    .fp-slidesNav.bottom {
+        width: 100%;
+        background-color: rgba(240, 240, 240, 0.9);
+        bottom: 0px;
+        padding: 10px 0 4px;
+    }
+
+    .slide-2 {
+        .bloque-1 {
+            img {
+                max-width: 60%;
+            }
+        }
+
+        .bloque-2 {
+            img {
+                max-width: 25%;
+            }
+        }
+
+        .bloque-3 {
+            img {
+                max-width: 25%;
+            }
+        }
     }
 
     #trademark {
@@ -257,6 +302,7 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
 
     hr {
         background-color: #fff;
+        width: 100%;
     }
 
     h1,
