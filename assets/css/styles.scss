@@ -100,20 +100,22 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
 
 /* Estilos del los beans de los slides  */
 /* Activo */
-.fp-slidesNav ul li a.active span,
-.fp-slidesNav ul li:hover a.active span {
-    background-color: $slidesBeans;
-}
+// .fp-slidesNav ul li a.active span,
+// .fp-slidesNav ul li:hover a.active span {
+    // height: 14px;
+    // width: 14px;
+    // margin: -6px 0 0 -4px;
+// }
 
 /* No activo */
-#fp-nav ul li a span,
-.fp-slidesNav ul li a span {
-    background-color: transparent;
-    border: 2px solid $slidesBeans;
-    width: 12px;
-    height: 12px;
-    margin: -6px 0 0 -6px;
-}
+// #fp-nav ul li a span,
+// .fp-slidesNav ul li a span {
+//     background-color: transparent;
+//     border: 2px solid $slidesBeans;
+//     width: 12px;
+//     height: 12px;
+//     margin: -6px 0 0 -6px;
+// }
 
 #portada {
     width: 100% !important;
@@ -230,6 +232,24 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
     h1 {
         // opacity: 0;
         font-size: 1.5rem;
+    }
+
+    a {
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    a,
+    a:hover,
+    a:active,
+    a:visited
+    a:focus {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .btn-primary {
+        background-color: $menuBtn;
     }
 
     .fp-slidesNav.bottom {
