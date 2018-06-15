@@ -106,25 +106,29 @@
         <!-- Portada -->
         <div class="section active" id="portada">
             <div class="container-fluid d-flex flex-column justify-content-center">
-                <div class="row contenedor-circulo">
-                    <div class="col-12 col-lg-6 offset-lg-1 position-relative d-flex align-items-center justify-content-center">
-                        <img class="img-fluid" id="circulo" src="assets/images/circulo.png" alt="">
+                <div class="row">
+                    <div class="col-12 col-lg-10 offset-lg-1">
+                        <div class="row contenedor-circulo">
+                            <div class="col-12 col-lg-6 offset-lg-1 position-relative d-flex align-items-center justify-content-center">
+                                <img class="img-fluid" id="circulo" src="assets/images/circulo.png" alt="">
+                            </div>
+                            <div class="col-12 col-lg-4 d-flex align-items-center justify-content-center">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#instrucciones" class="btn btn-primary btn-lg my-4" id="btn-comenzar" role="button">Comenzar</a>
+                                    </li>
+                                    <li>
+                                        <a href="#menu" class="btn btn-primary btn-lg my-4" id="btn-saltar" role="button">Saltar Instrucciones</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row d-block d-sm-block d-md-block d-lg-none d-xl-none">
+                            <div class="col-12">
+                                <img class="img-fluid" id="mano" src="assets/images/mano.png" alt="">
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-12 col-lg-5 d-flex align-items-center justify-content-center">
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="#instrucciones" class="btn btn-primary btn-lg my-4" id="btn-comenzar" role="button">Comenzar</a>
-                            </li>
-                            <li>
-                                <a href="#menu" class="btn btn-primary btn-lg my-4" id="btn-saltar" role="button">Saltar Instrucciones</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row d-block d-sm-block d-md-block d-lg-none d-xl-none">
-                <div class="col-12">
-                    <img class="img-fluid" id="mano" src="assets/images/mano.png" alt="">
                 </div>
             </div>
         </div>
@@ -139,16 +143,24 @@
                             <h1 id="titulo-instrucciones-1">¿Por qué porciones?</h1>
                         </div>
                     </div>
+                    <div class="row d-flex align-items-center justify-content-center">
+                        <div class="col-10 offset-1 col-md-5 offset-md-1 position-relative">
+                            <img class="img-fluid" id="img-instrucciones-1" src="assets/images/instrucciones/1.png" alt="">
+                        </div>
+                        <div class="col-10 col-md-5">
+                            <p id="texto-instrucciones-1">Una alimentación balanceada incluye una combinación de todos los grupos alimenticios en la medida correcta. Con esta lección, tu familia aprenderá sobre el tamaño de las porciones de manera fácil, solo necesitarán sus manos.</p>
+                        
+                            <ul class="list-inline text-center">
+                                <li class="list-inline-item">
+                                    <a href="#instrucciones/1" class="btn btn-primary btn-lg btn-block mt-4 mb-3">Siguente</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                     <div class="row">
-                        <div class="col-10 offset-1 col-lg-5 offset-lg-1 position-relative d-flex align-items-center justify-content-center">
-                            <img class="img-fluid" src="assets/images/instrucciones/1.png" alt="">
-                        </div>
-                        <div class="col-10 col-lg-5 d-flex align-items-center justify-content-center">
-                            <p>Una alimentación balanceada incluye una combinación de todos los grupos alimenticios en la medida correcta. Con esta lección, tu familia aprenderá sobre el tamaño de las porciones de manera fácil, solo necesitarán sus manos.</p>
-                        </div>
                         <div class="col-12 col-md-5">
                             <p class="punto d-block d-sm-block d-md-block d-lg-none d-xl-none">.</p>
-                            <p class="punto d-block d-sm-block d-md-block d-lg-none d-xl-none">.</p>
+                             <p class="punto d-block d-sm-block d-md-block d-lg-none d-xl-none">.</p>
                         </div>
                     </div>
                 </div>
@@ -162,7 +174,7 @@
                                     <h1 id="titulo-instrucciones-2">Navegación Porciones</h1>
                                 </div>
                             </div>
-                            <div class="row d-flex align-items-center">
+                            <div class="row d-flex align-items-center justify-content-center">
                                 <div class="col-12 d-block d-sm-block d-md-block d-lg-none d-xl-none">
                                     <img class="img-fluid my-2" src="assets/images/instrucciones/dropdown.png" alt="">
                                     <p>Navega entre los diferentes grupos de alimentos.</p>
@@ -203,11 +215,22 @@
                                         <div class="col-8 col-md-12">
                                             <p>Indican en cual grupo de alimento te encuentras al momento.</p>
                                         </div>
-                                        <div class="col-12 col-md-5">
-                                            <p class="punto d-block d-sm-block d-md-block d-lg-none d-xl-none">.</p>
-                                            <p class="punto d-block d-sm-block d-md-block d-lg-none d-xl-none">.</p>
-                                        </div>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-10 offset-md-1">
+                                    <ul class="list-inline text-center">
+                                        <li class="list-inline-item">
+                                            <a href="#instrucciones" class="btn btn-primary btn-lg btn-block mt-4 mb-3">Anterior</a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#instrucciones/2" class="btn btn-primary btn-lg btn-block mt-4 mb-3">Siguente</a>
+                                        </li>
+                                    </ul>
+
+                                    <p class="punto d-block d-sm-block d-md-block d-lg-none d-xl-none">.</p>
+                                    <p class="punto d-block d-sm-block d-md-block d-lg-none d-xl-none">.</p>
                                 </div>
                             </div>
                         </div>
@@ -220,7 +243,7 @@
                         <div class="col-10 offset-1 col-md-10 offset-md-1">
                             <div class="row my-2">
                                 <div class="col-12 text-center">
-                                    <h1 id="titulo-instrucciones-1">Recursos Adicionales</h1>
+                                    <h1>Recursos Adicionales</h1>
                                 </div>
                             </div>
                             <div class="row d-flex align-items-center text-center">
@@ -238,16 +261,22 @@
                                 <div class="col-12 text-center">
                                     <p>Descarga todo el material gratuito para tu familia y conoce más sobre el programa Juntos Contamos<small id="trademark"><i class="fas fa-trademark"></i></small>.</p>
                                 </div>
-                                <div class="col-12 col-md-5">
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-10 offset-md-1">
+                                    <ul class="list-inline text-center">
+                                        <li class="list-inline-item">
+                                            <a href="#instrucciones/1" class="btn btn-primary btn-lg btn-block mt-4 mb-3">Anterior</a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#menu" class="btn btn-primary btn-lg btn-block mt-4 mb-3">Comenzar</a>
+                                        </li>
+                                    </ul>
+
                                     <p class="punto d-block d-sm-block d-md-block d-lg-none d-xl-none">.</p>
                                     <p class="punto d-block d-sm-block d-md-block d-lg-none d-xl-none">.</p>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-lg-6 offset-lg-3">
-                            <a href="#menu" class="btn btn-primary btn-lg btn-block mt-4 mb-3">Continuar</a>
                         </div>
                     </div>
                 </div>
@@ -269,44 +298,44 @@
                             <div class="row">
                                 <div class="col-6 col-lg-3">
                                     <a href="#proteinas">
-                                        <img class="img-fluid" src="assets/images/menu/proteinas.svg" alt="">
+                                        <img class="img-fluid" src="assets/images/menu/proteinas.png" alt="">
                                     </a>
                                 </div>
                                 <div class="col-6 col-lg-3">
                                     <a href="#calcio">
-                                        <img class="img-fluid" src="assets/images/menu/calcio.svg" alt="">
+                                        <img class="img-fluid" src="assets/images/menu/calcio.png" alt="">
                                     </a>
                                 </div>
                                 <div class="col-6 col-lg-3">
                                     <a href="#frutas">
-                                        <img class="img-fluid" src="assets/images/menu/frutas.svg" alt="">
+                                        <img class="img-fluid" src="assets/images/menu/frutas.png" alt="">
                                     </a>
                                 </div>
                                 <div class="col-6 col-lg-3">
                                     <a href="#vegetales">
-                                        <img class="img-fluid" src="assets/images/menu/vegetales.svg" alt="">
+                                        <img class="img-fluid" src="assets/images/menu/vegetales.png" alt="">
                                     </a>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-6 col-lg-3">
                                     <a href="#grasas">
-                                        <img class="img-fluid" src="assets/images/menu/grasas.svg" alt="">
+                                        <img class="img-fluid" src="assets/images/menu/grasas.png" alt="">
                                     </a>
                                 </div>
                                 <div class="col-6 col-lg-3">
                                     <a href="#carbohidratos">
-                                        <img class="img-fluid" src="assets/images/menu/carbohidratos.svg" alt="">
+                                        <img class="img-fluid" src="assets/images/menu/carbohidratos.png" alt="">
                                     </a>
                                 </div>
                                 <div class="col-6 col-lg-3">
                                     <a href="#dulce">
-                                        <img class="img-fluid" src="assets/images/menu/dulce.svg" alt="">
+                                        <img class="img-fluid" src="assets/images/menu/dulce.png" alt="">
                                     </a>
                                 </div>
                                 <div class="col-6 col-lg-3">
                                     <a href="#hidratacion">
-                                        <img class="img-fluid" src="assets/images/menu/hidratacion.svg" alt="">
+                                        <img class="img-fluid" src="assets/images/menu/hidratacion.png" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -372,7 +401,7 @@
                                     <h2 class="d-block d-sm-block d-md-block d-lg-none d-xl-none mt-3">¿Qué son?</h2>
                                 </div>
                                 <div class="col-8 offset-2 col-md-4 offset-md-1 text-center">
-                                    <img class="img-fluid my-3" src="assets/images/proteinas.png" alt="">
+                                    <img class="img-fluid my-3" src="assets/images/porciones/porciones_proteinas_500x500.png" alt="">
                                 </div>
                                 <div class="col-12 col-md-5">
                                     <div class="d-none d-sm-none d-md-none d-lg-block my-3">
@@ -393,7 +422,11 @@
                     </div> 
                     <div class="row d-none d-sm-none d-md-none d-lg-block d-xl-block text-center">
                         <div class="col-12">
-                            <p>Presiona la tecla <i class="fas fa-caret-square-down"></i> para continuar</p>
+                            <p>Presiona las teclas
+                                <i class="fas fa-caret-square-up"></i>
+                                <i class="fas fa-caret-square-down"></i>
+                                <i class="fas fa-caret-square-left"></i>
+                                <i class="fas fa-caret-square-right"></i> para navegar</p>
                         </div>
                     </div>  
                 </div>
@@ -409,7 +442,7 @@
                                     <h2 class="d-block d-sm-block d-md-block d-lg-none d-xl-none mt-3">Porciones</h2>
                                 </div>
                                 <div class="col-8 offset-2 col-md-4 offset-md-1 text-center">
-                                    <img class="img-fluid my-3" src="assets/images/palma.png" alt="">
+                                    <img class="img-fluid my-3" src="assets/images/porciones/mano_proteinas_500x500.png" alt="">
                                 </div>
                                 <div class="col-12 col-md-5">
                                     <div class="d-none d-sm-none d-md-none d-lg-block my-3">
@@ -430,7 +463,11 @@
                     </div>
                     <div class="row d-none d-sm-none d-md-none d-lg-block d-xl-block text-center">
                         <div class="col-12">
-                            <p>Presiona la tecla <i class="fas fa-caret-square-down"></i> para continuar</p>
+                            <p>Presiona las teclas
+                                <i class="fas fa-caret-square-up"></i>
+                                <i class="fas fa-caret-square-down"></i>
+                                <i class="fas fa-caret-square-left"></i>
+                                <i class="fas fa-caret-square-right"></i> para navegar</p>
                         </div>
                     </div>
                 </div>
@@ -503,7 +540,11 @@
                     </div>
                     <div class="row d-none d-sm-none d-md-none d-lg-block d-xl-block text-center">
                         <div class="col-12">
-                            <p>Presiona la tecla <i class="fas fa-caret-square-down"></i> para continuar</p>
+                            <p>Presiona las teclas
+                                <i class="fas fa-caret-square-up"></i>
+                                <i class="fas fa-caret-square-down"></i>
+                                <i class="fas fa-caret-square-left"></i>
+                                <i class="fas fa-caret-square-right"></i> para navegar</p>
                         </div>
                     </div>
                     <div class="row">
@@ -565,138 +606,7 @@
                 </div>
             </div>
         
-            <div class="slide active">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12 text-center">
-                            <h1 class="d-none d-sm-none d-md-none d-lg-inline d-xl-inline">Calcio</h1>
-                            <h2 class="mt-3">
-                                <span class="d-none d-sm-none d-md-none d-lg-inline d-xl-inline"> | </span>¿Qué son?</h2>
-                        </div>
-                        <div class="col-12 col-md-5 offset-md-1 d-flex justify-content-center">
-                            <img class="img-fluid my-5" src="assets/images/calcio.png" alt="">
-                        </div>
-                        <div class="col-12 col-md-5 d-flex align-items-center">
-                            <div class="info mb-3">
-                                <p>El calcio es esencial en el desarrollo de los niños.</p>
-                                <p>Puedes encontrarlo en productos lácteos como leche, yogurt o queso.</p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-5">
-                            <p class="punto d-block d-sm-block d-md-block d-lg-none d-xl-none">.</p>
-                            <p class="punto d-block d-sm-block d-md-block d-lg-none d-xl-none">.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slide">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12 text-center">
-                            <h1 class="d-none d-sm-none d-md-none d-lg-inline d-xl-inline">Calcio</h1>
-                            <h2 class="mt-3">
-                                <span class="d-none d-sm-none d-md-none d-lg-inline d-xl-inline"> | </span>Porciones</h2>
-                        </div>
-                        <div class="col-12 col-md-5 offset-md-1">
-                            <img class="img-fluid my-5" src="assets/images/palma.png" alt="">
-                        </div>
-                        <div class="col-12 col-md-5 d-flex align-items-center">
-                            <div class="row">
-                                <div class="col-12">
-                                    <p>La porción de alimentos ricos en calcio es una mano ahuecada por plato.</p>
-                                </div>
-                                <div class="col-12">
-                                    <div class="info mb-3">
-                                        <p class="montserrat-strong">Equivalente a media taza</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-5">
-                            <p class="punto d-block d-sm-block d-md-block d-lg-none d-xl-none">.</p>
-                            <p class="punto d-block d-sm-block d-md-block d-lg-none d-xl-none">.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slide">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12 text-center">
-                            <h1 class="d-none d-sm-none d-md-none d-lg-inline d-xl-inline">Calcio</h1>
-                            <h2 class="mt-3">
-                                <span class="d-none d-sm-none d-md-none d-lg-inline d-xl-inline"> | </span>Recomendaciones</h2>
-                        </div>
-                    </div>
-        
-                    <div class="row">
-                        <div class="col-10 offset-1">
-                            <div class="row">
-                                <div class="col-12 col-lg-6">
-                                    <div class="row">
-                                        <div class="col-3 col-lg-4 my-4">
-                                            <img class="mr-3 img-fluid" src="assets/images/comida-canasta.png" alt="">
-                                        </div>
-                                        <div class="col-9 col-lg-8 my-4">
-                                            <h5 class="mt-0">En tiempo récord</h5>
-                                            <p class="mb-0">
-                                                Al dividir la lista por grupos de alimentos ahorras tiempo buscando los artículos.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-3 col-lg-4 my-4">
-                                            <img class="mr-3 img-fluid" src="assets/images/comida-canasta.png" alt="">
-                                        </div>
-                                        <div class="col-9 col-lg-8 my-4">
-                                            <h5 class="mt-0">Aprende a usar "Mi Plato"</h5>
-                                            <p class="mb-0">
-                                                Una alimentación balanceada incluye alimentos de todos los grupos.
-                                                <a href="#">Aprende a usar mi plato</a>.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-6">
-                                    <div class="row">
-                                        <div class="col-3 col-lg-4 my-4">
-                                            <img class="mr-3 img-fluid" src="assets/images/plato-comida.png" alt="">
-                                        </div>
-                                        <div class="col-9 col-lg-8 my-4">
-                                            <h5 class="mt-0">Gasta menos</h5>
-                                            <p class="mb-0">
-                                                Medir porciones y planear, te ayuda a distribuir los alimentos de forma económica.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-3 col-lg-4 my-4">
-                                            <img class="mr-3 img-fluid" src="assets/images/plato-comida.png" alt="">
-                                        </div>
-                                        <div class="col-9 col-lg-8 my-4">
-                                            <h5 class="mt-0">¡Planea y ahorra!</h5>
-                                            <p class="mb-0">
-                                                Comer saludable no tiene por que ser caro. Continúa aprendiendo con las recomendaciones.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-10 offset-lg-1 d-flex align-items-center">
-                            <div class="info">
-                                <p>Una breve descripción de que son las proteínas y qué aportan a nuestro cuerpo.</p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-10 offset-lg-1">
-                            <p class="punto d-block d-sm-block d-md-block d-lg-none d-xl-none">.</p>
-                            <p class="punto d-block d-sm-block d-md-block d-lg-none d-xl-none">.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <!-- Aquí van los slides -->
         </div>
         <!-- /Calcio -->
         
@@ -1007,6 +917,11 @@
                         </li>
                         <li class="list-inline-item">
                             <img id="juntos-contamos" src="assets/images/juntos-contamos.svg" alt="">
+                        </li>
+                        <li class="list-inline-item d-none d-sm-none d-md-none d-lg-inline d-xl-inline">
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="Salir">
+                                <i class="fas fa-sign-out-alt"></i>
+                            </a>
                         </li>
                     </ul>
                 </div>

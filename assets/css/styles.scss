@@ -230,7 +230,6 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
 
 #intro-id {
     h1 {
-        // opacity: 0;
         font-size: 1.5rem;
     }
 
@@ -250,6 +249,12 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
 
     .btn-primary {
         background-color: $menuBtn;
+    }
+
+    #titulo-instrucciones-1,
+    #img-instrucciones-1,
+    #texto-instrucciones-1 {
+        opacity: 0;
     }
 
     .fp-slidesNav.bottom {
@@ -628,6 +633,19 @@ footer {
         .list-inline-item {
             img {
                 width: 38px;
+            }
+
+            a,
+            a:hover,
+            a:active,
+            a:visited
+            a:focus {
+                color: #fff;
+            }
+
+            .fa-sign-out-alt {
+                font-size: 2em;
+                vertical-align: middle;
             }
         }
     }

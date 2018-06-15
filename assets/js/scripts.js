@@ -23,9 +23,16 @@ $(document).ready(function() {
 			// animaciones 
 			// instrucciones
 			if (index == 1 && nextIndex == 2) {
-				$('#titulo-instrucciones-1').addClass('animated fadeInUpBig'); 
-			}
+				$('#titulo-instrucciones-1').addClass('animated fadeInUpBig');
 
+				setTimeout(function () {
+					$('#img-instrucciones-1').addClass('animated fadeIn');
+				}, 2000);
+
+				setTimeout(function () {
+					$('#texto-instrucciones-1').addClass('animated fadeInUpBig');
+				}, 3000);
+			}
 			else if (index == 2 && direction == 'up') {
 				alert("Regresaste al inicio");
 			}
@@ -568,6 +575,11 @@ $('.navbar-nav>li>a').on('click', function(){
 
 $('#fullpage').on('scroll', function () {
 	console.log('Event Fired');
+});
+
+// inicialización de tooltips
+$(function () {
+	$('[data-toggle="tooltip"]').tooltip();
 });
 
 // svgs
