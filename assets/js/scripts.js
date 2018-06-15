@@ -40,13 +40,13 @@ $(document).ready(function() {
 		afterLoad: function(anchorLink, index){
 			var loadedSection = $(this);
 	
-			// ocultamos navbar y footer en secciones donde no es necesaria
-			if( (index == 1) || (index == 2) || (index == 3) ) {
-				$('.navbar').hide();
-				$('footer').hide();
-			} else {
-				$('.navbar').show();
+			// mostramos navbar y footer en secciones donde son necesarios
+			if( !( (index == 1) || (index == 2) || (index == 3) ) ) {
+				$('.navbar').addClass('d-flex');
 				$('footer').show();
+			} else {
+				$('.navbar').removeClass('d-flex');
+				$('footer').hide();
 			}
 		},
 		afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
