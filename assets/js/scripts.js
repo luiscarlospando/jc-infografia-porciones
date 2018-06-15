@@ -49,6 +49,161 @@ $(document).ready(function() {
 				$('footer').show();
 			}
 		},
+		afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
+			var loadedSlide = $(this);
+
+			// proteínas
+			if (anchorLink == 'proteinas' && slideIndex == 0) {
+				$('.btn-izq-1').addClass('active');
+				$('.btn-mano-1').removeClass('active');
+				$('.btn-der-1').removeClass('active');
+			}
+
+			if (anchorLink == 'proteinas' && slideIndex == 1) {
+				$('.btn-izq-1').removeClass('active');
+				$('.btn-mano-1').addClass('active');
+				$('.btn-der-1').removeClass('active');
+			}
+
+			if (anchorLink == 'proteinas' && slideIndex == 2) {
+				$('.btn-izq-1').removeClass('active');
+				$('.btn-mano-1').removeClass('active');
+				$('.btn-der-1').addClass('active');
+			}
+
+			// frutas
+			if (anchorLink == 'frutas' && slideIndex == 0) {
+				$('.btn-izq-1').addClass('active');
+				$('.btn-mano-1').removeClass('active');
+				$('.btn-der-1').removeClass('active');
+			}
+
+			if (anchorLink == 'frutas' && slideIndex == 1) {
+				$('.btn-izq-1').removeClass('active');
+				$('.btn-mano-1').addClass('active');
+				$('.btn-der-1').removeClass('active');
+			}
+
+			if (anchorLink == 'frutas' && slideIndex == 2) {
+				$('.btn-izq-1').removeClass('active');
+				$('.btn-mano-1').removeClass('active');
+				$('.btn-der-1').addClass('active');
+			}
+
+			// grasas
+			if (anchorLink == 'grasas' && slideIndex == 0) {
+				$('.btn-izq-1').addClass('active');
+				$('.btn-mano-1').removeClass('active');
+				$('.btn-der-1').removeClass('active');
+			}
+
+			if (anchorLink == 'grasas' && slideIndex == 1) {
+				$('.btn-izq-1').removeClass('active');
+				$('.btn-mano-1').addClass('active');
+				$('.btn-der-1').removeClass('active');
+			}
+
+			if (anchorLink == 'grasas' && slideIndex == 2) {
+				$('.btn-izq-1').removeClass('active');
+				$('.btn-mano-1').removeClass('active');
+				$('.btn-der-1').addClass('active');
+			}
+
+			// carbohidratos
+			if (anchorLink == 'carbohidratos' && slideIndex == 0) {
+				$('.btn-izq-1').addClass('active');
+				$('.btn-mano-1').removeClass('active');
+				$('.btn-der-1').removeClass('active');
+			}
+
+			if (anchorLink == 'carbohidratos' && slideIndex == 1) {
+				$('.btn-izq-1').removeClass('active');
+				$('.btn-mano-1').addClass('active');
+				$('.btn-der-1').removeClass('active');
+			}
+
+			if (anchorLink == 'carbohidratos' && slideIndex == 2) {
+				$('.btn-izq-1').removeClass('active');
+				$('.btn-mano-1').removeClass('active');
+				$('.btn-der-1').addClass('active');
+			}
+
+			// calcio
+			if (anchorLink == 'calcio' && slideIndex == 0) {
+				$('.btn-izq-1').addClass('active');
+				$('.btn-mano-1').removeClass('active');
+				$('.btn-der-1').removeClass('active');
+			}
+
+			if (anchorLink == 'calcio' && slideIndex == 1) {
+				$('.btn-izq-1').removeClass('active');
+				$('.btn-mano-1').addClass('active');
+				$('.btn-der-1').removeClass('active');
+			}
+
+			if (anchorLink == 'calcio' && slideIndex == 2) {
+				$('.btn-izq-1').removeClass('active');
+				$('.btn-mano-1').removeClass('active');
+				$('.btn-der-1').addClass('active');
+			}
+
+			// dulce
+			if (anchorLink == 'dulce' && slideIndex == 0) {
+				$('.btn-izq-1').addClass('active');
+				$('.btn-mano-1').removeClass('active');
+				$('.btn-der-1').removeClass('active');
+			}
+
+			if (anchorLink == 'dulce' && slideIndex == 1) {
+				$('.btn-izq-1').removeClass('active');
+				$('.btn-mano-1').addClass('active');
+				$('.btn-der-1').removeClass('active');
+			}
+
+			if (anchorLink == 'dulce' && slideIndex == 2) {
+				$('.btn-izq-1').removeClass('active');
+				$('.btn-mano-1').removeClass('active');
+				$('.btn-der-1').addClass('active');
+			}
+
+			// hidratación
+			if (anchorLink == 'hidratacion' && slideIndex == 0) {
+				$('.btn-izq-1').addClass('active');
+				$('.btn-mano-1').removeClass('active');
+				$('.btn-der-1').removeClass('active');
+			}
+
+			if (anchorLink == 'hidratacion' && slideIndex == 1) {
+				$('.btn-izq-1').removeClass('active');
+				$('.btn-mano-1').addClass('active');
+				$('.btn-der-1').removeClass('active');
+			}
+
+			if (anchorLink == 'hidratacion' && slideIndex == 2) {
+				$('.btn-izq-1').removeClass('active');
+				$('.btn-mano-1').removeClass('active');
+				$('.btn-der-1').addClass('active');
+			}
+
+			// vegetales
+			if (anchorLink == 'vegetales' && slideIndex == 0) {
+				$('.btn-izq-1').addClass('active');
+				$('.btn-mano-1').removeClass('active');
+				$('.btn-der-1').removeClass('active');
+			}
+
+			if (anchorLink == 'vegetales' && slideIndex == 1) {
+				$('.btn-izq-1').removeClass('active');
+				$('.btn-mano-1').addClass('active');
+				$('.btn-der-1').removeClass('active');
+			}
+
+			if (anchorLink == 'vegetales' && slideIndex == 2) {
+				$('.btn-izq-1').removeClass('active');
+				$('.btn-mano-1').removeClass('active');
+				$('.btn-der-1').addClass('active');
+			}
+		},
 		onSlideLeave: function( anchorLink, index, slideIndex, direction, nextSlideIndex){
 			var leavingSlide = $(this);
 	
