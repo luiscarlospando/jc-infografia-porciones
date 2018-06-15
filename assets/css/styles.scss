@@ -500,6 +500,14 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
             font-weight: 600;
         }
     }
+
+    .mensaje-teclado {
+        transition: all ease 0.3s;
+    }
+
+    .mensaje-teclado-oculto {
+        opacity: 0;
+    }
     
     // .fp-slidesNav-custom.bottom {
     //     bottom: 17px;

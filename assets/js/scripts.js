@@ -44,6 +44,10 @@ $(document).ready(function() {
 			if( !( (index == 1) || (index == 2) || (index == 3) ) ) {
 				$('.navbar').addClass('d-flex');
 				$('footer').show();
+
+				setTimeout(function () {
+					$('.mensaje-teclado').addClass('mensaje-teclado-oculto');
+				}, 3000);
 			} else {
 				$('.navbar').removeClass('d-flex');
 				$('footer').hide();
