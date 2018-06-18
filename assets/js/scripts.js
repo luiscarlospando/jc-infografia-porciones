@@ -34,7 +34,7 @@ $(document).ready(function() {
 				}, 3000);
 			}
 			else if (index == 2 && direction == 'up') {
-				alert("Regresaste al inicio");
+				
 			}
 		},
 		afterLoad: function(anchorLink, index){
