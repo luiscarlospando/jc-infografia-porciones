@@ -48,6 +48,10 @@ $(document).ready(function() {
 				setTimeout(function () {
 					$('.mensaje-teclado').addClass('mensaje-teclado-oculto');
 				}, 3000);
+
+				setTimeout(function () {
+					$('.mensaje-teclado-contenedor').addClass('d-none');
+				}, 3500);
 			} else {
 				$('.navbar').removeClass('d-flex');
 				$('footer').hide();
