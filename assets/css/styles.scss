@@ -230,6 +230,15 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
 }
 
 #intro-id {
+    #cerrar-instrucciones {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        z-index: 2;
+        font-size: 1.5rem;
+        color: $cerrarInstrucciones;
+    }
+
     h1 {
         font-size: 1.5rem;
     }
