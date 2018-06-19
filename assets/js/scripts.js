@@ -80,6 +80,20 @@ $(document).ready(function() {
 					$('#btn-siguiente-2').addClass('animated fadeInRight');
 				}, 1500);
 			}
+			// instrucciones (slide 3)
+			if (anchorLink == 'instrucciones' && slideIndex == 2) {
+				$('#titulo-instrucciones-3').addClass('animated fadeInUp');
+
+				setTimeout(function () {
+					$('#texto-instrucciones-3').addClass('animated fadeInUp');
+				}, 500);
+
+				setTimeout(function () {
+					$('#cerrar-instrucciones').addClass('animated fadeIn');
+					$('#btn-anterior-3').addClass('animated fadeInLeft');
+					$('#btn-siguiente-3').addClass('animated fadeInRight');
+				}, 1000);
+			}
 
 			// proteínas
 			if (anchorLink == 'proteinas' && slideIndex == 0) {
