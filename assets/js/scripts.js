@@ -17,26 +17,6 @@ $(document).ready(function() {
 		controlArrows: false,
 		keyboardScrolling: true,
 		loopHorizontal: false,
-		onLeave: function (index, nextIndex, direction) {
-			var leavingSection = $(this);
-
-			// animaciones 
-			// instrucciones
-			if (index == 1 && nextIndex == 2) {
-				$('#titulo-instrucciones-1').addClass('animated fadeInUpBig');
-
-				setTimeout(function () {
-					$('#img-instrucciones-1').addClass('animated fadeIn');
-				}, 2000);
-
-				setTimeout(function () {
-					$('#texto-instrucciones-1').addClass('animated fadeInUpBig');
-				}, 3000);
-			}
-			else if (index == 2 && direction == 'up') {
-				
-			}
-		},
 		afterLoad: function(anchorLink, index){
 			var loadedSection = $(this);
 	
@@ -59,6 +39,47 @@ $(document).ready(function() {
 		},
 		afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
 			var loadedSlide = $(this);
+
+			// animaciones 
+			// instrucciones (slide 1)
+			if (anchorLink == 'instrucciones' && slideIndex == 0) {
+				$('#titulo-instrucciones-1').addClass('animated fadeInUp');
+
+				$('#img-instrucciones-1').addClass('animated fadeIn');
+
+				setTimeout(function () {
+					$('#btn-anterior-1').addClass('animated fadeInLeft');
+					$('#btn-siguiente-1').addClass('animated fadeInRight');
+					$('#texto-instrucciones-1').addClass('animated fadeInDown');
+				}, 1000);
+
+				setTimeout(function () {
+					$('#cerrar-instrucciones').addClass('animated fadeIn');
+				}, 2000);
+			}
+			// instrucciones (slide 2)
+			if (anchorLink == 'instrucciones' && slideIndex == 1) {
+				$('#titulo-instrucciones-2').addClass('animated fadeInUp');
+
+				setTimeout(function () {
+					$('#texto-instrucciones-2-1-a').addClass('animated fadeInDown');
+					$('#texto-instrucciones-2-1-b').addClass('animated fadeInDown');
+				}, 500);
+
+				setTimeout(function () {
+					$('#texto-instrucciones-2-2').addClass('animated fadeInUp');
+				}, 1000);
+
+				setTimeout(function () {
+					$('#texto-instrucciones-2-3').addClass('animated fadeInDown');
+				}, 1500);
+
+				setTimeout(function () {
+					$('#cerrar-instrucciones').addClass('animated fadeIn');
+					$('#btn-anterior-2').addClass('animated fadeInLeft');
+					$('#btn-siguiente-2').addClass('animated fadeInRight');
+				}, 1500);
+			}
 
 			// proteínas
 			if (anchorLink == 'proteinas' && slideIndex == 0) {
