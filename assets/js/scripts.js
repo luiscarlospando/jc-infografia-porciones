@@ -32,7 +32,7 @@ $(document).ready(function() {
 		afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
 			var loadedSlide = $(this);
 
-			// animaciones 
+			/// inicio de animaciones ///
 			// instrucciones (slide 1)
 			if (anchorLink == 'instrucciones' && slideIndex == 0) {
 				$('#titulo-instrucciones-1').addClass('animated fadeInUp');
@@ -86,6 +86,48 @@ $(document).ready(function() {
 					$('#btn-siguiente-3').addClass('animated fadeInRight');
 				}, 1000);
 			}
+
+			// menú
+			if (anchorLink == 'menu') {
+				$('#titulo-menu').addClass('animated fadeInUp');
+
+				setTimeout(function () {
+					$('#elemento-menu-1').addClass('animated jackInTheBox');
+				}, 500);
+
+				setTimeout(function () {
+					$('#elemento-menu-2').addClass('animated jackInTheBox');
+				}, 700);
+
+				setTimeout(function () {
+					$('#elemento-menu-3').addClass('animated jackInTheBox');
+				}, 1000);
+
+				setTimeout(function () {
+					$('#elemento-menu-4').addClass('animated jackInTheBox');
+				}, 1300);
+
+				setTimeout(function () {
+					$('#elemento-menu-5').addClass('animated jackInTheBox');
+				}, 1600);
+
+				setTimeout(function () {
+					$('#elemento-menu-6').addClass('animated jackInTheBox');
+				}, 1900);
+
+				setTimeout(function () {
+					$('#elemento-menu-7').addClass('animated jackInTheBox');
+				}, 2200);
+
+				setTimeout(function () {
+					$('#elemento-menu-8').addClass('animated jackInTheBox');
+				}, 2500);
+
+				setTimeout(function () {
+					$('#conoce-mas-menu').addClass('animated fadeInUp');
+				}, 2800);
+			}
+			/// fin de animaciones ///
 
 			// proteínas
 			if (anchorLink == 'proteinas') {

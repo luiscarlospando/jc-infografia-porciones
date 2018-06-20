@@ -341,6 +341,19 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
     .btn-primary {
         background-color: $menuBtn;
     }
+
+    #titulo-menu,
+    #elemento-menu-1,
+    #elemento-menu-2,
+    #elemento-menu-3,
+    #elemento-menu-4,
+    #elemento-menu-5,
+    #elemento-menu-6,
+    #elemento-menu-7,
+    #elemento-menu-8,
+    #conoce-mas-menu {
+        opacity: 0;
+    }
 }
 
 .section {
