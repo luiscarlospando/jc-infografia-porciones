@@ -24,14 +24,6 @@ $(document).ready(function() {
 			if( !( (index == 1) || (index == 2) || (index == 3) ) ) {
 				$('.navbar').addClass('d-flex');
 				$('footer').show();
-
-				setTimeout(function () {
-					$('.mensaje-teclado').addClass('mensaje-teclado-oculto');
-				}, 3000);
-
-				setTimeout(function () {
-					$('.mensaje-teclado-contenedor').addClass('d-none');
-				}, 3500);
 			} else {
 				$('.navbar').removeClass('d-flex');
 				$('footer').hide();
@@ -96,6 +88,16 @@ $(document).ready(function() {
 			}
 
 			// proteínas
+			if (anchorLink == 'proteinas') {
+				setTimeout(function () {
+					$('.mensaje-teclado').addClass('mensaje-teclado-oculto');
+				}, 3000);
+
+				setTimeout(function () {
+					$('.mensaje-teclado-contenedor').addClass('d-none');
+				}, 3500);
+			}
+
 			if (anchorLink == 'proteinas' && slideIndex == 0) {
 				$('.btn-izq-1').addClass('active');
 				$('.btn-mano-1').removeClass('active');
@@ -115,6 +117,16 @@ $(document).ready(function() {
 			}
 
 			// frutas
+			if (anchorLink == 'frutas') {
+				setTimeout(function () {
+					$('.mensaje-teclado').addClass('mensaje-teclado-oculto');
+				}, 3000);
+
+				setTimeout(function () {
+					$('.mensaje-teclado-contenedor').addClass('d-none');
+				}, 3500);
+			}
+			
 			if (anchorLink == 'frutas' && slideIndex == 0) {
 				$('.btn-izq-1').addClass('active');
 				$('.btn-mano-1').removeClass('active');
@@ -134,6 +146,16 @@ $(document).ready(function() {
 			}
 
 			// grasas
+			if (anchorLink == 'grasas') {
+				setTimeout(function () {
+					$('.mensaje-teclado').addClass('mensaje-teclado-oculto');
+				}, 3000);
+
+				setTimeout(function () {
+					$('.mensaje-teclado-contenedor').addClass('d-none');
+				}, 3500);
+			}
+
 			if (anchorLink == 'grasas' && slideIndex == 0) {
 				$('.btn-izq-1').addClass('active');
 				$('.btn-mano-1').removeClass('active');
@@ -153,6 +175,16 @@ $(document).ready(function() {
 			}
 
 			// carbohidratos
+			if (anchorLink == 'carbohidratos') {
+				setTimeout(function () {
+					$('.mensaje-teclado').addClass('mensaje-teclado-oculto');
+				}, 3000);
+
+				setTimeout(function () {
+					$('.mensaje-teclado-contenedor').addClass('d-none');
+				}, 3500);
+			}
+
 			if (anchorLink == 'carbohidratos' && slideIndex == 0) {
 				$('.btn-izq-1').addClass('active');
 				$('.btn-mano-1').removeClass('active');
@@ -172,6 +204,16 @@ $(document).ready(function() {
 			}
 
 			// calcio
+			if (anchorLink == 'calcio') {
+				setTimeout(function () {
+					$('.mensaje-teclado').addClass('mensaje-teclado-oculto');
+				}, 3000);
+
+				setTimeout(function () {
+					$('.mensaje-teclado-contenedor').addClass('d-none');
+				}, 3500);
+			}
+
 			if (anchorLink == 'calcio' && slideIndex == 0) {
 				$('.btn-izq-1').addClass('active');
 				$('.btn-mano-1').removeClass('active');
@@ -191,6 +233,16 @@ $(document).ready(function() {
 			}
 
 			// dulce
+			if (anchorLink == 'dulce') {
+				setTimeout(function () {
+					$('.mensaje-teclado').addClass('mensaje-teclado-oculto');
+				}, 3000);
+
+				setTimeout(function () {
+					$('.mensaje-teclado-contenedor').addClass('d-none');
+				}, 3500);
+			}
+
 			if (anchorLink == 'dulce' && slideIndex == 0) {
 				$('.btn-izq-1').addClass('active');
 				$('.btn-mano-1').removeClass('active');
@@ -210,6 +262,16 @@ $(document).ready(function() {
 			}
 
 			// hidratación
+			if (anchorLink == 'hidratacion') {
+				setTimeout(function () {
+					$('.mensaje-teclado').addClass('mensaje-teclado-oculto');
+				}, 3000);
+
+				setTimeout(function () {
+					$('.mensaje-teclado-contenedor').addClass('d-none');
+				}, 3500);
+			}
+
 			if (anchorLink == 'hidratacion' && slideIndex == 0) {
 				$('.btn-izq-1').addClass('active');
 				$('.btn-mano-1').removeClass('active');
@@ -229,6 +291,16 @@ $(document).ready(function() {
 			}
 
 			// vegetales
+			if (anchorLink == 'vegetales') {
+				setTimeout(function () {
+					$('.mensaje-teclado').addClass('mensaje-teclado-oculto');
+				}, 3000);
+
+				setTimeout(function () {
+					$('.mensaje-teclado-contenedor').addClass('d-none');
+				}, 3500);
+			}
+
 			if (anchorLink == 'vegetales' && slideIndex == 0) {
 				$('.btn-izq-1').addClass('active');
 				$('.btn-mano-1').removeClass('active');
