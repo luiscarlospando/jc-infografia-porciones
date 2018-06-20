@@ -223,7 +223,8 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
 }
 
 #intro-id,
-#menu-id {
+#menu-id,
+#learn-more {
     width: 100%;
     float: left;
     padding-top: 0 !important;
@@ -354,6 +355,10 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
     #conoce-mas-menu {
         opacity: 0;
     }
+}
+
+#learn-more {
+    
 }
 
 .section {
