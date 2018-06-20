@@ -320,7 +320,10 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
 }
 
 #menu-id {
-    h1,
+    h1 {
+        text-transform: uppercase;
+    }
+
     a {
         text-transform: uppercase;
         font-weight: 600;
