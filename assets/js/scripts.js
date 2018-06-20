@@ -21,13 +21,17 @@ $(document).ready(function() {
 			var loadedSection = $(this);
 	
 			// mostramos navbar y footer en secciones donde son necesarios
-			if( !( (index == 1) || (index == 2) || (index == 3) ) ) {
+			if (! ( (index == 1) || (index == 2) || (index == 3) ) ) {
 				$('.navbar').addClass('d-flex');
 				$('footer').show();
 			} else {
 				$('.navbar').removeClass('d-flex');
 				$('footer').hide();
 			}
+
+			if (index == 12) {
+				$('footer').hide();
+			} 
 		},
 		afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
 			var loadedSlide = $(this);
@@ -73,19 +77,19 @@ $(document).ready(function() {
 				}, 1500);
 			}
 			// instrucciones (slide 3)
-			if (anchorLink == 'instrucciones' && slideIndex == 2) {
-				$('#titulo-instrucciones-3').addClass('animated fadeInUp');
+			// if (anchorLink == 'instrucciones' && slideIndex == 2) {
+			// 	$('#titulo-instrucciones-3').addClass('animated fadeInUp');
 
-				setTimeout(function () {
-					$('#texto-instrucciones-3').addClass('animated fadeInUp');
-				}, 500);
+			// 	setTimeout(function () {
+			// 		$('#texto-instrucciones-3').addClass('animated fadeInUp');
+			// 	}, 500);
 
-				setTimeout(function () {
-					$('#cerrar-instrucciones').addClass('animated fadeIn');
-					$('#btn-anterior-3').addClass('animated fadeInLeft');
-					$('#btn-siguiente-3').addClass('animated fadeInRight');
-				}, 1000);
-			}
+			// 	setTimeout(function () {
+			// 		$('#cerrar-instrucciones').addClass('animated fadeIn');
+			// 		$('#btn-anterior-3').addClass('animated fadeInLeft');
+			// 		$('#btn-siguiente-3').addClass('animated fadeInRight');
+			// 	}, 1000);
+			// }
 
 			// menú
 			if (anchorLink == 'menu') {
@@ -127,6 +131,8 @@ $(document).ready(function() {
 					$('#conoce-mas-menu').addClass('animated fadeInUp');
 				}, 2800);
 			}
+
+
 			/// fin de animaciones ///
 
 			// proteínas
