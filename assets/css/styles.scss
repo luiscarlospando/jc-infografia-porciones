@@ -369,6 +369,11 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
         font-size: 1.2rem;
     }
 
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+
     #titulo-juntos-contamos {
         font-style: italic;
         text-transform: none;
@@ -396,7 +401,7 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
     }
 
     #logo-jc-cm {
-        max-width: 100%;
+        // max-width: 100%;
     }
 
     #trademark {
