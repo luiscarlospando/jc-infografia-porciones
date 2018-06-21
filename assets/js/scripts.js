@@ -132,7 +132,33 @@ $(document).ready(function() {
 				}, 2800);
 			}
 
+			if (anchorLink == 'proteinas') {
+				$('.buttons-container').addClass('animated fadeInDown');
+				$('.titulo-que-son-mobile').addClass('animated fadeInDown');
+				$('.titulo-porciones-mobile').addClass('animated fadeInDown');
+				$('.titulo-recomendaciones').addClass('animated fadeInDown');
+				$('.img-porciones-1').addClass('animated fadeInDown');
+				$('.img-porciones-2').addClass('animated fadeInDown');
+				$('.info-que-son').addClass('animated fadeInUp');
+				$('.info-porciones').addClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').addClass('animated fadeInUp');
 
+				setTimeout(function () {
+					$('.elemento-recomendaciones-1').addClass('animated fadeInLeft');
+				}, 500);
+
+				setTimeout(function () {
+					$('.elemento-recomendaciones-2').addClass('animated fadeInRight');
+				}, 700);
+
+				setTimeout(function () {
+					$('.elemento-recomendaciones-3').addClass('animated fadeInLeft');
+				}, 1000);
+
+				setTimeout(function () {
+					$('.elemento-recomendaciones-4').addClass('animated fadeInRight');
+				}, 1300);
+			}
 			/// fin de animaciones ///
 
 			// proteínas
