@@ -357,7 +357,50 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
 }
 
 #learn-more {
-    padding-top: 50px !important;
+    padding-top: 26px !important;
+
+    h2 {
+        text-transform: uppercase;
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-weight: 800;
+        font-size: 1.2rem;
+    }
+
+    #titulo-juntos-contamos {
+        font-style: italic;
+        text-transform: none;
+    }
+
+    a,
+    a:active,
+    a:hover,
+    a:focus,
+    a:visited {
+        color: $linkColor;
+        text-decoration: none;
+    }
+
+    .info {
+        margin: 0;
+    }
+
+    .btn-primary {
+        background-color: $conoceMasBtn;
+        width: 100%;
+        float: left;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    #trademark {
+        position: relative;
+        top: -8px;
+        left: -3px;
+        font-size: 60%;
+    }
 }
 
 .section {
