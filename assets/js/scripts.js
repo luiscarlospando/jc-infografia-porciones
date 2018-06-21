@@ -132,15 +132,26 @@ $(document).ready(function() {
 				}, 2800);
 			}
 
-			if (anchorLink == 'proteinas') {
+			// proteínas (slide 1)
+			if ( (anchorLink == 'proteinas' && slideIndex == 0) ) {
 				$('.buttons-container').addClass('animated fadeInDown');
 				$('.titulo-que-son-mobile').addClass('animated fadeInDown');
-				$('.titulo-porciones-mobile').addClass('animated fadeInDown');
-				$('.titulo-recomendaciones').addClass('animated fadeInDown');
-				$('.img-porciones-1').addClass('animated fadeInDown');
-				$('.img-porciones-2').addClass('animated fadeInDown');
+				$('.img-que-son').addClass('animated fadeInDown');
 				$('.info-que-son').addClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').addClass('animated fadeInUp');
+			}
+			// proteínas (slide 2)
+			if ((anchorLink == 'proteinas' && slideIndex == 1)) {
+				$('.buttons-container').addClass('animated fadeInDown');
+				$('.titulo-porciones-mobile').addClass('animated fadeInDown');
+				$('.img-porciones').addClass('animated fadeInDown');
 				$('.info-porciones').addClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').addClass('animated fadeInUp');
+			}
+			// proteínas (slide 3)
+			if ((anchorLink == 'proteinas' && slideIndex == 2)) {
+				$('.buttons-container').addClass('animated fadeInDown');
+				$('.titulo-recomendaciones').addClass('animated fadeInDown');
 				$('.mensaje-teclado-contenedor').addClass('animated fadeInUp');
 
 				setTimeout(function () {
