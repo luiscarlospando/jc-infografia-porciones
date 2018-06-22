@@ -665,6 +665,13 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
         text-transform: uppercase;
         font-weight: 600;
     }
+
+    .animacion {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 4;
+    }
 }
 
 #pagina-1 {
