@@ -936,24 +936,3 @@ $('#fullpage').on('scroll', function () {
 $(function () {
 	$('[data-toggle="tooltip"]').tooltip();
 });
-
-// svgs
-// var svg1 = new Vivus('svg-1', {
-// 		type: 'oneByOne',
-// 		duration: 150,
-// 		start: 'inViewport'
-// 	},
-// 	function (obj) {
-// 		obj.el.classList.add('finished');
-// 	}
-// );
-
-// var svg2 = new Vivus('svg-2', {
-// 	type: 'oneByOne',
-// 	duration: 150,
-// 	start: 'inViewport'
-// 	},
-// 	function (obj) {
-// 		obj.el.classList.add('finished');
-// 	}
-// );  

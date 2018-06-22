@@ -671,7 +671,11 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
         position: absolute;
         top: 0;
         left: 0;
+        right: 0;
         z-index: 4;
+        max-width: 443px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
