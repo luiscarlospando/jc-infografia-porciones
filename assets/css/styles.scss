@@ -759,6 +759,18 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
     }
 }
 
+#pagina-8 {
+    background-color: $vegetalesPrimario;
+
+    .punto {
+        color: $vegetalesPrimario;
+    }
+
+    .dropdown-toggle {
+        background-color: $vegetalesSecundario;
+    }
+}
+
 footer {
     position: fixed;
     left: 0;
