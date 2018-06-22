@@ -227,6 +227,10 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
     width: 100%;
     float: left;
     padding-top: 0 !important;
+
+    .punto {
+        color: #fff;
+    }
 }
 
 #intro-id {
@@ -287,10 +291,6 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
         background-color: rgba(240, 240, 240, 0.9);
         bottom: 0px;
         padding: 10px 0 4px;
-    }
-
-    .punto {
-        color: #fff;
     }
 
     .slide-2 {
@@ -357,7 +357,7 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
 }
 
 #learn-more {
-    padding-top: 26px !important;
+    padding-top: 48px !important;
 
     h2 {
         text-transform: uppercase;
@@ -372,9 +372,16 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
     img {
         display: block;
         margin: 0 auto;
+        max-width: 50%;
     }
 
-    #titulo-juntos-contamos {
+    hr {
+        border-top: 1px solid $separadorConoceMas !important;
+        background-color: transparent;
+    }
+
+    #titulo-juntos-contamos-mobile,
+    #titulo-juntos-contamos-desktop {
         font-style: italic;
         text-transform: none;
     }
@@ -401,7 +408,7 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
     }
 
     #logo-jc-cm {
-        // max-width: 100%;
+        max-width: 50%;
     }
 
     #trademark {
