@@ -100,25 +100,6 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
     display: none;
 }
 
-/* Estilos del los beans de los slides  */
-/* Activo */
-// .fp-slidesNav ul li a.active span,
-// .fp-slidesNav ul li:hover a.active span {
-    // height: 14px;
-    // width: 14px;
-    // margin: -6px 0 0 -4px;
-// }
-
-/* No activo */
-// #fp-nav ul li a span,
-// .fp-slidesNav ul li a span {
-//     background-color: transparent;
-//     border: 2px solid $slidesBeans;
-//     width: 12px;
-//     height: 12px;
-//     margin: -6px 0 0 -6px;
-// }
-
 #portada {
     width: 100% !important;
     float: left;
@@ -506,9 +487,48 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
         width: 100%;
         float: left;
 
-        .dropdown-item {
-            color: #212529;
-            text-decoration: none;
+        .dropdown-menu {
+            background-color: transparent;
+            border: none;
+            top: -10px !important;
+
+            .dropdown-item {
+                color: #fff;
+                text-decoration: none;
+                border-radius: 1rem;
+            }
+
+            .prot-dd {
+                background-color: $proteinasSecundario;
+            }
+
+            .cal-dd {
+                background-color: $calcioSecundario;
+            }
+
+            .frut-dd {
+                background-color: $frutasSecundario;
+            }
+
+            .veg-dd {
+                background-color: $vegetalesSecundario;
+            }
+
+            .gras-dd {
+                background-color: $grasasSecundario;
+            }
+
+            .carb-dd {
+                background-color: $carbohidratosSecundario;
+            }
+
+            .dul-dd {
+                background-color: $dulceSecundario;
+            }
+
+            .hid-dd {
+                background-color: $hidratacionSecundario;
+            }
         }
     }
 
