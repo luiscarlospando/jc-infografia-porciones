@@ -63,11 +63,11 @@ $(document).ready(function() {
 				}, 500);
 
 				setTimeout(function () {
-					$('#texto-instrucciones-2-2').addClass('animated fadeInUp');
+					$('#texto-instrucciones-2-3').addClass('animated fadeInDown');
 				}, 1000);
 
 				setTimeout(function () {
-					$('#texto-instrucciones-2-3').addClass('animated fadeInDown');
+					$('#texto-instrucciones-2-2').addClass('animated fadeInUp');
 				}, 1500);
 
 				setTimeout(function () {
