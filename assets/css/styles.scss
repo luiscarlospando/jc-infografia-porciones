@@ -64,7 +64,7 @@ h3 {
 .btn-primary:not(:disabled):not(.disabled).active,
 .btn-primary:not(:disabled):not(.disabled):active,
 .show>.btn-primary.dropdown-toggle {
-    color: #3f3d3f;
+    color: #fff;
     border: none;
 }
 
@@ -612,6 +612,7 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
     .fp-slidesNav-custom:after {
         position: absolute;
         left: 50%;
+        top: 50%;
         content: "";
         width: 58%;
         height: 4px;
