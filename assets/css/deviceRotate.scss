@@ -13,14 +13,21 @@
         }
     }
 
-    body > *,
-    .navbar {
+    body > * {
         display: none;
+    }
+
+    .navbar,
+    footer {
+        display: none !important;
     }
 }
 
 // iPad Normal
-@media only screen and (device-width: 1024px) and (orientation:landscape) {
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
     body {
         position: relative;
         display: flex;
@@ -35,9 +42,13 @@
         }
     }
 
-    body > *,
-    .navbar {
+    body > * {
         display: none;
+    }
+
+    .navbar,
+    footer {
+        display: none !important;
     }
 }
 
@@ -57,8 +68,12 @@
         }
     }
 
-    body > *,
-    .navbar {
+    body > * {
         display: none;
+    }
+
+    .navbar,
+    footer {
+        display: none !important;
     }
 }
