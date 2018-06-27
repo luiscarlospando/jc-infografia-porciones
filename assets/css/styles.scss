@@ -488,46 +488,55 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
         float: left;
 
         .dropdown-menu {
-            background-color: transparent;
+            background-color: white;
             border: none;
-            top: -10px !important;
+            top: -2px !important;
+            width: 100%;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 0;
 
             .dropdown-item {
                 color: #fff;
                 text-decoration: none;
-                border-radius: 1rem;
+                font-weight: 600;
+                border-bottom: 1px solid rgba(0,0,0,.1);
+            }
+
+            .dropdown-item:last-child {
+                border-bottom: none;
             }
 
             .prot-dd {
-                background-color: $proteinasSecundario;
+                color: $proteinasSecundario;
             }
 
             .cal-dd {
-                background-color: $calcioSecundario;
+                color: $calcioSecundario;
             }
 
             .frut-dd {
-                background-color: $frutasSecundario;
+                color: $frutasSecundario;
             }
 
             .veg-dd {
-                background-color: $vegetalesSecundario;
+                color: $vegetalesSecundario;
             }
 
             .gras-dd {
-                background-color: $grasasSecundario;
+                color: $grasasSecundario;
             }
 
             .carb-dd {
-                background-color: $carbohidratosSecundario;
+                color: $carbohidratosSecundario;
             }
 
             .dul-dd {
-                background-color: $dulceSecundario;
+                color: $dulceSecundario;
             }
 
             .hid-dd {
-                background-color: $hidratacionSecundario;
+                color: $hidratacionSecundario;
             }
         }
     }

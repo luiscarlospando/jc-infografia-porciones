@@ -51,29 +51,3 @@ and (orientation : landscape) {
         display: none !important;
     }
 }
-
-// iPad Pro
-@media only screen and (device-width: 1366px) and (orientation:landscape) {
-    body {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .msge {
-            display: block;
-            color: #000;
-            position: relative;
-            z-index: 9999;
-        }
-    }
-
-    body > * {
-        display: none;
-    }
-
-    .navbar,
-    footer {
-        display: none !important;
-    }
-}
