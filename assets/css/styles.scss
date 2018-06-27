@@ -488,7 +488,7 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
         float: left;
 
         .dropdown-menu {
-            background-color: white;
+            background-color: #fff;
             border: none;
             top: -2px !important;
             width: 100%;
@@ -503,6 +503,11 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
                 border-bottom: 1px solid rgba(0,0,0,.1);
             }
 
+            .dropdown-item:hover,
+            .dropdown-item:focus {
+                color: #fff;
+            }
+
             .dropdown-item:last-child {
                 border-bottom: none;
             }
@@ -511,32 +516,72 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
                 color: $proteinasSecundario;
             }
 
+            .prot-dd:hover,
+            .prot-dd:focus {
+                background-color: $proteinasSecundario;
+            }
+
             .cal-dd {
                 color: $calcioSecundario;
+            }
+
+            .cal-dd:hover,
+            .cal-dd:focus {
+                background-color: $calcioSecundario;
             }
 
             .frut-dd {
                 color: $frutasSecundario;
             }
 
+            .frut-dd:hover,
+            .frut-dd:focus {
+                background-color: $frutasSecundario;
+            }
+
             .veg-dd {
                 color: $vegetalesSecundario;
+            }
+
+            .veg-dd:hover,
+            .veg-dd:focus {
+                background-color: $vegetalesSecundario;
             }
 
             .gras-dd {
                 color: $grasasSecundario;
             }
 
+            .gras-dd:hover,
+            .gras-dd:focus {
+                background-color: $grasasSecundario;
+            }
+
             .carb-dd {
                 color: $carbohidratosSecundario;
+            }
+
+            .carb-dd:hover,
+            .carb-dd:focus {
+                background-color: $carbohidratosSecundario;
             }
 
             .dul-dd {
                 color: $dulceSecundario;
             }
 
+            .dul-dd:hover,
+            .dul-dd:focus {
+                background-color: $dulceSecundario;
+            }
+
             .hid-dd {
                 color: $hidratacionSecundario;
+            }
+
+            .hid-dd:hover,
+            .hid-dd:focus {
+                background-color: $hidratacionSecundario;
             }
         }
     }

@@ -76,20 +76,6 @@ $(document).ready(function() {
 					$('#btn-siguiente-2').addClass('animated fadeInRight');
 				}, 1500);
 			}
-			// instrucciones (slide 3)
-			// if (anchorLink == 'instrucciones' && slideIndex == 2) {
-			// 	$('#titulo-instrucciones-3').addClass('animated fadeInUp');
-
-			// 	setTimeout(function () {
-			// 		$('#texto-instrucciones-3').addClass('animated fadeInUp');
-			// 	}, 500);
-
-			// 	setTimeout(function () {
-			// 		$('#cerrar-instrucciones').addClass('animated fadeIn');
-			// 		$('#btn-anterior-3').addClass('animated fadeInLeft');
-			// 		$('#btn-siguiente-3').addClass('animated fadeInRight');
-			// 	}, 1000);
-			// }
 
 			// menú
 			if (anchorLink == 'menu') {
@@ -132,24 +118,24 @@ $(document).ready(function() {
 				}, 2800);
 			}
 
-			// proteínas (slide 1)
-			if ( (anchorLink == 'proteinas' && slideIndex == 0) ) {
+			// animaciones (slide 1)
+			if (((anchorLink == 'proteinas' || anchorLink == 'calcio' || anchorLink == 'frutas' || anchorLink == 'vegetales' || anchorLink == 'grasas' || anchorLink == 'carbohidratos' || anchorLink == 'dulce' || anchorLink == 'hidratacion') && slideIndex == 0)) {
 				$('.buttons-container').addClass('animated fadeInDown');
 				$('.titulo-que-son-mobile').addClass('animated fadeInDown');
 				$('.img-que-son').addClass('animated fadeInDown');
 				$('.info-que-son').addClass('animated fadeInUp');
 				$('.mensaje-teclado-contenedor').addClass('animated fadeInUp');
 			}
-			// proteínas (slide 2)
-			if ((anchorLink == 'proteinas' && slideIndex == 1)) {
+			// animaciones (slide 2)
+			if (((anchorLink == 'proteinas' || anchorLink == 'calcio' || anchorLink == 'frutas' || anchorLink == 'vegetales' || anchorLink == 'grasas' || anchorLink == 'carbohidratos' || anchorLink == 'dulce' || anchorLink == 'hidratacion') && slideIndex == 1)) {
 				$('.buttons-container').addClass('animated fadeInDown');
 				$('.titulo-porciones-mobile').addClass('animated fadeInDown');
 				$('.img-porciones').addClass('animated fadeInDown');
 				$('.info-porciones').addClass('animated fadeInUp');
 				$('.mensaje-teclado-contenedor').addClass('animated fadeInUp');
 			}
-			// proteínas (slide 3)
-			if ((anchorLink == 'proteinas' && slideIndex == 2)) {
+			// animaciones (slide 3)
+			if (((anchorLink == 'proteinas' || anchorLink == 'calcio' || anchorLink == 'frutas' || anchorLink == 'vegetales' || anchorLink == 'grasas' || anchorLink == 'carbohidratos' || anchorLink == 'dulce' || anchorLink == 'hidratacion') && slideIndex == 2)) {
 				$('.buttons-container').addClass('animated fadeInDown');
 				$('.titulo-recomendaciones').addClass('animated fadeInDown');
 				$('.mensaje-teclado-contenedor').addClass('animated fadeInUp');
@@ -402,6 +388,124 @@ $(document).ready(function() {
 				$('.btn-izq-1').removeClass('active');
 				$('.btn-mano-1').removeClass('active');
 				$('.btn-der-1').addClass('active');
+			}
+		},
+		onLeave: function (index, nextIndex, direction) {
+			var leavingSection = $(this);
+
+			// resetamos clases al visitar cada sección para que animaciones se vuelvan a reproducir
+			if ((index == 4 && nextIndex == 5) || (index == 4 && nextIndex == 6) || (index == 4 && nextIndex == 7) || (index == 4 && nextIndex == 8) || (index == 4 && nextIndex == 9) || (index == 4 && nextIndex == 10) || (index == 4 && nextIndex == 11)) {
+				$('.buttons-container').removeClass('animated fadeInDown');
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
+			} else if ((index == 5 && nextIndex == 4) || (index == 5 && nextIndex == 6) || (index == 5 && nextIndex == 7) || (index == 5 && nextIndex == 8) || (index == 5 && nextIndex == 9) || (index == 5 && nextIndex == 10) || (index == 5 && nextIndex == 11)) {
+				$('.buttons-container').removeClass('animated fadeInDown');
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
+			} else if ((index == 6 && nextIndex == 4) || (index == 6 && nextIndex == 5) || (index == 6 && nextIndex == 7) || (index == 6 && nextIndex == 8) || (index == 6 && nextIndex == 9) || (index == 6 && nextIndex == 10) || (index == 6 && nextIndex == 11)) {
+				$('.buttons-container').removeClass('animated fadeInDown');
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
+			} else if ((index == 7 && nextIndex == 4) || (index == 7 && nextIndex == 5) || (index == 7 && nextIndex == 6) || (index == 7 && nextIndex == 8) || (index == 7 && nextIndex == 9) || (index == 7 && nextIndex == 10) || (index == 7 && nextIndex == 11)) {
+				$('.buttons-container').removeClass('animated fadeInDown');
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
+			} else if ((index == 8 && nextIndex == 4) || (index == 8 && nextIndex == 5) || (index == 8 && nextIndex == 6) || (index == 8 && nextIndex == 7) || (index == 8 && nextIndex == 9) || (index == 8 && nextIndex == 10) || (index == 8 && nextIndex == 11)) {
+				$('.buttons-container').removeClass('animated fadeInDown');
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
+			} else if ((index == 9 && nextIndex == 4) || (index == 9 && nextIndex == 5) || (index == 9 && nextIndex == 6) || (index == 9 && nextIndex == 7) || (index == 9 && nextIndex == 8) || (index == 9 && nextIndex == 10) || (index == 9 && nextIndex == 11)) {
+				$('.buttons-container').removeClass('animated fadeInDown');
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
+			} else if ((index == 10 && nextIndex == 4) || (index == 10 && nextIndex == 5) || (index == 10 && nextIndex == 6) || (index == 10 && nextIndex == 7) || (index == 10 && nextIndex == 8) || (index == 10 && nextIndex == 9) || (index == 10 && nextIndex == 11)) {
+				$('.buttons-container').removeClass('animated fadeInDown');
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
+			} else if ((index == 11 && nextIndex == 4) || (index == 11 && nextIndex == 5) || (index == 11 && nextIndex == 6) || (index == 11 && nextIndex ==7) || (index == 11 && nextIndex == 8) || (index == 11 && nextIndex == 9) || (index == 11 && nextIndex == 10)) {
+				$('.buttons-container').removeClass('animated fadeInDown');
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
 			}
 		},
 		onSlideLeave: function( anchorLink, index, slideIndex, direction, nextSlideIndex){
