@@ -21,7 +21,7 @@ $(document).ready(function() {
 			var loadedSection = $(this);
 	
 			// mostramos navbar y footer en secciones donde son necesarios
-			if (! ( (index == 1) || (index == 2) || (index == 3) ) ) {
+			if (!((index == 1) || (index == 2) || (index == 3))) {
 				$('.navbar').addClass('d-flex');
 				$('footer').show();
 			} else {
@@ -29,6 +29,16 @@ $(document).ready(function() {
 				$('footer').hide();
 			}
 
+			// hack que soluciona la falta de animación de elementos al usar beans y flechas del teclado
+			if ((index == 4) || (index == 5) || (index == 6) || (index == 7) || (index == 8) || (index == 9) || (index == 10) || (index == 11)) {
+				$('.buttons-container').addClass('animated fadeInDown');
+				$('.titulo-que-son-mobile').addClass('animated fadeInDown');
+				$('.img-que-son').addClass('animated fadeInDown');
+				$('.info-que-son').addClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').addClass('animated fadeInUp');
+			}
+
+			// ocultamos el footer de la última página
 			if (index == 12) {
 				$('footer').hide();
 			} 
