@@ -445,203 +445,651 @@ $(document).ready(function() {
 			var vegetalesIndex = 11;
 			
 			// proteínas
-			if(index == proteinasIndex && slideIndex == 0 && direction == 'right'){
+			if(index == proteinasIndex && slideIndex == 0 && nextSlideIndex == 1){
 				$('.btn-izq-1').removeClass('active');
 				$('.btn-mano-1').addClass('active');
 				$('.btn-der-1').removeClass('active');
+
+				// reanimación de elementos
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
 			}
 
-			if(index == proteinasIndex && slideIndex == 1 && direction == 'left'){
+			if (index == proteinasIndex && slideIndex == 1 && nextSlideIndex == 0){
 				$('.btn-izq-1').addClass('active');
 				$('.btn-mano-1').removeClass('active');
 				$('.btn-der-1').removeClass('active');
+
+				// reanimación de elementos
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
 			}
 
-			if(index == proteinasIndex && slideIndex == 1 && direction == 'right'){
+			if (index == proteinasIndex && slideIndex == 1 && nextSlideIndex == 2){
 				$('.btn-izq-1').removeClass('active');
 				$('.btn-mano-1').removeClass('active');
 				$('.btn-der-1').addClass('active');
+
+				// reanimación de elementos
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
 			}
 
-			if(index == proteinasIndex && slideIndex == 2 && direction == 'left'){
+			if (index == proteinasIndex && slideIndex == 2 && nextSlideIndex == 1){
 				$('.btn-izq-1').removeClass('active');
 				$('.btn-mano-1').addClass('active');
 				$('.btn-der-1').removeClass('active');
+
+				// reanimación de elementos
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
 			}
 
 			// frutas
-			if(index == frutasIndex && slideIndex == 0 && direction == 'right'){
+			if (index == frutasIndex && slideIndex == 0 && nextSlideIndex == 1){
 				$('.btn-izq-2').removeClass('active');
 				$('.btn-mano-2').addClass('active');
 				$('.btn-der-2').removeClass('active');
+
+				// reanimación de elementos
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
 			}
 
-			if(index == frutasIndex && slideIndex == 1 && direction == 'left'){
+			if (index == frutasIndex && slideIndex == 1 && nextSlideIndex == 0){
 				$('.btn-izq-2').addClass('active');
 				$('.btn-mano-2').removeClass('active');
 				$('.btn-der-2').removeClass('active');
+
+				// reanimación de elementos
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
 			}
 
-			if(index == frutasIndex && slideIndex == 1 && direction == 'right'){
+			if (index == frutasIndex && slideIndex == 1 && nextSlideIndex == 2){
 				$('.btn-izq-2').removeClass('active');
 				$('.btn-mano-2').removeClass('active');
 				$('.btn-der-2').addClass('active');
+
+				// reanimación de elementos
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
 			}
 
-			if(index == frutasIndex && slideIndex == 2 && direction == 'left'){
+			if (index == frutasIndex && slideIndex == 2 && nextSlideIndex == 1){
 				$('.btn-izq-2').removeClass('active');
 				$('.btn-mano-2').addClass('active');
 				$('.btn-der-2').removeClass('active');
+
+				// reanimación de elementos
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
 			}
 
 			// grasas
-			if(index == grasasIndex && slideIndex == 0 && direction == 'right'){
+			if (index == grasasIndex && slideIndex == 0 && nextSlideIndex == 1){
 				$('.btn-izq-3').removeClass('active');
 				$('.btn-mano-3').addClass('active');
 				$('.btn-der-3').removeClass('active');
+
+				// reanimación de elementos
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
 			}
 
-			if(index == grasasIndex && slideIndex == 1 && direction == 'left'){
+			if (index == grasasIndex && slideIndex == 1 && nextSlideIndex == 0){
 				$('.btn-izq-3').addClass('active');
 				$('.btn-mano-3').removeClass('active');
 				$('.btn-der-3').removeClass('active');
+
+				// reanimación de elementos
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
 			}
 
-			if(index == grasasIndex && slideIndex == 1 && direction == 'right'){
+			if (index == grasasIndex && slideIndex == 1 && nextSlideIndex == 2){
 				$('.btn-izq-3').removeClass('active');
 				$('.btn-mano-3').removeClass('active');
 				$('.btn-der-3').addClass('active');
+
+				// reanimación de elementos
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
 			}
 
-			if(index == grasasIndex && slideIndex == 2 && direction == 'left'){
+			if (index == grasasIndex && slideIndex == 2 && nextSlideIndex == 1){
 				$('.btn-izq-3').removeClass('active');
 				$('.btn-mano-3').addClass('active');
 				$('.btn-der-3').removeClass('active');
+
+				// reanimación de elementos
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
 			}
 
 			// carbohidratos
-			if(index == carbohidratosIndex && slideIndex == 0 && direction == 'right'){
+			if (index == carbohidratosIndex && slideIndex == 0 && nextSlideIndex == 1){
 				$('.btn-izq-4').removeClass('active');
 				$('.btn-mano-4').addClass('active');
 				$('.btn-der-4').removeClass('active');
+
+				// reanimación de elementos
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
 			}
 
-			if(index == carbohidratosIndex && slideIndex == 1 && direction == 'left'){
+			if (index == carbohidratosIndex && slideIndex == 1 && nextSlideIndex == 0){
 				$('.btn-izq-4').addClass('active');
 				$('.btn-mano-4').removeClass('active');
 				$('.btn-der-4').removeClass('active');
+
+				// reanimación de elementos
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
 			}
 
-			if(index == carbohidratosIndex && slideIndex == 1 && direction == 'right'){
+			if (index == carbohidratosIndex && slideIndex == 1 && nextSlideIndex == 2){
 				$('.btn-izq-4').removeClass('active');
 				$('.btn-mano-4').removeClass('active');
 				$('.btn-der-4').addClass('active');
+
+				// reanimación de elementos
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
 			}
 
-			if(index == carbohidratosIndex && slideIndex == 2 && direction == 'left'){
+			if (index == carbohidratosIndex && slideIndex == 2 && nextSlideIndex == 1){
 				$('.btn-izq-4').removeClass('active');
 				$('.btn-mano-4').addClass('active');
 				$('.btn-der-4').removeClass('active');
+
+				// reanimación de elementos
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
 			}
 
 			// calcio
-			if(index == calcioIndex && slideIndex == 0 && direction == 'right'){
+			if (index == calcioIndex && slideIndex == 0 && nextSlideIndex == 1){
 				$('.btn-izq-5').removeClass('active');
 				$('.btn-mano-5').addClass('active');
 				$('.btn-der-5').removeClass('active');
+
+				// reanimación de elementos
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
 			}
 
-			if(index == calcioIndex && slideIndex == 1 && direction == 'left'){
+			if (index == calcioIndex && slideIndex == 1 && nextSlideIndex == 0){
 				$('.btn-izq-5').addClass('active');
 				$('.btn-mano-5').removeClass('active');
 				$('.btn-der-5').removeClass('active');
+
+				// reanimación de elementos
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
 			}
 
-			if(index == calcioIndex && slideIndex == 1 && direction == 'right'){
+			if (index == calcioIndex && slideIndex == 1 && nextSlideIndex == 2){
 				$('.btn-izq-5').removeClass('active');
 				$('.btn-mano-5').removeClass('active');
 				$('.btn-der-5').addClass('active');
+
+				// reanimación de elementos
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
 			}
 
-			if(index == calcioIndex && slideIndex == 2 && direction == 'left'){
+			if (index == calcioIndex && slideIndex == 2 && nextSlideIndex == 1){
 				$('.btn-izq-5').removeClass('active');
 				$('.btn-mano-5').addClass('active');
 				$('.btn-der-5').removeClass('active');
+
+				// reanimación de elementos
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
 			}
 
 			// dulce
-			if(index == dulceIndex && slideIndex == 0 && direction == 'right'){
+			if (index == dulceIndex && slideIndex == 0 && nextSlideIndex == 1){
 				$('.btn-izq-6').removeClass('active');
 				$('.btn-mano-6').addClass('active');
 				$('.btn-der-6').removeClass('active');
+
+				// reanimación de elementos
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
 			}
 
-			if(index == dulceIndex && slideIndex == 1 && direction == 'left'){
+			if (index == dulceIndex && slideIndex == 1 && nextSlideIndex == 0){
 				$('.btn-izq-6').addClass('active');
 				$('.btn-mano-6').removeClass('active');
 				$('.btn-der-6').removeClass('active');
+
+				// reanimación de elementos
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
 			}
 
-			if(index == dulceIndex && slideIndex == 1 && direction == 'right'){
+			if (index == dulceIndex && slideIndex == 1 && nextSlideIndex == 2){
 				$('.btn-izq-6').removeClass('active');
 				$('.btn-mano-6').removeClass('active');
 				$('.btn-der-6').addClass('active');
+
+				// reanimación de elementos
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
 			}
 
-			if(index == dulceIndex && slideIndex == 2 && direction == 'left'){
+			if (index == dulceIndex && slideIndex == 2 && nextSlideIndex == 1){
 				$('.btn-izq-6').removeClass('active');
 				$('.btn-mano-6').addClass('active');
 				$('.btn-der-6').removeClass('active');
+
+				// reanimación de elementos
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
 			}
 
 			// hidratación
-			if(index == hidratacionIndex && slideIndex == 0 && direction == 'right'){
+			if (index == hidratacionIndex && slideIndex == 0 && nextSlideIndex == 1){
 				$('.btn-izq-7').removeClass('active');
 				$('.btn-mano-7').addClass('active');
 				$('.btn-der-7').removeClass('active');
+
+				// reanimación de elementos
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
 			}
 
-			if(index == hidratacionIndex && slideIndex == 1 && direction == 'left'){
+			if (index == hidratacionIndex && slideIndex == 1 && nextSlideIndex == 0){
 				$('.btn-izq-7').addClass('active');
 				$('.btn-mano-7').removeClass('active');
 				$('.btn-der-7').removeClass('active');
+
+				// reanimación de elementos
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
 			}
 
-			if(index == hidratacionIndex && slideIndex == 1 && direction == 'right'){
+			if (index == hidratacionIndex && slideIndex == 1 && nextSlideIndex == 2){
 				$('.btn-izq-7').removeClass('active');
 				$('.btn-mano-7').removeClass('active');
 				$('.btn-der-7').addClass('active');
+
+				// reanimación de elementos
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
 			}
 
-			if(index == hidratacionIndex && slideIndex == 2 && direction == 'left'){
+			if (index == hidratacionIndex && slideIndex == 2 && nextSlideIndex == 1){
 				$('.btn-izq-7').removeClass('active');
 				$('.btn-mano-7').addClass('active');
 				$('.btn-der-7').removeClass('active');
+
+				// reanimación de elementos
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
 			}
 
 			// vegetales
-			if(index == vegetalesIndex && slideIndex == 0 && direction == 'right'){
+			if (index == vegetalesIndex && slideIndex == 0 && nextSlideIndex == 1){
 				$('.btn-izq-8').removeClass('active');
 				$('.btn-mano-8').addClass('active');
 				$('.btn-der-8').removeClass('active');
+
+				// reanimación de elementos
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
 			}
 
-			if(index == vegetalesIndex && slideIndex == 1 && direction == 'left'){
+			if (index == vegetalesIndex && slideIndex == 1 && nextSlideIndex == 0){
 				$('.btn-izq-8').addClass('active');
 				$('.btn-mano-8').removeClass('active');
 				$('.btn-der-8').removeClass('active');
+
+				// reanimación de elementos
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
 			}
 
-			if(index == vegetalesIndex && slideIndex == 1 && direction == 'right'){
+			if (index == vegetalesIndex && slideIndex == 1 && nextSlideIndex == 2){
 				$('.btn-izq-8').removeClass('active');
 				$('.btn-mano-8').removeClass('active');
 				$('.btn-der-8').addClass('active');
+
+				// reanimación de elementos
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
 			}
 
-			if(index == vegetalesIndex && slideIndex == 2 && direction == 'left'){
+			if (index == vegetalesIndex && slideIndex == 2 && nextSlideIndex == 1){
 				$('.btn-izq-8').removeClass('active');
 				$('.btn-mano-8').addClass('active');
 				$('.btn-der-8').removeClass('active');
+
+				// reanimación de elementos
+				$('.titulo-que-son-mobile').removeClass('animated fadeInDown');
+				$('.img-que-son').removeClass('animated fadeInDown');
+				$('.info-que-son').removeClass('animated fadeInUp');
+				$('.mensaje-teclado-contenedor').removeClass('animated fadeInUp');
+				$('.titulo-porciones-mobile').removeClass('animated fadeInDown');
+				$('.img-porciones').removeClass('animated fadeInDown');
+				$('.info-porciones').removeClass('animated fadeInUp');
+				$('.titulo-recomendaciones').removeClass('animated fadeInDown');
+				$('.elemento-recomendaciones-1').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').removeClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').removeClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
 			}
 		}
 	});
