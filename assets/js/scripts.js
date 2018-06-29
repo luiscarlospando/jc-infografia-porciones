@@ -36,6 +36,17 @@ $(document).ready(function() {
 				$('.img-que-son').addClass('animated fadeInDown');
 				$('.info-que-son').addClass('animated fadeInUp');
 				$('.mensaje-teclado-contenedor').addClass('animated fadeInUp');
+
+				$('.titulo-porciones-mobile').addClass('animated fadeInDown');
+				$('.img-porciones').addClass('animated fadeInDown');
+				$('.info-porciones').addClass('animated fadeInUp');
+
+				$('.titulo-recomendaciones').addClass('animated fadeInDown');
+
+				$('.elemento-recomendaciones-1').addClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-2').addClass('animated fadeInRight');
+				$('.elemento-recomendaciones-3').addClass('animated fadeInLeft');
+				$('.elemento-recomendaciones-4').addClass('animated fadeInRight');
 			}
 
 			// ocultamos el footer de la última página
@@ -209,21 +220,21 @@ $(document).ready(function() {
 			}
 			
 			if (anchorLink == 'frutas' && slideIndex == 0) {
-				$('.btn-izq-1').addClass('active');
-				$('.btn-mano-1').removeClass('active');
-				$('.btn-der-1').removeClass('active');
+				$('.btn-izq-2').addClass('active');
+				$('.btn-mano-2').removeClass('active');
+				$('.btn-der-2').removeClass('active');
 			}
 
 			if (anchorLink == 'frutas' && slideIndex == 1) {
-				$('.btn-izq-1').removeClass('active');
-				$('.btn-mano-1').addClass('active');
-				$('.btn-der-1').removeClass('active');
+				$('.btn-izq-2').removeClass('active');
+				$('.btn-mano-2').addClass('active');
+				$('.btn-der-2').removeClass('active');
 			}
 
 			if (anchorLink == 'frutas' && slideIndex == 2) {
-				$('.btn-izq-1').removeClass('active');
-				$('.btn-mano-1').removeClass('active');
-				$('.btn-der-1').addClass('active');
+				$('.btn-izq-2').removeClass('active');
+				$('.btn-mano-2').removeClass('active');
+				$('.btn-der-2').addClass('active');
 			}
 
 			// grasas
@@ -238,21 +249,21 @@ $(document).ready(function() {
 			}
 
 			if (anchorLink == 'grasas' && slideIndex == 0) {
-				$('.btn-izq-1').addClass('active');
-				$('.btn-mano-1').removeClass('active');
-				$('.btn-der-1').removeClass('active');
+				$('.btn-izq-3').addClass('active');
+				$('.btn-mano-3').removeClass('active');
+				$('.btn-der-3').removeClass('active');
 			}
 
 			if (anchorLink == 'grasas' && slideIndex == 1) {
-				$('.btn-izq-1').removeClass('active');
-				$('.btn-mano-1').addClass('active');
-				$('.btn-der-1').removeClass('active');
+				$('.btn-izq-3').removeClass('active');
+				$('.btn-mano-3').addClass('active');
+				$('.btn-der-3').removeClass('active');
 			}
 
 			if (anchorLink == 'grasas' && slideIndex == 2) {
-				$('.btn-izq-1').removeClass('active');
-				$('.btn-mano-1').removeClass('active');
-				$('.btn-der-1').addClass('active');
+				$('.btn-izq-3').removeClass('active');
+				$('.btn-mano-3').removeClass('active');
+				$('.btn-der-3').addClass('active');
 			}
 
 			// carbohidratos
@@ -267,21 +278,21 @@ $(document).ready(function() {
 			}
 
 			if (anchorLink == 'carbohidratos' && slideIndex == 0) {
-				$('.btn-izq-1').addClass('active');
-				$('.btn-mano-1').removeClass('active');
-				$('.btn-der-1').removeClass('active');
+				$('.btn-izq-4').addClass('active');
+				$('.btn-mano-4').removeClass('active');
+				$('.btn-der-4').removeClass('active');
 			}
 
 			if (anchorLink == 'carbohidratos' && slideIndex == 1) {
-				$('.btn-izq-1').removeClass('active');
-				$('.btn-mano-1').addClass('active');
-				$('.btn-der-1').removeClass('active');
+				$('.btn-izq-4').removeClass('active');
+				$('.btn-mano-4').addClass('active');
+				$('.btn-der-4').removeClass('active');
 			}
 
 			if (anchorLink == 'carbohidratos' && slideIndex == 2) {
-				$('.btn-izq-1').removeClass('active');
-				$('.btn-mano-1').removeClass('active');
-				$('.btn-der-1').addClass('active');
+				$('.btn-izq-4').removeClass('active');
+				$('.btn-mano-4').removeClass('active');
+				$('.btn-der-4').addClass('active');
 			}
 
 			// calcio
@@ -296,21 +307,21 @@ $(document).ready(function() {
 			}
 
 			if (anchorLink == 'calcio' && slideIndex == 0) {
-				$('.btn-izq-1').addClass('active');
-				$('.btn-mano-1').removeClass('active');
-				$('.btn-der-1').removeClass('active');
+				$('.btn-izq-5').addClass('active');
+				$('.btn-mano-5').removeClass('active');
+				$('.btn-der-5').removeClass('active');
 			}
 
 			if (anchorLink == 'calcio' && slideIndex == 1) {
-				$('.btn-izq-1').removeClass('active');
-				$('.btn-mano-1').addClass('active');
-				$('.btn-der-1').removeClass('active');
+				$('.btn-izq-5').removeClass('active');
+				$('.btn-mano-5').addClass('active');
+				$('.btn-der-5').removeClass('active');
 			}
 
 			if (anchorLink == 'calcio' && slideIndex == 2) {
-				$('.btn-izq-1').removeClass('active');
-				$('.btn-mano-1').removeClass('active');
-				$('.btn-der-1').addClass('active');
+				$('.btn-izq-5').removeClass('active');
+				$('.btn-mano-5').removeClass('active');
+				$('.btn-der-5').addClass('active');
 			}
 
 			// dulce
@@ -325,21 +336,21 @@ $(document).ready(function() {
 			}
 
 			if (anchorLink == 'dulce' && slideIndex == 0) {
-				$('.btn-izq-1').addClass('active');
-				$('.btn-mano-1').removeClass('active');
-				$('.btn-der-1').removeClass('active');
+				$('.btn-izq-6').addClass('active');
+				$('.btn-mano-6').removeClass('active');
+				$('.btn-der-6').removeClass('active');
 			}
 
 			if (anchorLink == 'dulce' && slideIndex == 1) {
-				$('.btn-izq-1').removeClass('active');
-				$('.btn-mano-1').addClass('active');
-				$('.btn-der-1').removeClass('active');
+				$('.btn-izq-6').removeClass('active');
+				$('.btn-mano-6').addClass('active');
+				$('.btn-der-6').removeClass('active');
 			}
 
 			if (anchorLink == 'dulce' && slideIndex == 2) {
-				$('.btn-izq-1').removeClass('active');
-				$('.btn-mano-1').removeClass('active');
-				$('.btn-der-1').addClass('active');
+				$('.btn-izq-6').removeClass('active');
+				$('.btn-mano-6').removeClass('active');
+				$('.btn-der-6').addClass('active');
 			}
 
 			// hidratación
@@ -354,21 +365,21 @@ $(document).ready(function() {
 			}
 
 			if (anchorLink == 'hidratacion' && slideIndex == 0) {
-				$('.btn-izq-1').addClass('active');
-				$('.btn-mano-1').removeClass('active');
-				$('.btn-der-1').removeClass('active');
+				$('.btn-izq-7').addClass('active');
+				$('.btn-mano-7').removeClass('active');
+				$('.btn-der-7').removeClass('active');
 			}
 
 			if (anchorLink == 'hidratacion' && slideIndex == 1) {
-				$('.btn-izq-1').removeClass('active');
-				$('.btn-mano-1').addClass('active');
-				$('.btn-der-1').removeClass('active');
+				$('.btn-izq-7').removeClass('active');
+				$('.btn-mano-7').addClass('active');
+				$('.btn-der-7').removeClass('active');
 			}
 
 			if (anchorLink == 'hidratacion' && slideIndex == 2) {
-				$('.btn-izq-1').removeClass('active');
-				$('.btn-mano-1').removeClass('active');
-				$('.btn-der-1').addClass('active');
+				$('.btn-izq-7').removeClass('active');
+				$('.btn-mano-7').removeClass('active');
+				$('.btn-der-7').addClass('active');
 			}
 
 			// vegetales
@@ -383,21 +394,21 @@ $(document).ready(function() {
 			}
 
 			if (anchorLink == 'vegetales' && slideIndex == 0) {
-				$('.btn-izq-1').addClass('active');
-				$('.btn-mano-1').removeClass('active');
-				$('.btn-der-1').removeClass('active');
+				$('.btn-izq-8').addClass('active');
+				$('.btn-mano-8').removeClass('active');
+				$('.btn-der-8').removeClass('active');
 			}
 
 			if (anchorLink == 'vegetales' && slideIndex == 1) {
-				$('.btn-izq-1').removeClass('active');
-				$('.btn-mano-1').addClass('active');
-				$('.btn-der-1').removeClass('active');
+				$('.btn-izq-8').removeClass('active');
+				$('.btn-mano-8').addClass('active');
+				$('.btn-der-8').removeClass('active');
 			}
 
 			if (anchorLink == 'vegetales' && slideIndex == 2) {
-				$('.btn-izq-1').removeClass('active');
-				$('.btn-mano-1').removeClass('active');
-				$('.btn-der-1').addClass('active');
+				$('.btn-izq-8').removeClass('active');
+				$('.btn-mano-8').removeClass('active');
+				$('.btn-der-8').addClass('active');
 			}
 		},
 		onLeave: function (index, nextIndex, direction) {
