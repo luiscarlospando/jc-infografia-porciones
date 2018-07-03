@@ -180,7 +180,7 @@ $(document).ready(function() {
 			/// fin de animaciones ///
 
 			// proteínas
-			if (anchorLink == 'proteinas') {
+			if (anchorLink == 'proteinas' || anchorLink == 'calcio' || anchorLink == 'frutas' || anchorLink == 'vegetales' || anchorLink == 'grasas' || anchorLink == 'carbohidratos' || anchorLink == 'dulce' || anchorLink == 'hidratacion') {
 				setTimeout(function () {
 					$('.mensaje-teclado').addClass('mensaje-teclado-oculto');
 				}, 3000);
@@ -209,16 +209,6 @@ $(document).ready(function() {
 			}
 
 			// frutas
-			if (anchorLink == 'frutas') {
-				setTimeout(function () {
-					$('.mensaje-teclado').addClass('mensaje-teclado-oculto');
-				}, 3000);
-
-				setTimeout(function () {
-					$('.mensaje-teclado-contenedor').addClass('d-none');
-				}, 3500);
-			}
-			
 			if (anchorLink == 'frutas' && slideIndex == 0) {
 				$('.btn-izq-2').addClass('active');
 				$('.btn-mano-2').removeClass('active');
@@ -238,16 +228,6 @@ $(document).ready(function() {
 			}
 
 			// grasas
-			if (anchorLink == 'grasas') {
-				setTimeout(function () {
-					$('.mensaje-teclado').addClass('mensaje-teclado-oculto');
-				}, 3000);
-
-				setTimeout(function () {
-					$('.mensaje-teclado-contenedor').addClass('d-none');
-				}, 3500);
-			}
-
 			if (anchorLink == 'grasas' && slideIndex == 0) {
 				$('.btn-izq-3').addClass('active');
 				$('.btn-mano-3').removeClass('active');
@@ -267,16 +247,6 @@ $(document).ready(function() {
 			}
 
 			// carbohidratos
-			if (anchorLink == 'carbohidratos') {
-				setTimeout(function () {
-					$('.mensaje-teclado').addClass('mensaje-teclado-oculto');
-				}, 3000);
-
-				setTimeout(function () {
-					$('.mensaje-teclado-contenedor').addClass('d-none');
-				}, 3500);
-			}
-
 			if (anchorLink == 'carbohidratos' && slideIndex == 0) {
 				$('.btn-izq-4').addClass('active');
 				$('.btn-mano-4').removeClass('active');
@@ -296,16 +266,6 @@ $(document).ready(function() {
 			}
 
 			// calcio
-			if (anchorLink == 'calcio') {
-				setTimeout(function () {
-					$('.mensaje-teclado').addClass('mensaje-teclado-oculto');
-				}, 3000);
-
-				setTimeout(function () {
-					$('.mensaje-teclado-contenedor').addClass('d-none');
-				}, 3500);
-			}
-
 			if (anchorLink == 'calcio' && slideIndex == 0) {
 				$('.btn-izq-5').addClass('active');
 				$('.btn-mano-5').removeClass('active');
@@ -325,16 +285,6 @@ $(document).ready(function() {
 			}
 
 			// dulce
-			if (anchorLink == 'dulce') {
-				setTimeout(function () {
-					$('.mensaje-teclado').addClass('mensaje-teclado-oculto');
-				}, 3000);
-
-				setTimeout(function () {
-					$('.mensaje-teclado-contenedor').addClass('d-none');
-				}, 3500);
-			}
-
 			if (anchorLink == 'dulce' && slideIndex == 0) {
 				$('.btn-izq-6').addClass('active');
 				$('.btn-mano-6').removeClass('active');
@@ -354,16 +304,6 @@ $(document).ready(function() {
 			}
 
 			// hidratación
-			if (anchorLink == 'hidratacion') {
-				setTimeout(function () {
-					$('.mensaje-teclado').addClass('mensaje-teclado-oculto');
-				}, 3000);
-
-				setTimeout(function () {
-					$('.mensaje-teclado-contenedor').addClass('d-none');
-				}, 3500);
-			}
-
 			if (anchorLink == 'hidratacion' && slideIndex == 0) {
 				$('.btn-izq-7').addClass('active');
 				$('.btn-mano-7').removeClass('active');
@@ -383,16 +323,6 @@ $(document).ready(function() {
 			}
 
 			// vegetales
-			if (anchorLink == 'vegetales') {
-				setTimeout(function () {
-					$('.mensaje-teclado').addClass('mensaje-teclado-oculto');
-				}, 3000);
-
-				setTimeout(function () {
-					$('.mensaje-teclado-contenedor').addClass('d-none');
-				}, 3500);
-			}
-
 			if (anchorLink == 'vegetales' && slideIndex == 0) {
 				$('.btn-izq-8').addClass('active');
 				$('.btn-mano-8').removeClass('active');
@@ -436,13 +366,13 @@ $(document).ready(function() {
 	
 			// agregamos/quitamos clase active cuando se dezliza slide (touch)
 			var proteinasIndex = 4;
-			var frutasIndex = 5;
-			var grasasIndex = 6;
-			var carbohidratosIndex = 7;
-			var calcioIndex = 8;
-			var dulceIndex = 9;
-			var hidratacionIndex = 10;
-			var vegetalesIndex = 11;
+			var frutasIndex = 6;
+			var grasasIndex = 8;
+			var carbohidratosIndex = 9;
+			var calcioIndex = 5;
+			var dulceIndex = 10;
+			var hidratacionIndex = 11;
+			var vegetalesIndex = 7;
 			
 			// proteínas
 			if(index == proteinasIndex && slideIndex == 0 && nextSlideIndex == 1){
@@ -1099,54 +1029,15 @@ $(document).ready(function() {
 	$.fn.fullpage.setAllowScrolling(false);
 
 	// animaciones de la portada
-	// var index = 0;
-	// var total = $(".media").length;
-
-	// $(".animar").click(function () {
-	// 	$(".media").eq(index).addClass("current animated fadeInDown");
-	// 	index = (index + 1) % total;
-	// });
-
-	// animación de alimentos del intro
-	// setTimeout(function () {
-	// 	$('#queso').show().addClass('animated fadeInDown');
-	// }, 1500);
-
-	// setTimeout(function () {
-	// 	$('#miel').show().addClass('animated fadeInDown');
-	// }, 2000);
-
-	// setTimeout(function () {
-	// 	$('#banana').show().addClass('animated fadeInDown');
-	// }, 2500);
-
-	// setTimeout(function () {
-	// 	$('#pan').show().addClass('animated fadeInDown');
-	// }, 3000);
-
-	// setTimeout(function () {
-	// 	$('#brocoli').show().addClass('animated fadeInDown');
-	// }, 3500);
-
-	// setTimeout(function () {
-	// 	$('#pescado').show().addClass('animated fadeInDown');
-	// }, 4000);
-
 	setTimeout(function () {
 		$('#mano').show().addClass('animated fadeIn');
 	}, 800);
 
 	setTimeout(function () {
-		$('#circulo').show().addClass('animated fadeIn');
-	}, 2000);
-
-	setTimeout(function () {
-		$('#btn-comenzar').show().addClass('animated fadeIn');
-	}, 2800);
-
-	setTimeout(function () {
-		$('#btn-saltar').show().addClass('animated fadeIn');
-	}, 3300);
+		$('#circulo').show().addClass('animated rollIn');
+		$('#btn-comenzar').show().addClass('animated fadeInDown');
+		$('#btn-saltar').show().addClass('animated fadeInUp');
+	}, 1000);
 });
 
 // reseteamos estado de los botones de navegación entre slides al usar menú de navegación principal
