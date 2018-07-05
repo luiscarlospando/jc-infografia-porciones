@@ -915,6 +915,39 @@ footer {
     }
 }
 
+/* iPhone 5 */
+@media only screen 
+  and (max-device-width: 320px)
+  and (orientation: portrait) {
+    #intro-id {
+        .btn-primary {
+            font-size: 0.8rem;
+        }
+    }
+
+    .media {
+        .media-body {
+            h5 {
+                font-size: 1.1rem !important;
+            }
+
+            p {
+                font-size: 0.8rem !important;
+            }
+        }
+    }
+
+    .list-inline {
+        margin-bottom: 0;
+        
+        .list-inline-item {
+            img {
+                width: 32px !important;
+            }
+        }
+    }
+}
+
 @import "deviceRotate";
 @import "tablet";
 @import "desktop";
