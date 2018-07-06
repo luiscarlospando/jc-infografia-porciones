@@ -572,12 +572,12 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
             }
 
             .dul-dd {
-                color: $dulceSecundario;
+                color: $endulzantesSecundario;
             }
 
             .dul-dd:hover,
             .dul-dd:focus {
-                background-color: $dulceSecundario;
+                background-color: $endulzantesSecundario;
             }
 
             .hid-dd {
@@ -828,14 +828,14 @@ body.fp-viewing-conoce-mas-0 #fp-nav {
 }
 
 #pagina-6 {
-    background-color: $dulcePrimario;
+    background-color: $endulzantesPrimario;
 
     .punto {
-        color: $dulcePrimario;
+        color: $endulzantesPrimario;
     }
 
     .dropdown-toggle {
-        background-color: $dulceSecundario;
+        background-color: $endulzantesSecundario;
     }
 }
 
@@ -956,3 +956,4 @@ footer {
 @import "tablet";
 @import "desktop";
 @import "desktop-xl";
+@import "desktop-xxl";

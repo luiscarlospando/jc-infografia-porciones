@@ -8,8 +8,8 @@ $(document).ready(function() {
 		autoScrolling: false, // scrolleo de un toque activado
 		dragAndMove: false, // permitimos scrolleo con dedos solamente (desactivado)
 		recordHistory: false,
-		anchors: ['inicio', 'instrucciones', 'menu', 'proteinas', 'calcio', 'frutas', 'vegetales', 'grasas', 'carbohidratos', 'dulce', 'hidratacion', 'conoce-mas'],
-		navigationTooltips: ['', '', '', 'Proteínas', 'Calcio', 'Frutas', 'Vegetales', 'Grasas', 'Carbohidratos', 'Dulce', 'Hidratación'],
+		anchors: ['inicio', 'instrucciones', 'menu', 'proteinas', 'calcio', 'frutas', 'vegetales', 'grasas', 'carbohidratos', 'endulzantes', 'hidratacion', 'conoce-mas'],
+		navigationTooltips: ['', '', '', 'Proteínas', 'Calcio', 'Frutas', 'Vegetales', 'Grasas', 'Carbohidratos', 'Endulzantes', 'Hidratación'],
 		animateAnchor: true,
 		paddingTop: '130px',
 		// paddingBottom: '80px',
@@ -140,7 +140,7 @@ $(document).ready(function() {
 			}
 
 			// animaciones (slide 1)
-			if (((anchorLink == 'proteinas' || anchorLink == 'calcio' || anchorLink == 'frutas' || anchorLink == 'vegetales' || anchorLink == 'grasas' || anchorLink == 'carbohidratos' || anchorLink == 'dulce' || anchorLink == 'hidratacion') && slideIndex == 0)) {
+			if (((anchorLink == 'proteinas' || anchorLink == 'calcio' || anchorLink == 'frutas' || anchorLink == 'vegetales' || anchorLink == 'grasas' || anchorLink == 'carbohidratos' || anchorLink == 'endulzantes' || anchorLink == 'hidratacion') && slideIndex == 0)) {
 				$('.buttons-container').addClass('animated fadeInDown');
 				$('.titulo-que-son-mobile').addClass('animated fadeInDown');
 				$('.img-que-son').addClass('animated fadeInDown');
@@ -148,7 +148,7 @@ $(document).ready(function() {
 				$('.mensaje-teclado-contenedor').addClass('animated fadeInUp');
 			}
 			// animaciones (slide 2)
-			if (((anchorLink == 'proteinas' || anchorLink == 'calcio' || anchorLink == 'frutas' || anchorLink == 'vegetales' || anchorLink == 'grasas' || anchorLink == 'carbohidratos' || anchorLink == 'dulce' || anchorLink == 'hidratacion') && slideIndex == 1)) {
+			if (((anchorLink == 'proteinas' || anchorLink == 'calcio' || anchorLink == 'frutas' || anchorLink == 'vegetales' || anchorLink == 'grasas' || anchorLink == 'carbohidratos' || anchorLink == 'endulzantes' || anchorLink == 'hidratacion') && slideIndex == 1)) {
 				$('.buttons-container').addClass('animated fadeInDown');
 				$('.titulo-porciones-mobile').addClass('animated fadeInDown');
 				$('.img-porciones').addClass('animated fadeInDown');
@@ -156,7 +156,7 @@ $(document).ready(function() {
 				$('.mensaje-teclado-contenedor').addClass('animated fadeInUp');
 			}
 			// animaciones (slide 3)
-			if (((anchorLink == 'proteinas' || anchorLink == 'calcio' || anchorLink == 'frutas' || anchorLink == 'vegetales' || anchorLink == 'grasas' || anchorLink == 'carbohidratos' || anchorLink == 'dulce' || anchorLink == 'hidratacion') && slideIndex == 2)) {
+			if (((anchorLink == 'proteinas' || anchorLink == 'calcio' || anchorLink == 'frutas' || anchorLink == 'vegetales' || anchorLink == 'grasas' || anchorLink == 'carbohidratos' || anchorLink == 'endulzantes' || anchorLink == 'hidratacion') && slideIndex == 2)) {
 				$('.buttons-container').addClass('animated fadeInDown');
 				$('.titulo-recomendaciones').addClass('animated fadeInDown');
 				$('.mensaje-teclado-contenedor').addClass('animated fadeInUp');
@@ -180,7 +180,7 @@ $(document).ready(function() {
 			/// fin de animaciones ///
 
 			// proteínas
-			if (anchorLink == 'proteinas' || anchorLink == 'calcio' || anchorLink == 'frutas' || anchorLink == 'vegetales' || anchorLink == 'grasas' || anchorLink == 'carbohidratos' || anchorLink == 'dulce' || anchorLink == 'hidratacion') {
+			if (anchorLink == 'proteinas' || anchorLink == 'calcio' || anchorLink == 'frutas' || anchorLink == 'vegetales' || anchorLink == 'grasas' || anchorLink == 'carbohidratos' || anchorLink == 'endulzantes' || anchorLink == 'hidratacion') {
 				setTimeout(function () {
 					$('.mensaje-teclado').addClass('mensaje-teclado-oculto');
 				}, 3000);
@@ -284,20 +284,20 @@ $(document).ready(function() {
 				$('.btn-der-5').addClass('active');
 			}
 
-			// dulce
-			if (anchorLink == 'dulce' && slideIndex == 0) {
+			// endulzantes
+			if (anchorLink == 'endulzantes' && slideIndex == 0) {
 				$('.btn-izq-6').addClass('active');
 				$('.btn-mano-6').removeClass('active');
 				$('.btn-der-6').removeClass('active');
 			}
 
-			if (anchorLink == 'dulce' && slideIndex == 1) {
+			if (anchorLink == 'endulzantes' && slideIndex == 1) {
 				$('.btn-izq-6').removeClass('active');
 				$('.btn-mano-6').addClass('active');
 				$('.btn-der-6').removeClass('active');
 			}
 
-			if (anchorLink == 'dulce' && slideIndex == 2) {
+			if (anchorLink == 'endulzantes' && slideIndex == 2) {
 				$('.btn-izq-6').removeClass('active');
 				$('.btn-mano-6').removeClass('active');
 				$('.btn-der-6').addClass('active');
@@ -370,7 +370,7 @@ $(document).ready(function() {
 			var grasasIndex = 8;
 			var carbohidratosIndex = 9;
 			var calcioIndex = 5;
-			var dulceIndex = 10;
+			var endulzantesIndex = 10;
 			var hidratacionIndex = 11;
 			var vegetalesIndex = 7;
 			
@@ -779,8 +779,8 @@ $(document).ready(function() {
 				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
 			}
 
-			// dulce
-			if (index == dulceIndex && slideIndex == 0 && nextSlideIndex == 1){
+			// endulzantes
+			if (index == endulzantesIndex && slideIndex == 0 && nextSlideIndex == 1){
 				$('.btn-izq-6').removeClass('active');
 				$('.btn-mano-6').addClass('active');
 				$('.btn-der-6').removeClass('active');
@@ -800,7 +800,7 @@ $(document).ready(function() {
 				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
 			}
 
-			if (index == dulceIndex && slideIndex == 1 && nextSlideIndex == 0){
+			if (index == endulzantesIndex && slideIndex == 1 && nextSlideIndex == 0){
 				$('.btn-izq-6').addClass('active');
 				$('.btn-mano-6').removeClass('active');
 				$('.btn-der-6').removeClass('active');
@@ -820,7 +820,7 @@ $(document).ready(function() {
 				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
 			}
 
-			if (index == dulceIndex && slideIndex == 1 && nextSlideIndex == 2){
+			if (index == endulzantesIndex && slideIndex == 1 && nextSlideIndex == 2){
 				$('.btn-izq-6').removeClass('active');
 				$('.btn-mano-6').removeClass('active');
 				$('.btn-der-6').addClass('active');
@@ -840,7 +840,7 @@ $(document).ready(function() {
 				$('.elemento-recomendaciones-4').removeClass('animated fadeInRight');
 			}
 
-			if (index == dulceIndex && slideIndex == 2 && nextSlideIndex == 1){
+			if (index == endulzantesIndex && slideIndex == 2 && nextSlideIndex == 1){
 				$('.btn-izq-6').removeClass('active');
 				$('.btn-mano-6').addClass('active');
 				$('.btn-der-6').removeClass('active');
@@ -1205,17 +1205,17 @@ $(document).on('click', '.btn-der-5', function(){
 	$.fn.fullpage.moveTo('calcio', 2);
 });
 
-// dulce
+// endulzantes
 $(document).on('click', '.btn-izq-6', function(){
-	$.fn.fullpage.moveTo('dulce', 0);
+	$.fn.fullpage.moveTo('endulzantes', 0);
 });
 
 $(document).on('click', '.btn-mano-6', function(){
-	$.fn.fullpage.moveTo('dulce', 1);
+	$.fn.fullpage.moveTo('endulzantes', 1);
 });
 
 $(document).on('click', '.btn-der-6', function(){
-	$.fn.fullpage.moveTo('dulce', 2);
+	$.fn.fullpage.moveTo('endulzantes', 2);
 });
 
 // hidratación
@@ -1271,9 +1271,9 @@ $('.fp-slidesNav-custom > ul > li > button').each(function() {
 			$('.btn-calcio').removeClass('active');
 			$(this).toggleClass('active');
 		});
-	} else if ( $(this).hasClass('btn-dulce') ) {
+	} else if ( $(this).hasClass('btn-endulzantes') ) {
 		$(this).click(function () {
-			$('.btn-dulce').removeClass('active');
+			$('.btn-endulzantes').removeClass('active');
 			$(this).toggleClass('active');
 		});
 	} else if ( $(this).hasClass('btn-hidratacion') ) {
