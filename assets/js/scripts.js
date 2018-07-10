@@ -1294,10 +1294,6 @@ $('.navbar-nav>li>a').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });
 
-$('#fullpage').on('scroll', function () {
-	console.log('Event Fired');
-});
-
 // inicialización de tooltips
 $(function () {
 	$('[data-toggle="tooltip"]').tooltip();
