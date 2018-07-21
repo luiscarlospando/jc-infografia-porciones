@@ -63,7 +63,7 @@ body.fp-viewing-menu-0 #fp-nav,
 body.fp-viewing-conoce-mas-0 #fp-nav {
   display: none; }
 
-/* Ocultamos beans de portada, instrucciones, menú y conoce más */
+/* Ocultamos beans en portada, instrucciones, menú y conoce más */
 #fp-nav ul li:first-child,
 #fp-nav ul li:nth-child(2),
 #fp-nav ul li:nth-child(3),
@@ -651,6 +651,10 @@ footer {
     margin-bottom: 0; }
     .list-inline .list-inline-item img {
       width: 32px !important; } }
+@media all and (-ms-high-contrast: none) {
+  #outdated {
+    background-color: #4d4d4d;
+    display: block; } }
 @media all and (max-width: 991.98px) and (orientation: landscape) {
   body {
     position: relative;

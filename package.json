@@ -32,6 +32,7 @@
     "fullpage.js": "^2.9.6",
     "hover.css": "^2.3.2",
     "jquery": "^1.9.1",
+    "outdatedbrowser": "^1.1.5",
     "popper.js": "^1.14.3",
     "vivus": "^0.4.3"
   }

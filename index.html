@@ -23,6 +23,16 @@
     </script>
 </head>
 <body>
+    <div id="outdated">
+        <h6>¡Atención! Actualiza tu navegador</h6>
+        <p class="text-lowercase"><span class="text-uppercase">P</span>ara tener la mejor experiencia viendo esta infografía es necesario que actualices tu navegador.
+            <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/es" target="_blank"><span class="text-uppercase">A</span>ctualizar mi navegador</a>
+        </p>
+        <p class="last">
+            <a href="#" id="btnCloseUpdateBrowser" title="Cerrar">&times;</a>
+        </p>
+    </div>
+
     <p class="msge">Favor de girar tu dispositivo.</p>
 
     <!-- Menú de navegación (Desktop) -->
@@ -1650,7 +1660,7 @@
                                     </div>
                                     <p>Son una fuente de energía inmediata para el cuerpo y el cerebro. Su consumo debe ser en moderación.</p>
                                     <div class="info mb-3">
-                                        <p>Algunos ejemplos son el azúcar, chocolate en polvo o en barra y otras golosinas.</p>
+                                        <p>Algunos ejemplos son el azúcar, chocolate en polvo o en barra y miel de abeja.</p>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-5">
@@ -1694,7 +1704,7 @@
                                     </div>
                                     <p></p>
                                     <div class="info mb-3">
-                                        <p>Para endulzar tus bebidas o platillos solo necesitas el equivalente al tamaño de la punta del dedo de azúcar.</p>
+                                        <p>Para endulzar tus bebidas o platillos solo necesitas el equivalente al tamaño de la punta del dedo.</p>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-5">
@@ -2115,5 +2125,32 @@
     </footer>
     
     <script src="public/build/js/bundle.js"></script>
+
+    <script>
+        //event listener: DOM ready
+        function addLoadEvent(func) {
+            var oldonload = window.onload;
+            if (typeof window.onload != 'function') {
+                window.onload = func;
+            } else {
+                window.onload = function() {
+                    if (oldonload) {
+                        oldonload();
+                    }
+                    func();
+                }
+            }
+        }
+
+        //call plugin function after DOM ready
+        addLoadEvent(function(){
+            outdatedBrowser({
+                bgColor: '#4d4d4d',
+                color: '#ffffff',
+                lowerThan: 'IE11',
+                languagePath: ''
+            })
+        });
+    </script>
 </body>
 </html>

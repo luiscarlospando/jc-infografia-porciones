@@ -10,6 +10,7 @@ gulp.task('pack-js', function () {
         'node_modules/fullpage.js/vendors/scrolloverflow.js',
         'assets/js/fullpage.fadingEffect.min.js',
         'node_modules/fullpage.js/dist/jquery.fullpage.extensions.min.js',
+        'node_modules/outdatedbrowser/outdatedbrowser/outdatedbrowser.js',
         'assets/js/scripts.js'
     ])
         .pipe(concat('bundle.js'))
@@ -29,6 +30,7 @@ gulp.task('pack-css', function () {
         'node_modules/bootstrap/dist/css/bootstrap.min.css',
         'node_modules/animate.css/animate.min.css',
         'node_modules/hover.css/css/hover-min.css',
+        'node_modules/outdatedbrowser/outdatedbrowser/outdatedbrowser.min.css',
         'assets/css/styles.css'
     ])
         .pipe(concat('stylesheet.css'))
