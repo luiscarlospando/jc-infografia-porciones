@@ -1294,6 +1294,11 @@ $('.navbar-nav>li>a').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });
 
+// cerrar mensaje de actualización de navegadores obsoletos
+$("#btnCloseUpdateBrowser").click(function(){
+    $('#outdated').hide();
+});
+
 // inicialización de tooltips
 $(function () {
 	$('[data-toggle="tooltip"]').tooltip();
