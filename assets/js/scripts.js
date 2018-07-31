@@ -2,7 +2,8 @@ $(document).ready(function() {
 	// fullPage.js
 	$('#fullpage').fullpage({
 		fadingEffect: true,
-		fadingEffectKey: 'aW50ZXJhY3RpdmVzb2x1dGlvbnMuaW5mb190NmhabUZrYVc1blJXWm1aV04wN3BH',
+		fadingEffectKey: 'anVudG9zY29udGFtb3MuY29tX0toYlptRmthVzVuUldabVpXTjB0eng=',
+		// fadingEffectKey: 'aW50ZXJhY3RpdmVzb2x1dGlvbnMuaW5mb190NmhabUZrYVc1blJXWm1aV04wN3BH',
 		navigation: true,
 		slidesNavigation: true, // activado para sección de instrucciones
 		autoScrolling: false, // scrolleo de un toque activado
